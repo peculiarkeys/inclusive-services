@@ -66,10 +66,10 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-white leading-[1.1] font-medium max-w-[900px] mb-8 tracking-tight"
-            style={{ fontSize: "clamp(32px, 7vw, 64px)" }}
+            className="text-white leading-[1.1] font-medium max-w-[1000px] mb-8 tracking-tight"
+            style={{ fontSize: "clamp(30px, 6vw, 64px)" }}
           >
-            We Build It. You Don't <br /> Have to Worry About It.
+            Leading the Way in Engineering, Procurement, and Construction
           </motion.h1>
 
           <motion.div
