@@ -9,6 +9,12 @@ const rawImages = import.meta.glob("../../assets/obembe_projects/*.jpeg", {
   import: "default",
 }) as Record<string, string>;
 
+const rawFurnitureImages = import.meta.glob("../../assets/furniture_projects/*.{jpeg,jpg,png,webp}", {
+  eager: true,
+  import: "default",
+}) as Record<string, string>;
+
+
 const sortedPaths = Object.keys(rawImages).sort();
 
 const categories = [
@@ -16,6 +22,8 @@ const categories = [
   { id: "commercial", label: "Commercial Plazas", desc: "Modern workspaces designed for peak productivity.", stat: "45+", statDesc: "Plazas Built" },
   { id: "structural", label: "Structural & Civil", desc: "The backbone of major infrastructure developments.", stat: "80+", statDesc: "Heavy Projects" },
   { id: "renovations", label: "Renovations & Fit-Out", desc: "Transforming existing spaces into modern marvels.", stat: "150+", statDesc: "Spaces Revamped" },
+  { id: "furnitures", label: "Bespoke Furnitures", desc: "Crafting beautiful, functional pieces for your spaces.", stat: "200+", statDesc: "Pieces Installed" },
+
 ];
 
 export function WorksTabbedSection() {
@@ -26,7 +34,14 @@ export function WorksTabbedSection() {
   // Find the first image that belongs to this category (using a simple mock logic for the image)
   // We'll just use the first few sorted paths based on index for variety
   const categoryIndex = categories.findIndex(c => c.id === activeTab);
-  const featuredImage = rawImages[sortedPaths[categoryIndex % sortedPaths.length]];
+  
+  let featuredImage;
+  if (activeTab === "furnitures") {
+    const furniturePaths = Object.keys(rawFurnitureImages).sort();
+    featuredImage = furniturePaths.length > 0 ? rawFurnitureImages[furniturePaths[0]] : "";
+  } else {
+    featuredImage = rawImages[sortedPaths[categoryIndex % sortedPaths.length]];
+  }
 
   return (
     <section className="py-20 md:py-28 px-6 md:px-[60px] bg-white">

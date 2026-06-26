@@ -4,6 +4,7 @@ import { Footer } from "./components/Footer";
 import { HomePage } from "./pages/HomePage";
 import { AboutPage } from "./pages/AboutPage";
 import { ProjectsPage } from "./pages/ProjectsPage";
+import { TranscorpHiltonPage } from "./pages/works/TranscorpHiltonPage";
 import { ServicesPage } from "./pages/ServicesPage";
 import { BlogPage } from "./pages/BlogPage";
 import { ContactPage } from "./pages/ContactPage";
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/works" element={<ProjectsPage />} />
+          <Route path="/works/transcorp-hilton-renovation" element={<TranscorpHiltonPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/services/engineering-and-design" element={<EngineeringDesignPage />} />
           <Route path="/services/procurement" element={<ProcurementPage />} />

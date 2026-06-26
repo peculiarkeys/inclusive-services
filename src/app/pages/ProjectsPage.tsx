@@ -2,8 +2,8 @@ import { WorksHero } from "../components/WorksHero";
 import { WorksTabbedSection } from "../components/WorksTabbedSection";
 import { WorksFeatures } from "../components/WorksFeatures";
 import { WorksAbout } from "../components/WorksAbout";
-import { WorksPartners } from "../components/WorksPartners";
 import { PhotoGallery } from "../components/PhotoGallery";
+import { FurnitureGallery } from "../components/FurnitureGallery";
 
 export function ProjectsPage() {
   return (
@@ -11,9 +11,9 @@ export function ProjectsPage() {
       <WorksHero />
       <WorksTabbedSection />
       <PhotoGallery />
+      <FurnitureGallery />
       <WorksFeatures />
       <WorksAbout />
-      <WorksPartners />
     </div>
   );
 }
