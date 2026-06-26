@@ -129,7 +129,7 @@ export function FeaturedProjects() {
 
         {/* Project Grid */}
         <AnimatedSection delay={0.2}>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
+          <div className="grid md:grid-cols-2 gap-5 mb-12">
             <AnimatePresence mode="popLayout">
               {filteredProjects.map((project, index) => (
                 <motion.div

@@ -3,19 +3,24 @@ import { AnimatedSection } from "./AnimatedSection";
 import { ArrowRight, HardHat, Truck, Hammer, Key, RefreshCw, Settings } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Link, useNavigate } from "react-router";
-const rawImages = import.meta.glob("../../assets/obembe_projects/*.{jpeg,jpg,png,webp}", {
-  eager: true,
-  import: "default",
-}) as Record<string, string>;
 
-const projectImages = Object.keys(rawImages).sort().map(key => rawImages[key]);
+const obembeImgs = import.meta.glob("../../assets/obembe_projects/*.{jpeg,jpg,png,webp}", { eager: true, import: "default" }) as Record<string, string>;
+const architectureImgs = import.meta.glob("../../assets/architecture_designs/*.{jpeg,jpg,png,webp}", { eager: true, import: "default" }) as Record<string, string>;
+const transcorpImgs = import.meta.glob("../../assets/furniture_projects/*.{jpeg,jpg,png,webp}", { eager: true, import: "default" }) as Record<string, string>;
+const maitamaImgs = import.meta.glob("../../assets/maitama_project/*.{jpeg,jpg,png,webp}", { eager: true, import: "default" }) as Record<string, string>;
+const furnitureImgs = import.meta.glob("../../assets/furnitures_and_furnishing/*.{jpeg,jpg,png,webp}", { eager: true, import: "default" }) as Record<string, string>;
 
-const service1 = projectImages[0] || "";
-const service2 = projectImages[1] || "";
-const service3 = projectImages[2] || "";
-const service4 = projectImages[3] || "";
-const service5 = projectImages[4] || "";
-const service6 = projectImages[5] || "";
+const getFirstImage = (record: Record<string, string>, offset = 0) => {
+  const keys = Object.keys(record).sort();
+  return keys.length > offset ? record[keys[offset]] : "";
+};
+
+const service1 = getFirstImage(architectureImgs, 1); // Engineering & Design
+const service2 = getFirstImage(obembeImgs, 4); // Procurement
+const service3 = getFirstImage(obembeImgs, 7); // Construction
+const service4 = getFirstImage(maitamaImgs, 2); // Turnkey Solutions
+const service5 = getFirstImage(transcorpImgs, 0); // Renovation & Rehabilitation
+const service6 = getFirstImage(furnitureImgs, 1); // Maintenance & Facility
 
 const services = [
   {
@@ -66,49 +71,45 @@ export function ServiceSection() {
   const navigate = useNavigate();
 
   return (
-    <section id="services" className="py-20 md:py-28 px-4 md:px-10 bg-[#161a16] rounded-t-[40px] mt-10">
+    <section id="services" className="py-20 md:py-[120px] px-6 md:px-[60px] bg-[#f9f9f9]">
       <div className="max-w-[1320px] mx-auto">
         {/* Top Header Area */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
-          <AnimatedSection className="max-w-[500px]">
-            <p className="text-[#a0a59b] text-sm font-semibold tracking-wider uppercase mb-3">
-              • Services
-            </p>
-            <h2 className="text-white leading-[1.1] font-medium" style={{ fontSize: "clamp(36px, 4vw, 56px)" }}>
-              Explore our wide<br />range of services
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8">
+          <AnimatedSection className="max-w-2xl">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="w-2 h-2 rounded-full bg-[#FF6501]" />
+              <span className="text-[#FF6501] text-sm font-semibold tracking-wider uppercase font-sans">
+                Our Capabilities
+              </span>
+            </div>
+            <h2 className="text-[#111111] leading-[1.1] font-medium" style={{ fontSize: "clamp(40px, 5vw, 64px)", letterSpacing: "-2px" }}>
+              Comprehensive services for your next bold vision.
             </h2>
           </AnimatedSection>
           
           <AnimatedSection delay={0.2} className="flex items-center gap-4 shrink-0">
             <Link
-              to="/contact"
-              className="bg-[#2d4a32] hover:bg-[#233a27] text-white px-6 py-3 rounded-full font-medium transition-colors text-sm"
-            >
-              Get in touch
-            </Link>
-            <Link
               to="/services"
-              className="border border-white/20 hover:bg-white/10 text-white px-6 py-3 rounded-full font-medium transition-colors text-sm"
+              className="group flex items-center gap-3 bg-[#111111] hover:bg-[#FF6501] text-white px-7 py-4 rounded-full font-medium transition-colors text-sm"
             >
               Browse all services
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </AnimatedSection>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, i) => {
             const Icon = service.icon;
             return (
               <AnimatedSection key={i} delay={i * 0.1}>
                 <motion.div
-                  className="group flex flex-col cursor-pointer h-full"
-                  whileHover={{ y: -5 }}
-                  transition={{ duration: 0.3 }}
+                  className="group bg-white border border-gray-200 hover:border-gray-300 shadow-sm hover:shadow-xl rounded-[32px] p-4 cursor-pointer transition-all duration-300 flex flex-col h-full"
                   onClick={() => navigate(service.link)}
                 >
                   {/* Image Container */}
-                  <div className="relative w-full aspect-[4/3] rounded-[24px] overflow-hidden mb-6 bg-gray-800">
+                  <div className="relative w-full h-[240px] md:h-[260px] rounded-[24px] overflow-hidden mb-6 bg-gray-100">
                     <ImageWithFallback
                       src={service.img}
                       alt={service.title}
@@ -116,34 +117,27 @@ export function ServiceSection() {
                     />
                     
                     {/* Floating Icon */}
-                    <div className="absolute bottom-4 left-4 flex items-center justify-center shadow-lg backdrop-blur-sm group-hover:scale-110 transition-transform bg-transparent">
-                      <Icon className="w-8 h-8 text-white drop-shadow-md" />
+                    <div className="absolute top-4 left-4 w-12 h-12 rounded-full bg-white/90 backdrop-blur-md border border-gray-200 flex items-center justify-center group-hover:bg-[#FF6501] group-hover:border-[#FF6501] transition-colors duration-300 shadow-md">
+                      <Icon className="w-5 h-5 text-[#FF6501] group-hover:text-white transition-colors" />
                     </div>
                   </div>
 
                   {/* Text Content */}
-                  <div className="flex-1 flex flex-col">
-                    <h3 className="text-white text-2xl font-medium mb-3 group-hover:text-[#2d4a32] transition-colors">
+                  <div className="px-2 pb-2 flex-1 flex flex-col">
+                    <h3 className="text-[#111111] text-2xl font-medium mb-3 tracking-tight">
                       {service.title}
                     </h3>
-                    <p className="text-[#a0a59b] text-[15px] leading-relaxed mb-4 flex-1">
+                    <p className="text-[#546478] text-[15px] leading-relaxed font-sans mb-6 flex-1">
                       {service.desc}
                     </p>
-                    <div className="flex items-center text-[#2d4a32] font-medium text-sm gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                      Learn more <ArrowRight className="w-4 h-4" />
+                    <div className="flex items-center gap-2 text-gray-400 group-hover:text-[#FF6501] transition-colors text-sm font-medium mt-auto">
+                      Explore Service <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </div>
                   </div>
                 </motion.div>
               </AnimatedSection>
             );
           })}
-        </div>
-        
-        {/* Carousel indicators dummy */}
-        <div className="flex justify-center items-center gap-2 mt-12 md:hidden">
-          <div className="w-2 h-2 rounded-full bg-white"></div>
-          <div className="w-2 h-2 rounded-full bg-white/30"></div>
-          <div className="w-2 h-2 rounded-full bg-white/30"></div>
         </div>
       </div>
     </section>
