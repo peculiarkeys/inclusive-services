@@ -8,6 +8,7 @@ import { ServicesPage } from "./pages/ServicesPage";
 import { BlogPage } from "./pages/BlogPage";
 import { ContactPage } from "./pages/ContactPage";
 import { ScrollToTop } from "./components/ScrollToTop"; // We need this to scroll up on route change
+import { WhatsAppFloatingIcon } from "./components/WhatsAppFloatingIcon";
 
 // Import new service pages
 import { EngineeringDesignPage } from "./pages/services/EngineeringDesignPage";
@@ -21,6 +22,7 @@ export default function App() {
   return (
     <div className="min-h-screen w-full overflow-x-hidden font-sans">
       <ScrollToTop />
+      <WhatsAppFloatingIcon />
       <Header />
       <main>
         <Routes>
