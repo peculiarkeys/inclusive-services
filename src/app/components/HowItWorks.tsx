@@ -1,10 +1,10 @@
 import { AnimatedSection } from "./AnimatedSection";
 
 const steps = [
-  { num: "1", title: "Our Vision", desc: "Obembe Construction was founded with a vision to transform the construction industry and deliver exceptional projects that shape communities and drive progress." },
-  { num: "2", title: "Our Journey", desc: "Our journey began with a small team of industry professionals who shared a common vision: to create a construction company that prioritizes quality." },
-  { num: "3", title: "Our Commitment", desc: "From the very beginning, we focused on building strong relationships with our clients, delivering tailored solutions that exceed expectations." },
-  { num: "4", title: "Our Mission", desc: "To deliver exceptional construction solutions that exceed client expectations, foster sustainable development, and positively impact communities." },
+  { num: "1", title: "Consultation & Planning", desc: "We begin by understanding your needs, evaluating the site, and developing a comprehensive strategy to ensure project success." },
+  { num: "2", title: "Design & Engineering", desc: "Our experts create detailed architectural designs and robust engineering plans that balance aesthetics, functionality, and safety." },
+  { num: "3", title: "Execution & Construction", desc: "Our skilled workforce brings the plans to life, adhering to the highest quality standards, strict safety protocols, and agreed timelines." },
+  { num: "4", title: "Delivery & Handover", desc: "We hand over a fully completed project ready for use, ensuring every detail meets our rigorous standards and your exact expectations." },
 ];
 
 export function HowItWorks() {
@@ -13,7 +13,7 @@ export function HowItWorks() {
       <div className="max-w-[1320px] mx-auto">
         <AnimatedSection className="text-center mb-16">
           <h2 className="text-[#111111]" style={{ fontSize: "clamp(32px, 5vw, 64px)", fontWeight: 400, lineHeight: "1.2", letterSpacing: "-2px" }}>
-            Get To Know Us
+            How We Work
           </h2>
         </AnimatedSection>
 

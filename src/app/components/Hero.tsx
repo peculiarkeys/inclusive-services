@@ -66,8 +66,8 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-white leading-[1.0] font-medium max-w-[900px] mb-8"
-            style={{ fontSize: "clamp(40px, 5vw, 64px)" }}
+            className="text-white leading-[1.1] font-medium max-w-[900px] mb-8 tracking-tight"
+            style={{ fontSize: "clamp(32px, 7vw, 64px)" }}
           >
             We Build It. You Don't <br /> Have to Worry About It.
           </motion.h1>
@@ -76,18 +76,18 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="flex flex-wrap items-center gap-4"
+            className="flex flex-row items-center gap-2 md:gap-4"
           >
             <Link
               to="/contact"
-              className="bg-white text-[#111111] px-7 py-3.5 rounded-full font-semibold hover:bg-gray-100 transition-colors flex items-center gap-2 text-sm shadow-md"
+              className="bg-white text-[#111111] px-5 py-3 md:px-7 md:py-3.5 rounded-full font-semibold hover:bg-gray-100 transition-colors flex items-center justify-center gap-1.5 md:gap-2 text-[13px] md:text-sm shadow-md whitespace-nowrap"
             >
               Talk to Us Today
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-3.5 h-3.5 md:w-4 md:h-4" />
             </Link>
             <a
               href="#projects"
-              className="text-white border border-white/40 hover:bg-white/10 px-7 py-3.5 rounded-full font-semibold transition-colors text-sm backdrop-blur-sm"
+              className="text-white border border-white/40 hover:bg-white/10 px-5 py-3 md:px-7 md:py-3.5 rounded-full font-semibold transition-colors text-[13px] md:text-sm backdrop-blur-sm whitespace-nowrap flex items-center justify-center"
             >
               See Our Work &rarr;
             </a>
