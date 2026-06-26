@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { X, Calendar } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { AnimatedSection } from "./AnimatedSection";
 
 const rawImages = import.meta.glob("../../assets/obembe_projects/*.{jpeg,jpg,png,webp}", {
   eager: true,
