@@ -34,7 +34,7 @@ export function Hero() {
   return (
     <section className="relative w-full bg-[#f9f9f9] p-4 md:p-6">
       {/* Hero Container with Rounded Corners */}
-      <div className="relative w-full h-[90vh] min-h-[600px] rounded-[32px] overflow-hidden flex flex-col bg-[#2e1d13] shadow-lg">
+      <div className="relative w-full h-[75vh] min-h-[450px] md:h-[90vh] md:min-h-[600px] rounded-[32px] overflow-hidden flex flex-col bg-[#2e1d13] shadow-lg">
         
         {/* Background image + overlay */}
         <div className="absolute inset-0 z-0 overflow-hidden">
