@@ -4,7 +4,7 @@ import { AboutSection } from "../components/AboutSection";
 import { WhyChooseUs } from "../components/WhyChooseUs";
 import { HowItWorks } from "../components/HowItWorks";
 import { IndustriesWeServe } from "../components/IndustriesWeServe";
-import { ProjectsSection } from "../components/ProjectsSection";
+import { FeaturedProjects } from "../components/FeaturedProjects";
 import { Testimonials } from "../components/Testimonials";
 import { CTABanner } from "../components/CTABanner";
 
@@ -14,10 +14,10 @@ export function HomePage() {
       <Hero />
       <ServiceSection />
       <AboutSection />
+      <FeaturedProjects />
       <WhyChooseUs />
       <HowItWorks />
       <IndustriesWeServe />
-      <ProjectsSection />
       <Testimonials />
       <CTABanner />
     </>

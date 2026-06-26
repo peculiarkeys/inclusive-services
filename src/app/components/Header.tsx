@@ -38,10 +38,15 @@ export function Header() {
               Works <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
             </button>
             <div className="absolute top-full left-0 pt-2 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-200">
-              <div className="bg-white rounded-xl shadow-lg border border-black/5 py-2 w-64 flex flex-col">
+              <div className="bg-white rounded-xl shadow-lg border border-black/5 py-2 w-72 flex flex-col">
                 <Link to="/works" className="px-4 py-2 text-sm text-[#111111]/80 hover:text-[#d16c49] hover:bg-gray-50 transition-colors">All Projects</Link>
                 <Link to="/works/transcorp-hilton-renovation" className="px-4 py-2 text-sm text-[#111111]/80 hover:text-[#d16c49] hover:bg-gray-50 transition-colors">Transcorp Hilton Renovation</Link>
-                <Link to="/works" className="px-4 py-2 text-sm text-[#111111]/80 hover:text-[#d16c49] hover:bg-gray-50 transition-colors">Bespoke Furnitures</Link>
+                <Link to="/works/architecture-estate" className="px-4 py-2 text-sm text-[#111111]/80 hover:text-[#d16c49] hover:bg-gray-50 transition-colors">Architectural Design Estate Project</Link>
+                <Link to="/works/golf-center" className="px-4 py-2 text-sm text-[#111111]/80 hover:text-[#d16c49] hover:bg-gray-50 transition-colors">Golf Center Development</Link>
+                <Link to="/works/furnitures-and-furnishing" className="px-4 py-2 text-sm text-[#111111]/80 hover:text-[#d16c49] hover:bg-gray-50 transition-colors">Furnitures and Furnishing Project</Link>
+                <Link to="/works/modern-city-jahi" className="px-4 py-2 text-sm text-[#111111]/80 hover:text-[#d16c49] hover:bg-gray-50 transition-colors">Modern City Jahi</Link>
+                <Link to="/works/asokoro-project" className="px-4 py-2 text-sm text-[#111111]/80 hover:text-[#d16c49] hover:bg-gray-50 transition-colors">Residential Development Asokoro</Link>
+                <Link to="/works/maitama-project" className="px-4 py-2 text-sm text-[#111111]/80 hover:text-[#d16c49] hover:bg-gray-50 transition-colors">Maitama Private Residence</Link>
               </div>
             </div>
           </div>
@@ -85,7 +90,12 @@ export function Header() {
                 <div className="flex flex-col gap-2 pl-4 border-l-2 border-gray-100 ml-2">
                   <Link to="/works" className="text-[#111111]/60 hover:text-[#FF6501] transition-colors text-sm" onClick={() => setMobileOpen(false)}>All Projects</Link>
                   <Link to="/works/transcorp-hilton-renovation" className="text-[#111111]/60 hover:text-[#FF6501] transition-colors text-sm" onClick={() => setMobileOpen(false)}>Transcorp Hilton Renovation</Link>
-                  <Link to="/works" className="text-[#111111]/60 hover:text-[#FF6501] transition-colors text-sm" onClick={() => setMobileOpen(false)}>Bespoke Furnitures</Link>
+                  <Link to="/works/architecture-estate" className="text-[#111111]/60 hover:text-[#FF6501] transition-colors text-sm" onClick={() => setMobileOpen(false)}>Architectural Design Estate Project</Link>
+                  <Link to="/works/golf-center" className="text-[#111111]/60 hover:text-[#FF6501] transition-colors text-sm" onClick={() => setMobileOpen(false)}>Golf Center Development</Link>
+                  <Link to="/works/furnitures-and-furnishing" className="text-[#111111]/60 hover:text-[#FF6501] transition-colors text-sm" onClick={() => setMobileOpen(false)}>Furnitures and Furnishing Project</Link>
+                  <Link to="/works/modern-city-jahi" className="text-[#111111]/60 hover:text-[#FF6501] transition-colors text-sm" onClick={() => setMobileOpen(false)}>Modern City Jahi</Link>
+                  <Link to="/works/asokoro-project" className="text-[#111111]/60 hover:text-[#FF6501] transition-colors text-sm" onClick={() => setMobileOpen(false)}>Residential Development Asokoro</Link>
+                  <Link to="/works/maitama-project" className="text-[#111111]/60 hover:text-[#FF6501] transition-colors text-sm" onClick={() => setMobileOpen(false)}>Maitama Private Residence</Link>
                 </div>
               </div>
 

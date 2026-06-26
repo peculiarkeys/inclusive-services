@@ -5,6 +5,12 @@ import { HomePage } from "./pages/HomePage";
 import { AboutPage } from "./pages/AboutPage";
 import { ProjectsPage } from "./pages/ProjectsPage";
 import { TranscorpHiltonPage } from "./pages/works/TranscorpHiltonPage";
+import { ArchitectureEstatePage } from "./pages/works/ArchitectureEstatePage";
+import { GolfCenterPage } from "./pages/works/GolfCenterPage";
+import { FurnituresAndFurnishingPage } from "./pages/works/FurnituresAndFurnishingPage";
+import { ModernCityJahiPage } from "./pages/works/ModernCityJahiPage";
+import { AsokoroProjectPage } from "./pages/works/AsokoroProjectPage";
+import { MaitamaProjectPage } from "./pages/works/MaitamaProjectPage";
 import { ServicesPage } from "./pages/ServicesPage";
 import { BlogPage } from "./pages/BlogPage";
 import { ContactPage } from "./pages/ContactPage";
@@ -31,6 +37,12 @@ export default function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/works" element={<ProjectsPage />} />
           <Route path="/works/transcorp-hilton-renovation" element={<TranscorpHiltonPage />} />
+          <Route path="/works/architecture-estate" element={<ArchitectureEstatePage />} />
+          <Route path="/works/golf-center" element={<GolfCenterPage />} />
+          <Route path="/works/furnitures-and-furnishing" element={<FurnituresAndFurnishingPage />} />
+          <Route path="/works/modern-city-jahi" element={<ModernCityJahiPage />} />
+          <Route path="/works/asokoro-project" element={<AsokoroProjectPage />} />
+          <Route path="/works/maitama-project" element={<MaitamaProjectPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/services/engineering-and-design" element={<EngineeringDesignPage />} />
           <Route path="/services/procurement" element={<ProcurementPage />} />
