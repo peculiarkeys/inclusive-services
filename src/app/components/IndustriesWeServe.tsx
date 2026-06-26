@@ -1,27 +1,72 @@
 import { AnimatedSection } from "./AnimatedSection";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { 
+  Home, 
+  Building2, 
+  Factory, 
+  Landmark, 
+  GraduationCap, 
+  HeartPulse, 
+  Utensils, 
+  Route, 
+  Flame 
+} from "lucide-react";
 
-import residentialImg from "../../assets/industries/residential.png";
-import commercialImg from "../../assets/industries/commercial.png";
-import industrialImg from "../../assets/industries/industrial.png";
-import governmentImg from "../../assets/industries/government.png";
-import educationImg from "../../assets/industries/education.png";
-import healthcareImg from "../../assets/industries/healthcare.png";
-import hospitalityImg from "../../assets/industries/hospitality.png";
-import infrastructureImg from "../../assets/industries/infrastructure.png";
-import oilGasImg from "../../assets/industries/oil_gas.png";
-
-// Assign relevant images to industries
+// Assign relevant icons and bento grid classes to industries
 const industries = [
-  { name: "Residential", desc: "Custom homes and multi-family units", image: residentialImg },
-  { name: "Commercial", desc: "Offices, retail, and mixed-use spaces", image: commercialImg },
-  { name: "Industrial", desc: "Warehouses and manufacturing facilities", image: industrialImg },
-  { name: "Government", desc: "Public sector and municipal buildings", image: governmentImg },
-  { name: "Education", desc: "Schools, universities, and training centers", image: educationImg },
-  { name: "Healthcare", desc: "Hospitals, clinics, and research labs", image: healthcareImg },
-  { name: "Hospitality", desc: "Hotels, resorts, and restaurants", image: hospitalityImg },
-  { name: "Infrastructure", desc: "Roads, bridges, and public works", image: infrastructureImg },
-  { name: "Oil & Gas", desc: "Specialized energy sector facilities", image: oilGasImg }
+  { 
+    name: "Residential", 
+    desc: "Custom homes, luxury villas, and multi-family units designed with precision.", 
+    icon: Home,
+    className: "md:col-span-2 md:row-span-2" // Large Square
+  },
+  { 
+    name: "Commercial", 
+    desc: "Offices, retail, and mixed-use spaces.", 
+    icon: Building2,
+    className: "md:col-span-2 md:row-span-1" // Wide
+  },
+  { 
+    name: "Industrial", 
+    desc: "Warehouses and manufacturing facilities.", 
+    icon: Factory,
+    className: "md:col-span-1 md:row-span-1" // Small
+  },
+  { 
+    name: "Government", 
+    desc: "Public sector and municipal buildings.", 
+    icon: Landmark,
+    className: "md:col-span-1 md:row-span-1" // Small
+  },
+  { 
+    name: "Education", 
+    desc: "Schools, universities, and training centers.", 
+    icon: GraduationCap,
+    className: "md:col-span-2 md:row-span-1" // Wide
+  },
+  { 
+    name: "Healthcare", 
+    desc: "Hospitals, clinics, and research labs.", 
+    icon: HeartPulse,
+    className: "md:col-span-1 md:row-span-1" // Small
+  },
+  { 
+    name: "Hospitality", 
+    desc: "Hotels, resorts, and restaurants.", 
+    icon: Utensils,
+    className: "md:col-span-1 md:row-span-1" // Small
+  },
+  { 
+    name: "Infrastructure", 
+    desc: "Roads, bridges, and public works built to last.", 
+    icon: Route,
+    className: "md:col-span-2 md:row-span-1" // Wide
+  },
+  { 
+    name: "Oil & Gas", 
+    desc: "Specialized energy sector facilities.", 
+    icon: Flame,
+    className: "md:col-span-2 md:row-span-1" // Wide
+  }
 ];
 
 export function IndustriesWeServe() {
@@ -29,38 +74,43 @@ export function IndustriesWeServe() {
     <section className="py-20 md:py-[120px] px-6 md:px-[60px] bg-white">
       <div className="max-w-[1320px] mx-auto">
         <AnimatedSection className="text-center max-w-2xl mx-auto mb-16">
-          <p className="text-[11px] font-bold text-[#d16c49] uppercase tracking-widest mb-4">
+          <p className="text-[11px] font-bold text-[#FF6501] uppercase tracking-widest mb-4">
             INDUSTRIES WE SERVE
           </p>
           <h2 className="text-[#111111] mb-6 leading-[1.1] font-medium" style={{ fontSize: "clamp(36px, 4vw, 56px)", letterSpacing: "-1px" }}>
             Expertise Across Every Sector
           </h2>
+          <p className="text-gray-500 text-lg">
+            Delivering excellence and specialized solutions tailored to the unique requirements of various industries.
+          </p>
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
-          {industries.map((ind, i) => (
-            <AnimatedSection key={i} delay={i * 0.1}>
-              <div className="group cursor-pointer flex flex-col gap-4">
-                <div className="relative w-full aspect-[4/3] rounded-[24px] overflow-hidden shadow-sm">
-                  <ImageWithFallback 
-                    src={ind.image} 
-                    alt={ind.name} 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" 
-                  />
-                  <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
+        <AnimatedSection delay={0.2}>
+          <div className="grid grid-cols-1 md:grid-cols-4 auto-rows-[180px] md:auto-rows-[220px] gap-4">
+            {industries.map((ind, i) => {
+              const Icon = ind.icon;
+              return (
+                <div 
+                  key={i} 
+                  className={`group relative flex flex-col justify-end p-6 md:p-8 rounded-[32px] overflow-hidden bg-[#f4f5f6] hover:bg-[#ebecee] transition-colors duration-300 cursor-pointer ${ind.className}`}
+                >
+                  <div className="absolute top-6 right-6 w-12 h-12 rounded-full bg-white flex items-center justify-center transition-transform duration-500 group-hover:scale-110">
+                    <Icon className="w-5 h-5 text-[#111111] group-hover:text-[#FF6501] transition-colors duration-300" strokeWidth={2} />
+                  </div>
+                  
+                  <div className="mt-auto relative z-10">
+                    <h3 className="text-[#111111] font-semibold text-2xl mb-1.5 tracking-tight">
+                      {ind.name}
+                    </h3>
+                    <p className="text-[#546478] text-[14px] leading-relaxed max-w-[90%]">
+                      {ind.desc}
+                    </p>
+                  </div>
                 </div>
-                <div className="flex flex-col gap-1 px-1">
-                  <h3 className="text-[#111111] font-semibold text-xl group-hover:text-[#326B70] transition-colors duration-300">
-                    {ind.name}
-                  </h3>
-                  <p className="text-gray-500 text-[15px]">
-                    {ind.desc}
-                  </p>
-                </div>
-              </div>
-            </AnimatedSection>
-          ))}
-        </div>
+              );
+            })}
+          </div>
+        </AnimatedSection>
       </div>
     </section>
   );
