@@ -129,42 +129,43 @@ export function FeaturedProjects() {
 
         {/* Project Grid */}
         <AnimatedSection delay={0.2}>
-          <div className="grid md:grid-cols-2 gap-5 mb-12">
+          <div className="grid md:grid-cols-2 gap-6 lg:gap-8 mb-12">
             <AnimatePresence mode="popLayout">
               {filteredProjects.map((project, index) => (
                 <motion.div
                   layout
-                  initial={{ opacity: 0, scale: 0.9 }}
+                  initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.9 }}
-                  transition={{ duration: 0.3 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  transition={{ duration: 0.4 }}
                   key={project.link}
                 >
                   <Link
                     to={project.link}
-                    className="group relative rounded-xl overflow-hidden block h-[280px] md:h-[332px] cursor-pointer shadow-lg bg-white/5 border border-white/10"
+                    className="group relative rounded-[32px] overflow-hidden block h-[400px] md:h-[500px] lg:h-[600px] cursor-pointer shadow-lg bg-white/5 border border-white/10"
                   >
                     <ImageWithFallback
                       src={project.image}
                       alt={project.title}
-                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-80 group-hover:opacity-95 transition-opacity" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-[#111111]/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500" />
                     
-                    <div className="absolute top-4 right-4 w-9 h-9 rounded-full bg-[#FF6501] flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <ArrowRight className="w-4 h-4 transform group-hover:translate-x-0.5 transition-transform" />
-                    </div>
-
-                    <div className="absolute bottom-0 left-0 right-0 p-5 flex flex-col gap-1.5">
-                      <span className="text-[#FF6501] text-xs font-semibold uppercase tracking-wider">
+                    <div className="absolute bottom-0 left-0 w-full p-6 md:p-10 flex flex-col justify-end transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-out">
+                      <span className="text-[#FF6501] text-xs md:text-sm font-semibold uppercase tracking-wider mb-2 block">
                         {categories.find((c) => c.id === project.category)?.label}
                       </span>
-                      <h4 className="text-white text-lg md:text-xl font-medium tracking-tight">
+                      <h4 className="text-white text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight mb-2">
                         {project.title}
                       </h4>
-                      <div className="flex items-center gap-1.5 text-white/70 text-sm mt-0.5">
-                        <MapPin className="w-4 h-4 text-[#FF6501] shrink-0" />
-                        <span>{project.location}</span>
+                      <div className="flex items-center justify-between mt-2">
+                        <div className="flex items-center gap-2 text-white/60 text-sm md:text-base font-sans">
+                          <MapPin className="w-4 h-4 text-[#FF6501]" />
+                          <span>{project.location}</span>
+                        </div>
+                        <div className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center text-white border border-white/20 group-hover:bg-[#FF6501] group-hover:border-[#FF6501] transition-colors duration-300">
+                          <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" />
+                        </div>
                       </div>
                     </div>
                   </Link>
