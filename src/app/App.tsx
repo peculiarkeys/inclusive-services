@@ -13,6 +13,7 @@ import { AsokoroProjectPage } from "./pages/works/AsokoroProjectPage";
 import { MaitamaProjectPage } from "./pages/works/MaitamaProjectPage";
 import { ServicesPage } from "./pages/ServicesPage";
 import { BlogPage } from "./pages/BlogPage";
+import { SingleBlogPage } from "./pages/SingleBlogPage";
 import { ContactPage } from "./pages/ContactPage";
 import { ScrollToTop } from "./components/ScrollToTop"; // We need this to scroll up on route change
 import { WhatsAppFloatingIcon } from "./components/WhatsAppFloatingIcon";
@@ -51,6 +52,7 @@ export default function App() {
           <Route path="/services/renovation-and-rehabilitation" element={<RenovationPage />} />
           <Route path="/services/maintenance-and-facility-management" element={<MaintenancePage />} />
           <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/:slug" element={<SingleBlogPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </main>
