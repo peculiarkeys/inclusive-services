@@ -14,7 +14,7 @@ export function FurnituresAndFurnishingPage() {
   return (
     <div className="w-full bg-[#f9f9f9]">
       <PageHero 
-        title="Furnitures and Furnishing Project" 
+        title="Furnitures and Furnishing program" 
         description="Explore our meticulously crafted furniture and complete furnishing solutions."
         image={heroImg}
       />

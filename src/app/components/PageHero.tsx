@@ -10,7 +10,7 @@ interface PageHeroProps {
 export function PageHero({ title, description, image }: PageHeroProps) {
   return (
     <section className="relative w-full p-4 md:p-6 pb-0">
-      <div className="relative w-full h-[60vh] min-h-[400px] rounded-[32px] overflow-hidden flex flex-col bg-[#1a1c18] shadow-lg mt-0">
+      <div className="relative w-full h-[60vh] min-h-[400px] rounded-[32px] overflow-hidden flex flex-col bg-[#1C3234] shadow-lg mt-0">
         
         {/* Background image + overlay */}
         <div className="absolute inset-0 z-0">
@@ -25,7 +25,7 @@ export function PageHero({ title, description, image }: PageHeroProps) {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-white leading-[1.1] font-medium"
+              className="text-white leading-[1.1] "
               style={{ fontSize: "clamp(40px, 6vw, 80px)" }}
             >
               {title}
@@ -35,7 +35,7 @@ export function PageHero({ title, description, image }: PageHeroProps) {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-white/80 text-lg leading-relaxed font-medium max-w-[600px]"
+              className="text-white/80 text-lg leading-relaxed  max-w-[600px]"
             >
               {description}
             </motion.p>

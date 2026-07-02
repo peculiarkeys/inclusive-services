@@ -42,11 +42,11 @@ export function GolfCenterGallery({ columns = 3 }: GolfCenterGalleryProps = {}) 
               <div className="break-inside-avoid relative group rounded-2xl overflow-hidden bg-gray-200">
                 <ImageWithFallback 
                   src={src} 
-                  alt={`Golf Center project ${index + 1}`} 
+                  alt={`Golf Center program ${index + 1}`} 
                   className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105" 
                 />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <span className="text-white font-medium px-4 py-2 border border-white/30 rounded-full backdrop-blur-sm">View</span>
+                  <span className="text-white  px-4 py-2 border border-white/30 rounded-full backdrop-blur-sm">View</span>
                 </div>
               </div>
             </AnimatedSection>
@@ -57,7 +57,7 @@ export function GolfCenterGallery({ columns = 3 }: GolfCenterGalleryProps = {}) 
           <div className="mt-12 flex justify-center">
             <button
               onClick={handleLoadMore}
-              className="px-8 py-3 bg-[#111111] text-white rounded-xl font-medium hover:bg-[#d16c49] transition-colors"
+              className="px-8 py-3 bg-[#111111] text-white rounded-xl  hover:bg-[#FF994F] transition-colors"
             >
               Load More
             </button>

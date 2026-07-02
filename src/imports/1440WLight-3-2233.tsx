@@ -1,22 +1,22 @@
 import svgPaths from "./svg-gypfhz78cl";
-import imgSolutionImage from "figma:asset/0bad60086fd0cffb0ef4c852d12369ae8fe7f68f.png";
-import imgServiceImage from "figma:asset/e261f5edb57bd9da5e9eb38b7981e488e673b668.png";
-import imgServiceImage1 from "figma:asset/77e58ea2c2f619eb26edaff82a496ecdff23d5c4.png";
-import imgServiceImage2 from "figma:asset/efe577f30b84d232b81b3e76c6c2491093e3462f.png";
-import imgProjectImage from "figma:asset/b69010b45ae5b9784e78a8dc7f38d76f567e6452.png";
-import imgProjectImage1 from "figma:asset/c3948ffc2fc3efc9b9d9be06ad8cc2d1a2da3725.png";
-import imgProjectImage2 from "figma:asset/d704be682a54280c1f70015885cde05a122608ab.png";
-import imgProjectImage3 from "figma:asset/55f0d05da41079f7cd88dadc119a7a41d75cafcb.png";
-import imgProjectImage4 from "figma:asset/af9e3469488188cf525954d2b5a912c03d7c1009.png";
-import imgProjectImage5 from "figma:asset/7e2a0570d98a36052c1f6389a981c2c46738c5f6.png";
-import imgAuthorImage from "figma:asset/426ceceee471dcde99c5f76748c5a11bcd589d18.png";
-import imgAuthorImage1 from "figma:asset/be1c1b31637a5d0322c87142f2db54c10b428bb0.png";
-import imgAuthorImage2 from "figma:asset/5784ceece83b4230d23d1dea73acda304f625fd3.png";
-import imgBlogImage from "figma:asset/b1dd56bf93297241ecbe1ce7f4cdee94dda33dfe.png";
-import imgBlogImage1 from "figma:asset/4cce5f2fa65edff10acd585416da13637ad1c8ee.png";
-import imgBlogImage2 from "figma:asset/5cd454dcd29672793acab0b17acf5536cc771160.png";
-import imgFooterDesktop from "figma:asset/ff625af9cc74a348dac7d0b1e6a8cc355a34a1de.png";
-import imgHeroSection from "figma:asset/9c7f9a850dcb52e471bb613bc76969646fffe4b5.png";
+import imgSolutionImage from "local:asset/0bad60086fd0cffb0ef4c852d12369ae8fe7f68f.png";
+import imgServiceImage from "local:asset/e261f5edb57bd9da5e9eb38b7981e488e673b668.png";
+import imgServiceImage1 from "local:asset/77e58ea2c2f619eb26edaff82a496ecdff23d5c4.png";
+import imgServiceImage2 from "local:asset/efe577f30b84d232b81b3e76c6c2491093e3462f.png";
+import imgprogramImage from "local:asset/b69010b45ae5b9784e78a8dc7f38d76f567e6452.png";
+import imgprogramImage1 from "local:asset/c3948ffc2fc3efc9b9d9be06ad8cc2d1a2da3725.png";
+import imgprogramImage2 from "local:asset/d704be682a54280c1f70015885cde05a122608ab.png";
+import imgprogramImage3 from "local:asset/55f0d05da41079f7cd88dadc119a7a41d75cafcb.png";
+import imgprogramImage4 from "local:asset/af9e3469488188cf525954d2b5a912c03d7c1009.png";
+import imgprogramImage5 from "local:asset/7e2a0570d98a36052c1f6389a981c2c46738c5f6.png";
+import imgAuthorImage from "local:asset/426ceceee471dcde99c5f76748c5a11bcd589d18.png";
+import imgAuthorImage1 from "local:asset/be1c1b31637a5d0322c87142f2db54c10b428bb0.png";
+import imgAuthorImage2 from "local:asset/5784ceece83b4230d23d1dea73acda304f625fd3.png";
+import imgBlogImage from "local:asset/b1dd56bf93297241ecbe1ce7f4cdee94dda33dfe.png";
+import imgBlogImage1 from "local:asset/4cce5f2fa65edff10acd585416da13637ad1c8ee.png";
+import imgBlogImage2 from "local:asset/5cd454dcd29672793acab0b17acf5536cc771160.png";
+import imgFooterDesktop from "local:asset/ff625af9cc74a348dac7d0b1e6a8cc355a34a1de.png";
+import imgHeroSection from "local:asset/9c7f9a850dcb52e471bb613bc76969646fffe4b5.png";
 import { imgGroup, imgGroup1, imgGroup2, imgGroup3, imgGroup4, imgGroup5, imgGroup6, imgGroup7, imgGroup8, imgGroup9, imgGroup10 } from "./svg-92iqt";
 
 function Svg() {
@@ -1809,11 +1809,11 @@ function SectionTitle4() {
   );
 }
 
-function ProjectImage() {
+function programImage() {
   return (
-    <div className="absolute inset-0 rounded-[8px]" data-name="Project Image">
+    <div className="absolute inset-0 rounded-[8px]" data-name="program Image">
       <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[8px]">
-        <img alt="" className="absolute h-full left-[-9.01%] max-w-none top-0 w-[118.02%]" src={imgProjectImage} />
+        <img alt="" className="absolute h-full left-[-9.01%] max-w-none top-0 w-[118.02%]" src={imgprogramImage} />
       </div>
     </div>
   );
@@ -1901,7 +1901,7 @@ function Content6() {
 function Default4() {
   return (
     <div className="h-[332px] relative rounded-[8px] shrink-0 w-full" data-name="Default">
-      <ProjectImage />
+      <programImage />
       <Content6 />
     </div>
   );
@@ -1923,11 +1923,11 @@ function Container37() {
   );
 }
 
-function ProjectImage1() {
+function programImage1() {
   return (
-    <div className="absolute inset-0 rounded-[8px]" data-name="Project Image">
+    <div className="absolute inset-0 rounded-[8px]" data-name="program Image">
       <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[8px]">
-        <img alt="" className="absolute h-full left-[-9.01%] max-w-none top-0 w-[118.02%]" src={imgProjectImage1} />
+        <img alt="" className="absolute h-full left-[-9.01%] max-w-none top-0 w-[118.02%]" src={imgprogramImage1} />
       </div>
     </div>
   );
@@ -2015,7 +2015,7 @@ function Content7() {
 function Default5() {
   return (
     <div className="h-[332px] relative rounded-[8px] shrink-0 w-full" data-name="Default">
-      <ProjectImage1 />
+      <programImage1 />
       <Content7 />
     </div>
   );
@@ -2037,11 +2037,11 @@ function Container40() {
   );
 }
 
-function ProjectImage2() {
+function programImage2() {
   return (
-    <div className="absolute inset-0 rounded-[8px]" data-name="Project Image">
+    <div className="absolute inset-0 rounded-[8px]" data-name="program Image">
       <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[8px]">
-        <img alt="" className="absolute h-full left-[-17.52%] max-w-none top-0 w-[135.04%]" src={imgProjectImage2} />
+        <img alt="" className="absolute h-full left-[-17.52%] max-w-none top-0 w-[135.04%]" src={imgprogramImage2} />
       </div>
     </div>
   );
@@ -2129,7 +2129,7 @@ function Content8() {
 function Default6() {
   return (
     <div className="h-[332px] relative rounded-[8px] shrink-0 w-full" data-name="Default">
-      <ProjectImage2 />
+      <programImage2 />
       <Content8 />
     </div>
   );
@@ -2151,11 +2151,11 @@ function Container43() {
   );
 }
 
-function ProjectImage3() {
+function programImage3() {
   return (
-    <div className="absolute inset-0 rounded-[8px]" data-name="Project Image">
+    <div className="absolute inset-0 rounded-[8px]" data-name="program Image">
       <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[8px]">
-        <img alt="" className="absolute h-full left-[-9.01%] max-w-none top-0 w-[118.02%]" src={imgProjectImage3} />
+        <img alt="" className="absolute h-full left-[-9.01%] max-w-none top-0 w-[118.02%]" src={imgprogramImage3} />
       </div>
     </div>
   );
@@ -2243,7 +2243,7 @@ function Content9() {
 function Default7() {
   return (
     <div className="h-[332px] relative rounded-[8px] shrink-0 w-full" data-name="Default">
-      <ProjectImage3 />
+      <programImage3 />
       <Content9 />
     </div>
   );
@@ -2265,11 +2265,11 @@ function Container46() {
   );
 }
 
-function ProjectImage4() {
+function programImage4() {
   return (
-    <div className="absolute inset-0 rounded-[8px]" data-name="Project Image">
+    <div className="absolute inset-0 rounded-[8px]" data-name="program Image">
       <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[8px]">
-        <img alt="" className="absolute h-full left-[-20.11%] max-w-none top-0 w-[140.22%]" src={imgProjectImage4} />
+        <img alt="" className="absolute h-full left-[-20.11%] max-w-none top-0 w-[140.22%]" src={imgprogramImage4} />
       </div>
     </div>
   );
@@ -2357,7 +2357,7 @@ function Content10() {
 function Default8() {
   return (
     <div className="h-[332px] relative rounded-[8px] shrink-0 w-full" data-name="Default">
-      <ProjectImage4 />
+      <programImage4 />
       <Content10 />
     </div>
   );
@@ -2379,11 +2379,11 @@ function Container49() {
   );
 }
 
-function ProjectImage5() {
+function programImage5() {
   return (
-    <div className="absolute inset-0 rounded-[8px]" data-name="Project Image">
+    <div className="absolute inset-0 rounded-[8px]" data-name="program Image">
       <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[8px]">
-        <img alt="" className="absolute h-full left-[-10.43%] max-w-none top-0 w-[120.85%]" src={imgProjectImage5} />
+        <img alt="" className="absolute h-full left-[-10.43%] max-w-none top-0 w-[120.85%]" src={imgprogramImage5} />
       </div>
     </div>
   );
@@ -2471,7 +2471,7 @@ function Content11() {
 function Default9() {
   return (
     <div className="h-[332px] relative rounded-[8px] shrink-0 w-full" data-name="Default">
-      <ProjectImage5 />
+      <programImage5 />
       <Content11 />
     </div>
   );
@@ -2510,7 +2510,7 @@ function Container56() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container">
       <div className="flex flex-col font-['Host_Grotesk:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-white whitespace-nowrap">
-        <p className="leading-[30.4px]">View All Projects</p>
+        <p className="leading-[30.4px]">View All programs</p>
       </div>
     </div>
   );
@@ -2589,9 +2589,9 @@ function Container55() {
   );
 }
 
-function Projects() {
+function programs() {
   return (
-    <div className="content-stretch flex flex-col gap-[48px] items-center justify-center overflow-clip relative shrink-0 w-full" data-name="Projects">
+    <div className="content-stretch flex flex-col gap-[48px] items-center justify-center overflow-clip relative shrink-0 w-full" data-name="programs">
       <Container36 />
       <Container55 />
     </div>
@@ -2602,14 +2602,14 @@ function Container35() {
   return (
     <div className="content-stretch flex flex-col gap-[64px] items-center justify-center max-w-[1320px] relative shrink-0 w-full" data-name="Container">
       <SectionTitle4 />
-      <Projects />
+      <programs />
     </div>
   );
 }
 
-function ProjectsSection() {
+function programsSection() {
   return (
-    <div className="absolute bg-[#190d00] content-stretch flex flex-col items-center justify-center left-0 overflow-clip pb-[120px] pt-[109px] px-[60px] right-0 top-[3508.67px]" data-name="Projects Section">
+    <div className="absolute bg-[#190d00] content-stretch flex flex-col items-center justify-center left-0 overflow-clip pb-[120px] pt-[109px] px-[60px] right-0 top-[3508.67px]" data-name="programs Section">
       <Container35 />
     </div>
   );
@@ -4055,9 +4055,9 @@ function Question() {
   );
 }
 
-function GrataskIsAnAdvancedTaskManagementSoftwareAsAServiceSaaSDesignedToStreamlineWorkflowsEnhanceCollaborationAndBoostProductivityItProvidesAnIntuitivePlatformForOrganizingTasksManagingProjectsAndFacilitatingTeamCommunication() {
+function GrataskIsAnAdvancedTaskManagementSoftwareAsAServiceSaaSPlanedToStreamlineWorkflowsEnhanceCollaborationAndBoostProductivityItProvidesAnIntuitivePlatformForOrganizingTasksManagingprogramsAndFacilitatingTeamCommunication() {
   return (
-    <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px relative" data-name="Gratask is an advanced task management Software as a Service (SaaS) designed to streamline workflows, enhance collaboration, and boost productivity. It provides an intuitive platform for organizing tasks, managing projects, and facilitating team communication.">
+    <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px relative" data-name="Gratask is an advanced task management Software as a Service (SaaS) planed to streamline workflows, enhance collaboration, and boost productivity. It provides an intuitive platform for organizing tasks, managing programs, and facilitating team communication.">
       <div className="flex flex-col font-['Host_Grotesk:Regular',sans-serif] justify-center leading-[30.4px] not-italic relative shrink-0 text-[#160c00] text-[16px] w-full whitespace-pre-wrap">
         <p className="mb-0">{`We offer a wide range of materials, including asphalt shingles, metal, tile, flat roofing `}</p>
         <p className="mb-0">{`systems (EPDM, TPO, PVC), and more. Our experts can help you choose the best option `}</p>
@@ -4072,7 +4072,7 @@ function Answer() {
     <div className="relative shrink-0 w-full" data-name="Answer">
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex items-center pb-[20px] pl-[16px] pr-[60px] relative w-full">
-          <GrataskIsAnAdvancedTaskManagementSoftwareAsAServiceSaaSDesignedToStreamlineWorkflowsEnhanceCollaborationAndBoostProductivityItProvidesAnIntuitivePlatformForOrganizingTasksManagingProjectsAndFacilitatingTeamCommunication />
+          <GrataskIsAnAdvancedTaskManagementSoftwareAsAServiceSaaSPlanedToStreamlineWorkflowsEnhanceCollaborationAndBoostProductivityItProvidesAnIntuitivePlatformForOrganizingTasksManagingprogramsAndFacilitatingTeamCommunication />
         </div>
       </div>
     </div>
@@ -6356,7 +6356,7 @@ function EndOfBodyStart() {
       <AboutSectionSection />
       <ServiceSection />
       <HowItWorksSection />
-      <ProjectsSection />
+      <programsSection />
       <FeaturesSection />
       <TestimonialSection />
       <InsightSection />

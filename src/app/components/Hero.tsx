@@ -5,19 +5,19 @@ import { motion, AnimatePresence } from "motion/react";
 import { ArrowRight, Plus } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Link } from "react-router";
-const rawImages = import.meta.glob("../../assets/obembe_projects/*.{jpeg,jpg,png,webp}", {
+const rawImages = import.meta.glob("../../assets/programs/*.{jpeg,jpg,png,webp}", {
   eager: true,
   import: "default",
 }) as Record<string, string>;
 
-const projectImages = Object.keys(rawImages).sort().map(key => rawImages[key]);
+const programImages = Object.keys(rawImages).sort().map(key => rawImages[key]);
 
 // Select a few images for the slider
 const sliderImages = [
-  projectImages[12],
-  projectImages[2],
-  projectImages[5],
-  projectImages[8],
+  programImages[12],
+  programImages[2],
+  programImages[5],
+  programImages[8],
 ].filter(Boolean) as string[];
 
 export function Hero() {
@@ -52,7 +52,7 @@ export function Hero() {
                   }}
                   className="absolute inset-0 w-full h-full"
                 >
-                  <ImageWithFallback src={src} alt="Construction Site" className="w-full h-full object-cover opacity-80 mix-blend-overlay" />
+                  <ImageWithFallback src={src} alt="One-to-One Support Site" className="w-full h-full object-cover opacity-80 mix-blend-overlay" />
                 </motion.div>
               )
             ))}
@@ -66,10 +66,10 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-white leading-[1.1] font-medium max-w-[1000px] mb-8 tracking-tight"
+            className="text-white leading-[1.1]  max-w-[1000px] mb-8 tracking-tight"
             style={{ fontSize: "clamp(30px, 6vw, 64px)" }}
           >
-            Leading the Way in Engineering, Procurement, and Construction
+            Supporting Families Through Every Season
           </motion.h1>
 
           <motion.div
@@ -86,10 +86,10 @@ export function Hero() {
               <ArrowRight className="w-3.5 h-3.5 md:w-4 md:h-4" />
             </Link>
             <a
-              href="#projects"
+              href="#services"
               className="text-white border border-white/40 hover:bg-white/10 px-5 py-3 md:px-7 md:py-3.5 rounded-full font-semibold transition-colors text-[13px] md:text-sm backdrop-blur-sm whitespace-nowrap flex items-center justify-center"
             >
-              See Our Work &rarr;
+              See Our Services &rarr;
             </a>
           </motion.div>
         </div>
@@ -104,7 +104,7 @@ export function Hero() {
           >
             <div className="flex gap-4">
               <div className="w-24 h-16 rounded-xl overflow-hidden bg-gray-200">
-                <img src={projectImages[13] || ""} alt="Video thumb" className="w-full h-full object-cover" />
+                <img src={programImages[13] || ""} alt="Video thumb" className="w-full h-full object-cover" />
               </div>
               <div className="flex flex-col justify-center">
                 <div className="flex -space-x-2">
@@ -112,12 +112,12 @@ export function Hero() {
                   <img src="https://i.pravatar.cc/100?img=12" alt="Client" className="w-7 h-7 rounded-full border-2 border-white relative z-20" />
                   <img src="https://i.pravatar.cc/100?img=33" alt="Client" className="w-7 h-7 rounded-full border-2 border-white relative z-10" />
                 </div>
-                <div className="text-[12px] font-semibold text-[#111] mt-1.5 leading-none tracking-tight">200+ Clients</div>
-                <div className="text-[11px] text-gray-500 mt-1 leading-none">100% Success Rate</div>
+                <div className="text-[12px] font-semibold text-[#111] mt-1.5 leading-none tracking-tight">1000+ Families Supported</div>
+                <div className="text-[11px] text-gray-500 mt-1 leading-none">Compassionate Care</div>
               </div>
             </div>
-            <p className="text-sm text-gray-600 leading-relaxed font-medium pr-2">
-              Our clients love us and are consistently satisfied with our construction delivery and management.
+            <p className="text-sm text-gray-600 leading-relaxed  pr-2">
+              Our clients feel supported and empowered with our professional and compassionate care.
             </p>
           </motion.div>
         </div>

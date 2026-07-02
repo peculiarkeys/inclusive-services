@@ -2,15 +2,15 @@ import { AnimatedSection } from "./AnimatedSection";
 import { Medal, Lightbulb } from "lucide-react";
 import { Logo } from "./Header";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-const rawImages = import.meta.glob("../../assets/obembe_projects/*.{jpeg,jpg,png,webp}", {
+const rawImages = import.meta.glob("../../assets/programs/*.{jpeg,jpg,png,webp}", {
   eager: true,
   import: "default",
 }) as Record<string, string>;
 
-const projectImages = Object.keys(rawImages).sort().map(key => rawImages[key]);
+const programImages = Object.keys(rawImages).sort().map(key => rawImages[key]);
 
-const img1 = projectImages[6] || "";
-const img2 = projectImages[7] || "";
+const img1 = programImages[6] || "";
+const img2 = programImages[7] || "";
 
 export function WorksAbout() {
   return (
@@ -22,7 +22,7 @@ export function WorksAbout() {
             <Logo color="#111111" size={24} />
           </div>
           <h2 className="text-[#111111]" style={{ fontSize: "clamp(36px, 4vw, 56px)", fontWeight: 500, lineHeight: "1.15", letterSpacing: "-1px" }}>
-            Building Your Vision,<br />
+            growing Your Vision,<br />
             <span className="italic font-light">Today and Tomorrow.</span>
           </h2>
         </AnimatedSection>
@@ -32,7 +32,7 @@ export function WorksAbout() {
           {/* Left Side Info */}
           <div className="lg:w-[45%] flex flex-col gap-12">
             <AnimatedSection direction="left">
-              <h3 className="text-[#111111] leading-tight font-medium" style={{ fontSize: "clamp(28px, 3vw, 40px)", letterSpacing: "-0.5px" }}>
+              <h3 className="text-[#111111] leading-tight " style={{ fontSize: "clamp(28px, 3vw, 40px)", letterSpacing: "-0.5px" }}>
                 We're best in <br />the Country
               </h3>
             </AnimatedSection>
@@ -40,9 +40,9 @@ export function WorksAbout() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 w-full max-w-lg">
               
               <AnimatedSection direction="left" delay={0.1} className="flex flex-col gap-2">
-                <div className="text-4xl md:text-5xl font-medium text-[#111111] mb-1 tracking-tight">200+</div>
+                <div className="text-4xl md:text-5xl  text-[#111111] mb-1 tracking-tight">200+</div>
                 <p className="text-[#546478] text-xs leading-relaxed">
-                  Successfully completed projects across commercial, residential, and structural sectors.
+                  Successfully completed programs across commercial, residential, and structural sectors.
                 </p>
               </AnimatedSection>
 
@@ -53,7 +53,7 @@ export function WorksAbout() {
                 <div>
                   <h4 className="text-[#111111] font-semibold text-[15px] mb-1">Unmatched Services</h4>
                   <p className="text-[#546478] text-xs leading-relaxed">
-                    Delivering premium quality construction through rigorous standards and expert craftsmanship.
+                    Delivering premium quality support through rigorous standards and expert craftsmanship.
                   </p>
                 </div>
               </AnimatedSection>
@@ -65,7 +65,7 @@ export function WorksAbout() {
                 <div>
                   <h4 className="text-[#111111] font-semibold text-[15px] mb-1">Innovative Solutions</h4>
                   <p className="text-[#546478] text-xs leading-relaxed">
-                    Utilizing modern engineering techniques and sustainable materials for lasting structures.
+                    Utilizing modern counseling techniques and sustainable materials for lasting structures.
                   </p>
                 </div>
               </AnimatedSection>
@@ -76,7 +76,7 @@ export function WorksAbout() {
           {/* Right Side Images */}
           <div className="lg:w-[50%] relative min-h-[400px] md:min-h-[500px]">
             <AnimatedSection delay={0.2} className="absolute left-0 top-0 w-[80%] h-[90%] rounded-3xl overflow-hidden shadow-2xl z-10">
-              <ImageWithFallback src={img1} alt="Construction Site" className="w-full h-full object-cover" />
+              <ImageWithFallback src={img1} alt="support Site" className="w-full h-full object-cover" />
             </AnimatedSection>
             
             <AnimatedSection direction="right" delay={0.4} className="absolute right-0 bottom-0 w-[35%] h-[60%] rounded-2xl overflow-hidden shadow-xl z-20 hidden md:block">

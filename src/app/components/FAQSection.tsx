@@ -10,12 +10,12 @@ export interface FAQ {
 
 const defaultFaqs: FAQ[] = [
   {
-    q: "What construction services do you offer?",
-    a: "We offer a wide range of services, including Engineering and Design, Procurement, Construction, Turnkey Solutions, Renovation and Rehabilitation, and Maintenance and Facility Management.",
+    q: "What support services do you offer?",
+    a: "We offer a wide range of services, including individual counseling, Child Welfare, support, Community Programs, Crisis Intervention, and Group Support.",
   },
-  { q: "How long does it take to complete a project?", a: "" },
+  { q: "How long does it take to complete a program?", a: "" },
   { q: "Do you provide free estimates?", a: "" },
-  { q: "How do I know if my building needs renovation?", a: "" },
+  { q: "How do I know if my growing needs renovation?", a: "" },
   { q: "Are your services covered by a warranty?", a: "" },
 ];
 

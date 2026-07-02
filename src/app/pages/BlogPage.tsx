@@ -1,29 +1,29 @@
 import { PageHero } from "../components/PageHero";
 import { BlogSection } from "../components/BlogSection";
 import { FAQSection } from "../components/FAQSection";
-import { ProjectsSection } from "../components/ProjectsSection";
+import { programsSection } from "../components/programsSection";
 import { AboutSection } from "../components/AboutSection";
 import { CTABanner } from "../components/CTABanner";
 
-const rawImages = import.meta.glob("../../assets/obembe_projects/*.{jpeg,jpg,png,webp}", {
+const rawImages = import.meta.glob("../../assets/programs/*.{jpeg,jpg,png,webp}", {
   eager: true,
   import: "default",
 }) as Record<string, string>;
 
-const projectImages = Object.keys(rawImages).sort().map(key => rawImages[key]);
-const heroImg = projectImages[27] || "";
+const programImages = Object.keys(rawImages).sort().map(key => rawImages[key]);
+const heroImg = "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2000&auto=format&fit=crop";
 
 export function BlogPage() {
   return (
     <div className="w-full bg-[#f9f9f9]">
       <PageHero 
         title="Our Blog & Insights" 
-        description="Stay updated with the latest news, industry trends, and insights from Obembe Construction experts."
+        description="Stay updated with the latest news, industry trends, and insights from Inclusive Social Services experts."
         image={heroImg}
       />
       <BlogSection />
       <FAQSection />
-      <ProjectsSection />
+      <programsSection />
       <AboutSection />
       <CTABanner />
     </div>

@@ -68,7 +68,7 @@ export function ServicePageTemplate({
       <section className="py-20 md:py-28 px-4 md:px-10 bg-white">
         <div className="max-w-[1320px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <AnimatedSection>
-            <h2 className="text-[#111111] text-3xl md:text-5xl font-medium mb-6 leading-tight">
+            <h2 className="text-[#111111] text-3xl md:text-5xl  mb-6 leading-tight">
               {overview.title}
             </h2>
             <p className="text-[#666666] text-lg leading-relaxed">
@@ -91,7 +91,7 @@ export function ServicePageTemplate({
       <section className="py-20 md:py-28 px-4 md:px-10 bg-[#161a16] text-white">
         <div className="max-w-[1320px] mx-auto">
           <AnimatedSection className="mb-16 text-center">
-            <h2 className="text-3xl md:text-5xl font-medium mb-4">{features.title}</h2>
+            <h2 className="text-3xl md:text-5xl  mb-4">{features.title}</h2>
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -106,9 +106,9 @@ export function ServicePageTemplate({
                   }`}
                 >
                   <div className="flex items-center mb-6">
-                    <Icon className="w-10 h-10 text-[#d16c49]" />
+                    <Icon className="w-10 h-10 text-[#FF994F]" />
                   </div>
-                  <h3 className="text-2xl font-medium mb-4">{feature.title}</h3>
+                  <h3 className="text-2xl  mb-4">{feature.title}</h3>
                   <p className="text-[#a0a59b] leading-relaxed">
                     {feature.description}
                   </p>
@@ -123,7 +123,7 @@ export function ServicePageTemplate({
       <section className="py-20 md:py-28 px-4 md:px-10 bg-white">
         <div className="max-w-[1320px] mx-auto">
           <AnimatedSection className="mb-16 text-center">
-            <h2 className="text-[#111111] text-3xl md:text-5xl font-medium mb-4">{process.title}</h2>
+            <h2 className="text-[#111111] text-3xl md:text-5xl  mb-4">{process.title}</h2>
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -133,10 +133,10 @@ export function ServicePageTemplate({
                   className="bg-[#f9f9f9] border border-gray-100 p-8 rounded-[24px] h-full"
                   whileHover={{ y: -5 }}
                 >
-                  <div className="text-[#FF6501] font-bold text-5xl mb-6 opacity-30">
+                  <div className="text-[#FF6501] font-semibold text-5xl mb-6 opacity-30">
                     {item.step}
                   </div>
-                  <h3 className="text-[#111111] text-xl font-bold mb-3">{item.title}</h3>
+                  <h3 className="text-[#111111] text-xl font-semibold mb-3">{item.title}</h3>
                   <p className="text-[#666666] leading-relaxed">
                     {item.description}
                   </p>
@@ -152,8 +152,8 @@ export function ServicePageTemplate({
         <div className="max-w-[1320px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {stats.map((stat, idx) => (
             <AnimatedSection key={idx} delay={idx * 0.1}>
-              <div className="text-5xl md:text-6xl font-bold mb-2">{stat.value}</div>
-              <div className="text-white/80 font-medium uppercase tracking-wider text-sm">{stat.label}</div>
+              <div className="text-5xl md:text-6xl font-semibold mb-2">{stat.value}</div>
+              <div className="text-white/80  uppercase tracking-wider text-sm">{stat.label}</div>
             </AnimatedSection>
           ))}
         </div>

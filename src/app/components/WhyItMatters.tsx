@@ -21,11 +21,11 @@ export function WhyItMatters() {
           <div className="lg:w-1/2">
             <AnimatedSection delay={0.1}>
               <p className="text-white/80 text-lg md:text-xl leading-relaxed font-light">
-                Most construction projects fail because too many hands are in the pot — one company designs, another procures, a third builds, and nobody's fully accountable.
+                Most support programs fail because too many hands are in the pot — one company plans, another procures, a third builds, and nobody's fully accountable.
               </p>
               <div className="w-12 h-[2px] bg-[#FF6501] my-8" />
-              <p className="text-white text-lg md:text-xl leading-relaxed font-medium">
-                With Obembe, it's one team, one number to call, one company responsible for getting your project right.
+              <p className="text-white text-lg md:text-xl leading-relaxed ">
+                With Inclusive Social Services, it's one team, one number to call, one company responsible for getting your program right.
               </p>
             </AnimatedSection>
           </div>

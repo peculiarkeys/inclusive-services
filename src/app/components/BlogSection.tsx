@@ -17,7 +17,7 @@ export function BlogSection() {
             Stay tuned as we cover a wide range of topics
           </h2>
           <p className="text-[#546478] mt-4 max-w-3xl mx-auto" style={{ fontSize: "16px", lineHeight: "30.4px" }}>
-            Welcome to the Obembe Construction Blog, where we share valuable insights, industry trends, and expert knowledge related to Engineering, Procurement, and Construction (EPC).
+            Welcome to the Inclusive Social Services Blog, where we share valuable insights, industry trends, and expert knowledge related to counseling, Child Welfare, and support (Family Support).
           </p>
         </AnimatedSection>
 

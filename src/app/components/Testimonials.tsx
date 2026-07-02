@@ -4,40 +4,40 @@ import { AnimatedSection } from "./AnimatedSection";
 import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
-const rawImages = import.meta.glob("../../assets/obembe_projects/*.{jpeg,jpg,png,webp}", {
+const rawImages = import.meta.glob("../../assets/programs/*.{jpeg,jpg,png,webp}", {
   eager: true,
   import: "default",
 }) as Record<string, string>;
 
-const projectImages = Object.keys(rawImages).sort().map(key => rawImages[key]);
+const programImages = Object.keys(rawImages).sort().map(key => rawImages[key]);
 
 const testimonialsData = [
   {
     name: "James Carter",
     role: "CEO, Carter Enterprises",
-    image: projectImages[16] || "",
+    image: programImages[16] || "",
     stars: 5,
     quote: "Working with them was a complete game-changer for our business. Their attention to detail, creative thinking, and innovative approach truly stand out.",
     desc: "Their team delivered practical solutions tailored to our needs and helped streamline our processes for long-term success.",
-    tags: ["Engineering", "Procurement", "Construction"]
+    tags: ["counseling", "Child Welfare", "support"]
   },
   {
     name: "Amina Yusuf",
-    role: "Project Director, Prime Developments",
-    image: projectImages[14] || "",
+    role: "program Director, Prime Developments",
+    image: programImages[14] || "",
     stars: 5,
-    quote: "The procurement and finishing quality on our luxury apartments were exceptional. They delivered ahead of schedule and within budget.",
-    desc: "Communication was seamless throughout the construction phases. We highly recommend their turnkey services.",
-    tags: ["Construction", "Finishing", "Procurement"]
+    quote: "The child welfare and finishing quality on our luxury apartments were exceptional. They delivered ahead of schedule and within budget.",
+    desc: "Communication was seamless throughout the support phases. We highly recommend their turnkey services.",
+    tags: ["support", "Finishing", "Child Welfare"]
   },
   {
     name: "Chinedu Okafor",
     role: "MD, Zenith Warehouses",
-    image: projectImages[15] || "",
+    image: programImages[15] || "",
     stars: 5,
     quote: "Their structural steel framing and foundation work for our logistics hub was flawless. Extremely professional engineers.",
-    desc: "They strictly adhered to safety standards and engineering specifications. A top-tier civil partner.",
-    tags: ["Engineering", "Civil Work", "Structural"]
+    desc: "They strictly adhered to safety standards and counseling specifications. A top-tier civil partner.",
+    tags: ["counseling", "Civil Work", "Structural"]
   }
 ];
 
@@ -105,11 +105,11 @@ export function Testimonials() {
                   {/* Overlaid pill at bottom left */}
                   <div className="absolute bottom-4 left-4 right-4 md:right-auto bg-white/95 backdrop-blur-sm rounded-full py-2 px-3 flex items-center gap-3 shadow-lg">
                     <div className="flex -space-x-2">
-                      <div className="w-8 h-8 rounded-full bg-[#111111] border-2 border-white flex items-center justify-center text-white text-[10px] font-medium">J</div>
-                      <div className="w-8 h-8 rounded-full bg-[#FF6501] border-2 border-white flex items-center justify-center text-white text-[10px] font-medium">M</div>
-                      <div className="w-8 h-8 rounded-full bg-[#546478] border-2 border-white flex items-center justify-center text-white text-[10px] font-medium">S</div>
+                      <div className="w-8 h-8 rounded-full bg-[#111111] border-2 border-white flex items-center justify-center text-white text-[10px] ">J</div>
+                      <div className="w-8 h-8 rounded-full bg-[#FF6501] border-2 border-white flex items-center justify-center text-white text-[10px] ">M</div>
+                      <div className="w-8 h-8 rounded-full bg-[#546478] border-2 border-white flex items-center justify-center text-white text-[10px] ">S</div>
                     </div>
-                    <span className="text-[11px] font-medium text-[#111111] pr-2">500+ Projects Completed!</span>
+                    <span className="text-[11px]  text-[#111111] pr-2">500+ programs Completed!</span>
                   </div>
                 </div>
 
@@ -121,7 +121,7 @@ export function Testimonials() {
                     ))}
                   </div>
 
-                  <h3 className="text-[#111111] text-[24px] md:text-[32px] leading-[1.3] font-medium mb-6 tracking-tight">
+                  <h3 className="text-[#111111] text-[24px] md:text-[32px] leading-[1.3]  mb-6 tracking-tight">
                     "{active.quote}"
                   </h3>
 
@@ -136,7 +136,7 @@ export function Testimonials() {
 
                   <div className="flex flex-wrap items-center gap-3">
                     {active.tags.map((tag) => (
-                      <span key={tag} className="px-4 py-2 bg-[#f9f9f9] text-[#111111] rounded-full text-[13px] font-medium border border-[#111111]/5">
+                      <span key={tag} className="px-4 py-2 bg-[#f9f9f9] text-[#111111] rounded-full text-[13px]  border border-[#111111]/5">
                         {tag}
                       </span>
                     ))}

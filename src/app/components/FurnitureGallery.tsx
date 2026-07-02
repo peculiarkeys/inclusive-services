@@ -3,7 +3,7 @@ import { AnimatedSection } from "./AnimatedSection";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 
-const rawImages = import.meta.glob("../../assets/furniture_projects/*.{jpeg,jpg,png,webp}", {
+const rawImages = import.meta.glob("../../assets/furniture_programs/*.{jpeg,jpg,png,webp}", {
   eager: true,
   import: "default",
 }) as Record<string, string>;
@@ -31,10 +31,10 @@ export function FurnitureGallery({ columns = 3 }: FurnitureGalleryProps = {}) {
       <div className="max-w-[1320px] mx-auto">
         <AnimatedSection className="text-center mb-16">
           <h2 className="text-[#111111]" style={{ fontSize: "clamp(36px, 4vw, 56px)", fontWeight: 500, lineHeight: "1.1", letterSpacing: "-1px" }}>
-            Furniture Projects
+            Furniture programs
           </h2>
           <p className="text-[#546478] mt-4 max-w-2xl mx-auto text-lg">
-            A visual showcase of our bespoke furniture designs and installations.
+            A visual showcase of our bespoke furniture plans and installations.
           </p>
         </AnimatedSection>
 
@@ -44,11 +44,11 @@ export function FurnitureGallery({ columns = 3 }: FurnitureGalleryProps = {}) {
               <div className="break-inside-avoid relative group rounded-2xl overflow-hidden bg-gray-200">
                 <ImageWithFallback 
                   src={src} 
-                  alt={`Furniture project ${index + 1}`} 
+                  alt={`Furniture program ${index + 1}`} 
                   className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105" 
                 />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <span className="text-white font-medium px-4 py-2 border border-white/30 rounded-full backdrop-blur-sm">View</span>
+                  <span className="text-white  px-4 py-2 border border-white/30 rounded-full backdrop-blur-sm">View</span>
                 </div>
               </div>
             </AnimatedSection>
@@ -59,7 +59,7 @@ export function FurnitureGallery({ columns = 3 }: FurnitureGalleryProps = {}) {
           <div className="mt-12 flex justify-center">
             <button
               onClick={handleLoadMore}
-              className="px-8 py-3 bg-[#111111] text-white rounded-xl font-medium hover:bg-[#d16c49] transition-colors"
+              className="px-8 py-3 bg-[#111111] text-white rounded-xl  hover:bg-[#FF994F] transition-colors"
             >
               Load More
             </button>

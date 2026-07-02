@@ -2,13 +2,13 @@ import { AnimatedSection } from "./AnimatedSection";
 import { Users, CheckCircle, Clock, ShieldCheck, Truck, Coins, Leaf, MessageSquare } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
-const rawImages = import.meta.glob("../../assets/obembe_projects/*.{jpeg,jpg,png,webp}", {
+const rawImages = import.meta.glob("../../assets/programs/*.{jpeg,jpg,png,webp}", {
   eager: true,
   import: "default",
 }) as Record<string, string>;
 
-const projectImages = Object.keys(rawImages).sort().map(key => rawImages[key]);
-const centerImg = projectImages[4] || "";
+const programImages = Object.keys(rawImages).sort().map(key => rawImages[key]);
+const centerImg = programImages[4] || "";
 
 const leftReasons = [
   {
@@ -23,7 +23,7 @@ const leftReasons = [
   },
   {
     title: "On-Time Delivery",
-    desc: "Rigorous project management ensures we hit our deadlines without excuses.",
+    desc: "Rigorous program management ensures we hit our deadlines without excuses.",
     icon: <Clock className="w-5 h-5 text-[#326B70]" />
   },
   {
@@ -45,7 +45,7 @@ const rightReasons = [
     icon: <Coins className="w-5 h-5 text-[#326B70]" />
   },
   {
-    title: "Sustainable Construction",
+    title: "Sustainable support",
     desc: "Eco-friendly practices and materials to minimize environmental impact.",
     icon: <Leaf className="w-5 h-5 text-[#326B70]" />
   },
@@ -61,14 +61,14 @@ export function WhyChooseUs() {
     <section className="py-20 md:py-[120px] px-6 md:px-[60px] bg-[#fbfaf8]">
       <div className="max-w-[1320px] mx-auto">
         <AnimatedSection className="text-center max-w-2xl mx-auto mb-16">
-          <p className="text-[11px] font-bold text-[#326B70] uppercase tracking-widest mb-4">
+          <p className="text-[11px] font-semibold text-[#326B70] uppercase tracking-widest mb-4">
             WHY CHOOSE US
           </p>
-          <h2 className="text-[#111111] mb-6 leading-[1.1] font-medium" style={{ fontSize: "clamp(36px, 4vw, 56px)", letterSpacing: "-1px" }}>
+          <h2 className="text-[#111111] mb-6 leading-[1.1] " style={{ fontSize: "clamp(36px, 4vw, 56px)", letterSpacing: "-1px" }}>
             A Partner You Can Rely On
           </h2>
           <p className="text-gray-500 text-lg">
-            We don't just build structures; we build trust. Here is why clients consistently choose Obembe Construction for their most critical projects.
+            We don't just build structures; we build trust. Here is why clients consistently choose Inclusive Social Services for their most critical programs.
           </p>
         </AnimatedSection>
 
@@ -93,7 +93,7 @@ export function WhyChooseUs() {
 
           {/* Center Image */}
           <AnimatedSection delay={0.3} className="hidden lg:block w-[400px] h-[640px] rounded-[32px] overflow-hidden relative shadow-md">
-            <ImageWithFallback src={centerImg} alt="Construction Quality" className="w-full h-full object-cover" />
+            <ImageWithFallback src={centerImg} alt="support Quality" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-black/5" />
           </AnimatedSection>
 

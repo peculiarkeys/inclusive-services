@@ -14,7 +14,7 @@ export function SingleBlogPage() {
       <div className="w-full bg-[#f9f9f9] min-h-[60vh] flex flex-col items-center justify-center p-6 mt-[100px]">
         <h1 className="text-4xl font-semibold mb-4 text-[#111111]">Blog Not Found</h1>
         <p className="text-[#546478] mb-8 text-lg">The article you are looking for does not exist or has been moved.</p>
-        <Link to="/blog" className="px-8 py-3 bg-[#FF6501] text-white rounded-full font-medium hover:bg-[#e55a00] transition-colors shadow-md">
+        <Link to="/blog" className="px-8 py-3 bg-[#FF6501] text-white rounded-full  hover:bg-[#e55a00] transition-colors shadow-md">
           Back to Blog
         </Link>
       </div>
@@ -40,7 +40,7 @@ export function SingleBlogPage() {
       <section className="px-6 md:px-[60px] pb-16 md:pb-[60px]">
         <div className="max-w-[900px] mx-auto bg-white p-8 md:p-14 rounded-[24px] shadow-xl relative -mt-[80px] md:-mt-[120px] z-20">
           
-          <Link to="/blog" className="inline-flex items-center text-sm font-medium text-[#546478] hover:text-[#FF6501] transition-colors mb-10 group">
+          <Link to="/blog" className="inline-flex items-center text-sm  text-[#546478] hover:text-[#FF6501] transition-colors mb-10 group">
             <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
             Back to all articles
           </Link>
@@ -67,8 +67,8 @@ export function SingleBlogPage() {
         <section className="py-20 bg-white px-6 md:px-[60px]">
           <div className="max-w-[1320px] mx-auto">
             <div className="flex justify-between items-end mb-10">
-              <h2 className="text-[32px] md:text-[40px] font-medium text-[#111111] tracking-tight">More Articles</h2>
-              <Link to="/blog" className="hidden md:inline-flex text-[#FF6501] font-medium hover:underline">
+              <h2 className="text-[32px] md:text-[40px]  text-[#111111] tracking-tight">More Articles</h2>
+              <Link to="/blog" className="hidden md:inline-flex text-[#FF6501]  hover:underline">
                 View all posts
               </Link>
             </div>
@@ -83,8 +83,8 @@ export function SingleBlogPage() {
                   <ImageWithFallback src={b.img} alt={b.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/80 rounded-xl" />
                   <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <p className="text-white/90 mb-2 font-medium" style={{ fontSize: "14px" }}>{b.date}</p>
-                    <h3 className="text-white font-medium" style={{ fontSize: "22px", lineHeight: "28px", letterSpacing: "-0.5px" }}>
+                    <p className="text-white/90 mb-2 " style={{ fontSize: "14px" }}>{b.date}</p>
+                    <h3 className="text-white " style={{ fontSize: "22px", lineHeight: "28px", letterSpacing: "-0.5px" }}>
                       {b.title}
                     </h3>
                   </div>
@@ -93,7 +93,7 @@ export function SingleBlogPage() {
             </div>
             
             <div className="mt-8 text-center md:hidden">
-              <Link to="/blog" className="inline-flex text-[#FF6501] font-medium hover:underline">
+              <Link to="/blog" className="inline-flex text-[#FF6501]  hover:underline">
                 View all posts
               </Link>
             </div>

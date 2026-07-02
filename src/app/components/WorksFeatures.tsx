@@ -6,12 +6,12 @@ export function WorksFeatures() {
     {
       icon: ShieldCheck,
       title: "Peace of Mind Guaranteed",
-      desc: "Our rigorous quality control ensures every project meets international standards.",
+      desc: "Our rigorous quality control ensures every program meets international standards.",
     },
     {
       icon: HardHat,
       title: "Always Covered",
-      desc: "From procurement to execution, we manage all risks and safety protocols on-site.",
+      desc: "From child welfare to execution, we manage all risks and safety protocols on-site.",
     },
     {
       icon: TrendingUp,

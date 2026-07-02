@@ -1,189 +1,192 @@
 import { motion } from "motion/react";
-import { MapPin, Phone, Mail, Clock, Send, MessageCircle } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Send, ArrowRight, MessageCircle } from "lucide-react";
 
 export function ContactSection() {
   return (
-    <section className="w-full bg-[#f9f9f9] px-6 py-20 md:py-28">
+    <section className="w-full bg-white px-6 py-24 md:py-32">
       <div className="max-w-[1320px] mx-auto">
-        <div className="text-center mb-16">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-medium text-[#111111] mb-4 tracking-tighter"
-          >
-            Get in Touch
-          </motion.h2>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-            className="text-gray-600 max-w-2xl mx-auto text-lg"
-          >
-            Have a project in mind or need expert construction advice? We're here to help. Reach out to us today.
-          </motion.p>
+        {/* Header */}
+        <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-16 gap-10">
+          <div className="max-w-2xl">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-2 h-2 rounded-full bg-[#348B93]" />
+              <span className="text-[#348B93] font-bold text-xs tracking-widest uppercase">Contact Us</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl lg:text-[64px] font-semibold text-[#111] leading-[1.1] mb-6 tracking-tight">
+              Let's Start a<br/>Conversation
+            </h2>
+            <p className="text-gray-500 text-lg leading-relaxed max-w-xl">
+              Have a program in mind or need expert support advice? We're here to help. Reach out to us today and our team will get back to you within 24 hours.
+            </p>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-white rounded-3xl p-6 md:p-10 shadow-lg">
-          {/* Contact Information */}
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12">
+          
+          {/* Contact Information (Left, 2 columns wide) */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="bg-[#2e1d13] text-white rounded-2xl p-8 md:p-12 flex flex-col justify-between"
+            className="lg:col-span-2 flex flex-col gap-6"
           >
-            <div>
-              <h3 className="text-3xl font-medium mb-2 tracking-tight">Contact Information</h3>
-              <p className="text-white/70 mb-10 text-sm md:text-base">
-                Fill out the form and our team will get back to you within 24 hours.
-              </p>
-
-              <div className="flex flex-col gap-8">
-                <div className="flex items-start gap-4">
-                  <div className="flex items-center justify-center shrink-0 mt-0.5">
-                    <Phone className="w-6 h-6 text-[#d16c49]" />
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-medium">Phone</h4>
-                    <p className="text-white/70 mt-1">09044444303</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="flex items-center justify-center shrink-0 mt-0.5">
-                    <Mail className="w-6 h-6 text-[#d16c49]" />
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-medium">Email Address</h4>
-                    <p className="text-white/70 mt-1">info@obembeconstruction.com</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="flex items-center justify-center shrink-0 mt-0.5">
-                    <MapPin className="w-6 h-6 text-[#d16c49]" />
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-medium">Office Location</h4>
-                    <p className="text-white/70 mt-1">Suite 09, First floor, Vicbalcon Towers Jabi.</p>
-                    <p className="text-white/70">Abuja, Nigeria</p>
-                  </div>
-                </div>
+            {/* Main Info Card */}
+            <div className="bg-[#111] text-white rounded-[40px] p-10 lg:p-12 flex flex-col justify-between h-full relative overflow-hidden group">
+              {/* Abstract background shape */}
+              <div className="absolute -top-24 -right-24 w-64 h-64 bg-white/5 rounded-full blur-3xl group-hover:bg-[#348B93]/20 transition-colors duration-700" />
+              
+              <div className="relative z-10">
+                <h3 className="text-3xl font-semibold mb-12 tracking-tight">Contact<br/>Information</h3>
                 
-                <div className="flex items-start gap-4">
-                  <div className="flex items-center justify-center shrink-0 mt-0.5">
-                    <Clock className="w-6 h-6 text-[#d16c49]" />
+                <div className="flex flex-col gap-10">
+                  <div className="flex items-start gap-5">
+                    <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+                      <Phone className="w-5 h-5 text-[#FF994F]" />
+                    </div>
+                    <div>
+                      <h4 className="text-white/60 text-sm font-medium mb-1">Call Us Directly</h4>
+                      <p className="text-lg font-medium text-white">0904 444 4303</p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="text-lg font-medium">Working Hours</h4>
-                    <p className="text-white/70 mt-1">Mon – Fri : 8:30 – 18:00</p>
+
+                  <div className="flex items-start gap-5">
+                    <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+                      <Mail className="w-5 h-5 text-[#348B93]" />
+                    </div>
+                    <div>
+                      <h4 className="text-white/60 text-sm font-medium mb-1">Email Address</h4>
+                      <p className="text-lg font-medium text-white break-all">info@inclusivesocialservices.com</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-5">
+                    <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+                      <MapPin className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="text-white/60 text-sm font-medium mb-1">Office Location</h4>
+                      <p className="text-base text-white leading-relaxed">Suite 09, First floor, Vicbalcon Towers Jabi.<br/>Abuja, Nigeria</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+
+            {/* Smaller Working Hours Card */}
+            <div className="bg-[#F5F5F5] rounded-[32px] p-8 flex items-center gap-6">
+              <div className="w-14 h-14 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0">
+                <Clock className="w-6 h-6 text-[#111]" />
+              </div>
+              <div>
+                <h4 className="text-[#111] font-semibold text-lg mb-1">Working Hours</h4>
+                <p className="text-gray-500 text-sm font-medium">Mon – Fri : 8:30 AM – 6:00 PM</p>
+              </div>
+            </div>
           </motion.div>
 
-          {/* Contact Form */}
+          {/* Contact Form (Right, 3 columns wide) */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="py-6 lg:pl-6"
+            transition={{ delay: 0.1 }}
+            className="lg:col-span-3 bg-white rounded-[40px] p-8 md:p-12 border border-gray-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)]"
           >
-            <h3 className="text-2xl font-medium text-[#111111] mb-6">Send us a message</h3>
+            <h3 className="text-3xl font-semibold text-[#111] mb-8 tracking-tight">Send us a message</h3>
             <form className="flex flex-col gap-6" onSubmit={(e) => e.preventDefault()}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="flex flex-col gap-2">
-                  <label htmlFor="firstName" className="text-sm font-medium text-gray-700">First Name</label>
+                <div className="flex flex-col gap-2.5">
+                  <label htmlFor="firstName" className="text-sm font-medium text-gray-700 ml-1">First Name</label>
                   <input 
                     type="text" 
                     id="firstName" 
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#d16c49] focus:border-transparent transition-all"
+                    className="w-full px-5 py-4 rounded-2xl border border-gray-200 bg-gray-50/50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#348B93]/20 focus:border-[#348B93] transition-all text-base placeholder:text-gray-400"
                     placeholder="John"
                   />
                 </div>
-                <div className="flex flex-col gap-2">
-                  <label htmlFor="lastName" className="text-sm font-medium text-gray-700">Last Name</label>
+                <div className="flex flex-col gap-2.5">
+                  <label htmlFor="lastName" className="text-sm font-medium text-gray-700 ml-1">Last Name</label>
                   <input 
                     type="text" 
                     id="lastName" 
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#d16c49] focus:border-transparent transition-all"
+                    className="w-full px-5 py-4 rounded-2xl border border-gray-200 bg-gray-50/50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#348B93]/20 focus:border-[#348B93] transition-all text-base placeholder:text-gray-400"
                     placeholder="Doe"
                   />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="flex flex-col gap-2">
-                  <label htmlFor="email" className="text-sm font-medium text-gray-700">Email Address</label>
+                <div className="flex flex-col gap-2.5">
+                  <label htmlFor="email" className="text-sm font-medium text-gray-700 ml-1">Email Address</label>
                   <input 
                     type="email" 
                     id="email" 
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#d16c49] focus:border-transparent transition-all"
+                    className="w-full px-5 py-4 rounded-2xl border border-gray-200 bg-gray-50/50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#348B93]/20 focus:border-[#348B93] transition-all text-base placeholder:text-gray-400"
                     placeholder="john@example.com"
                   />
                 </div>
-                <div className="flex flex-col gap-2">
-                  <label htmlFor="phone" className="text-sm font-medium text-gray-700">Phone Number</label>
+                <div className="flex flex-col gap-2.5">
+                  <label htmlFor="phone" className="text-sm font-medium text-gray-700 ml-1">Phone Number</label>
                   <input 
                     type="tel" 
                     id="phone" 
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#d16c49] focus:border-transparent transition-all"
+                    className="w-full px-5 py-4 rounded-2xl border border-gray-200 bg-gray-50/50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#348B93]/20 focus:border-[#348B93] transition-all text-base placeholder:text-gray-400"
                     placeholder="+234 800 000 0000"
                   />
                 </div>
               </div>
 
-              <div className="flex flex-col gap-2">
-                <label htmlFor="service" className="text-sm font-medium text-gray-700">Service Needed</label>
-                <select 
-                  id="service" 
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#d16c49] focus:border-transparent transition-all appearance-none"
-                >
-                  <option value="" disabled selected>Select a service</option>
-                  <option value="engineering">Engineering</option>
-                  <option value="procurement">Procurement</option>
-                  <option value="construction">Construction</option>
-                  <option value="other">Other / General Inquiry</option>
-                </select>
+              <div className="flex flex-col gap-2.5">
+                <label htmlFor="service" className="text-sm font-medium text-gray-700 ml-1">Service Needed</label>
+                <div className="relative">
+                  <select 
+                    id="service" 
+                    className="w-full px-5 py-4 rounded-2xl border border-gray-200 bg-gray-50/50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#348B93]/20 focus:border-[#348B93] transition-all appearance-none text-base text-gray-700 bg-transparent"
+                  >
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="counseling">Counseling</option>
+                    <option value="child welfare">Child Welfare</option>
+                    <option value="support">One-to-One Support</option>
+                    <option value="other">Other / General Inquiry</option>
+                  </select>
+                  <div className="absolute inset-y-0 right-0 flex items-center px-5 pointer-events-none">
+                    <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+                  </div>
+                </div>
               </div>
 
-              <div className="flex flex-col gap-2">
-                <label htmlFor="message" className="text-sm font-medium text-gray-700">Message</label>
+              <div className="flex flex-col gap-2.5">
+                <label htmlFor="message" className="text-sm font-medium text-gray-700 ml-1">Message</label>
                 <textarea 
                   id="message" 
                   rows={5}
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#d16c49] focus:border-transparent transition-all resize-none"
-                  placeholder="Tell us about your project..."
+                  className="w-full px-5 py-4 rounded-2xl border border-gray-200 bg-gray-50/50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#348B93]/20 focus:border-[#348B93] transition-all resize-none text-base placeholder:text-gray-400"
+                  placeholder="Tell us about how we can help..."
                 />
               </div>
 
-              <div className="flex flex-col gap-4 mt-2">
+              <div className="flex flex-col sm:flex-row gap-4 mt-6 items-center">
                 <button 
                   type="submit"
-                  className="group flex items-center justify-center gap-2 w-full bg-[#d16c49] hover:bg-[#b05b3e] text-white py-4 rounded-xl font-medium transition-colors"
+                  className="group flex-1 inline-flex items-center justify-center gap-3 bg-[#348B93] text-white px-8 py-4 rounded-full font-medium text-base hover:bg-[#2a7076] transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 w-full sm:w-auto"
                 >
-                  Send Message
-                  <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  <span>Send Message</span>
+                  <Send className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
                 </button>
 
-                <div className="relative flex items-center py-2">
-                  <div className="flex-grow border-t border-gray-200"></div>
-                  <span className="flex-shrink-0 mx-4 text-gray-400 text-sm">or</span>
-                  <div className="flex-grow border-t border-gray-200"></div>
+                <div className="hidden sm:flex items-center justify-center px-4 shrink-0">
+                  <span className="text-gray-300 font-medium text-sm">OR</span>
                 </div>
 
                 <a 
-                  href="https://wa.me/2349044444303?text=Hello%20Obembe%20Construction,%20I%20have%20an%20inquiry%20regarding%20a%20project."
+                  href="https://wa.me/2349044444303?text=Hello%20Inclusive Social Services%20support,%20I%20have%20an%20inquiry%20regarding%20a%20program."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 w-full bg-[#25D366] hover:bg-[#20b858] text-white py-4 rounded-xl font-medium transition-colors shadow-sm"
+                  className="group flex-1 inline-flex items-center justify-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-full font-medium text-base hover:bg-[#20b858] transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 w-full sm:w-auto"
                 >
-                  <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.459h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-                  </svg>
-                  Chat on WhatsApp
+                  <MessageCircle className="w-5 h-5" />
+                  <span>WhatsApp</span>
+                  <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>
             </form>

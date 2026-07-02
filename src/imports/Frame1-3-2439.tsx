@@ -1,5 +1,5 @@
 import svgPaths from "./svg-85bzleidrq";
-import imgHeroSection from "figma:asset/9c7f9a850dcb52e471bb613bc76969646fffe4b5.png";
+import imgHeroSection from "local:asset/9c7f9a850dcb52e471bb613bc76969646fffe4b5.png";
 import { imgVector, imgGroup } from "./svg-go5a8";
 
 function Group1() {

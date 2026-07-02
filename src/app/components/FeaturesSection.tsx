@@ -1,14 +1,14 @@
 import { AnimatedSection } from "./AnimatedSection";
 import { ArrowUpRight, Wind, Zap } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-const rawImages = import.meta.glob("../../assets/obembe_projects/*.{jpeg,jpg,png,webp}", {
+const rawImages = import.meta.glob("../../assets/programs/*.{jpeg,jpg,png,webp}", {
   eager: true,
   import: "default",
 }) as Record<string, string>;
 
-const projectImages = Object.keys(rawImages).sort().map(key => rawImages[key]);
-const feat1 = projectImages[9] || "";
-const feat2 = projectImages[10] || "";
+const programImages = Object.keys(rawImages).sort().map(key => rawImages[key]);
+const feat1 = programImages[9] || "";
+const feat2 = programImages[10] || "";
 
 export function FeaturesSection() {
   return (
@@ -26,8 +26,8 @@ export function FeaturesSection() {
             <div className="absolute inset-0 bg-gradient-to-t from-[#111111]/80 via-[#111111]/20 to-transparent" />
             <div className="absolute inset-x-6 bottom-6 text-white flex justify-between items-end">
               <div>
-                <h3 className="text-2xl font-medium mb-2 leading-tight">Excellence</h3>
-                <p className="text-white/80 text-sm max-w-[200px]">We don't cut corners. Every project is built to the highest standard, every time.</p>
+                <h3 className="text-2xl  mb-2 leading-tight">Excellence</h3>
+                <p className="text-white/80 text-sm max-w-[200px]">We don't cut corners. Every program is built to the highest standard, every time.</p>
               </div>
               <div className="w-10 h-10 rounded-full bg-[#111111] flex flex-shrink-0 items-center justify-center text-white">
                 <ArrowUpRight className="w-5 h-5" />
@@ -52,8 +52,8 @@ export function FeaturesSection() {
             <div className="absolute inset-0 bg-gradient-to-t from-[#111111]/80 via-[#111111]/20 to-transparent" />
             <div className="absolute inset-x-6 bottom-6 text-white flex justify-between items-end">
               <div>
-                <h3 className="text-2xl font-medium mb-2 leading-tight">Built to Last</h3>
-                <p className="text-white/80 text-sm max-w-[200px]">Spaces designed for comfort, utility, and absolute structural safety.</p>
+                <h3 className="text-2xl  mb-2 leading-tight">Built to Last</h3>
+                <p className="text-white/80 text-sm max-w-[200px]">Spaces planed for comfort, utility, and absolute structural safety.</p>
               </div>
               <div className="w-10 h-10 rounded-full bg-[#111111] flex flex-shrink-0 items-center justify-center text-white">
                 <ArrowUpRight className="w-5 h-5" />
@@ -64,11 +64,11 @@ export function FeaturesSection() {
           {/* Card 2: Square Middle Left */}
           <AnimatedSection className="lg:col-span-1 bg-[#f9f9f9] rounded-[24px] p-8 flex flex-col justify-between min-h-[250px] relative group cursor-pointer" delay={0.3}>
             <div>
-              <h3 className="text-2xl font-medium text-[#111111] mb-2 leading-tight">Integrity</h3>
+              <h3 className="text-2xl  text-[#111111] mb-2 leading-tight">Integrity</h3>
               <p className="text-[#111111]/70 text-sm mt-4">What we say is what we do. No surprises, no excuses.</p>
             </div>
             <div className="flex justify-between items-end mt-8">
-              <span className="px-4 py-2 border border-[#111111]/10 rounded-full text-sm font-medium text-[#111111]">
+              <span className="px-4 py-2 border border-[#111111]/10 rounded-full text-sm  text-[#111111]">
                 Read more
               </span>
               <div className="w-10 h-10 rounded-full bg-[#111111] flex flex-shrink-0 items-center justify-center text-white">
@@ -81,7 +81,7 @@ export function FeaturesSection() {
           <AnimatedSection className="lg:col-span-1 bg-[#f9f9f9] rounded-[24px] p-8 flex flex-col justify-between min-h-[250px] relative group cursor-pointer" delay={0.4}>
             <div>
               <Wind className="w-8 h-8 text-[#111111] mb-6" />
-              <h3 className="text-2xl font-medium text-[#111111] leading-tight">Collaboration</h3>
+              <h3 className="text-2xl  text-[#111111] leading-tight">Collaboration</h3>
             </div>
             <div className="flex justify-between items-end mt-8">
               <p className="text-[#111111]/70 text-sm max-w-[220px]">We work with you, not around you, from the first conversation to the final walkthrough.</p>

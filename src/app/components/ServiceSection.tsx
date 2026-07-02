@@ -4,11 +4,11 @@ import { ArrowRight, HardHat, Truck, Hammer, Key, RefreshCw, Settings } from "lu
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Link, useNavigate } from "react-router";
 
-const obembeImgs = import.meta.glob("../../assets/obembe_projects/*.{jpeg,jpg,png,webp}", { eager: true, import: "default" }) as Record<string, string>;
-const architectureImgs = import.meta.glob("../../assets/architecture_designs/*.{jpeg,jpg,png,webp}", { eager: true, import: "default" }) as Record<string, string>;
-const transcorpImgs = import.meta.glob("../../assets/furniture_projects/*.{jpeg,jpg,png,webp}", { eager: true, import: "default" }) as Record<string, string>;
-const maitamaImgs = import.meta.glob("../../assets/maitama_project/*.{jpeg,jpg,png,webp}", { eager: true, import: "default" }) as Record<string, string>;
-const furnitureImgs = import.meta.glob("../../assets/furnitures_and_furnishing/*.{jpeg,jpg,png,webp}", { eager: true, import: "default" }) as Record<string, string>;
+const obembeImgs = import.meta.glob("../../assets/*") as Record<string, string>;
+const architectureImgs = import.meta.glob("../../assets/*") as Record<string, string>;
+const transcorpImgs = import.meta.glob("../../assets/*") as Record<string, string>;
+const maitamaImgs = import.meta.glob("../../assets/*") as Record<string, string>;
+const furnitureImgs = import.meta.glob("../../assets/*") as Record<string, string>;
 
 const getFirstImage = (record: Record<string, string>, offset = 0) => {
   const keys = Object.keys(record).sort();
@@ -17,51 +17,51 @@ const getFirstImage = (record: Record<string, string>, offset = 0) => {
 
 const services = [
   {
-    title: "Engineering & Design",
-    desc: "Developing detailed engineering designs using the latest tools.",
+    title: "Individual Counseling",
+    desc: "Developing detailed counseling plans using the latest tools.",
     img: getFirstImage(architectureImgs, 1),
     icon: HardHat,
-    link: "/services/engineering-and-design",
+    link: "/services/individual-counseling",
     className: "md:col-span-2 md:row-span-1" // Wide
   },
   {
-    title: "Procurement",
+    title: "Child Welfare",
     desc: "Sourcing high-quality materials globally.",
     img: getFirstImage(obembeImgs, 4),
     icon: Truck,
-    link: "/services/procurement",
+    link: "/services/child-welfare",
     className: "md:col-span-1 md:row-span-1" // Square
   },
   {
-    title: "Construction",
-    desc: "Bringing projects to life with unmatched craftsmanship and rigorous standards.",
+    title: "support",
+    desc: "Bringing programs to life with unmatched craftsmanship and rigorous standards.",
     img: getFirstImage(obembeImgs, 7),
     icon: Hammer,
-    link: "/services/construction",
+    link: "/services/support",
     className: "md:col-span-1 md:row-span-2" // Tall
   },
   {
-    title: "Turnkey Solutions",
-    desc: "Taking full responsibility for the entire project lifecycle.",
+    title: "Community Programs",
+    desc: "Taking full responsibility for the entire program lifecycle.",
     img: getFirstImage(maitamaImgs, 2),
     icon: Key,
-    link: "/services/turnkey-solutions",
+    link: "/services/community-programs-solutions",
     className: "md:col-span-1 md:row-span-1" // Square
   },
   {
-    title: "Renovation",
+    title: "Crisis Intervention",
     desc: "Breathing new life into existing structures.",
     img: getFirstImage(transcorpImgs, 0),
     icon: RefreshCw,
-    link: "/services/renovation-and-rehabilitation",
+    link: "/services/crisis-intervention-and-rehabilitation",
     className: "md:col-span-1 md:row-span-1" // Square
   },
   {
-    title: "Maintenance & Facility",
+    title: "Group Support & Facility",
     desc: "Maximizing lifespan and operational efficiency of your assets.",
     img: getFirstImage(furnitureImgs, 1),
     icon: Settings,
-    link: "/services/maintenance-and-facility-management",
+    link: "/services/group-support-and-facility-management",
     className: "md:col-span-2 md:row-span-1" // Wide
   },
 ];
@@ -81,7 +81,7 @@ export function ServiceSection() {
                 Our Capabilities
               </span>
             </div>
-            <h2 className="text-[#111111] leading-[1.1] font-medium" style={{ fontSize: "clamp(40px, 5vw, 64px)", letterSpacing: "-2px" }}>
+            <h2 className="text-[#111111] leading-[1.1] " style={{ fontSize: "clamp(40px, 5vw, 64px)", letterSpacing: "-2px" }}>
               Comprehensive services for your next bold vision.
             </h2>
           </AnimatedSection>
@@ -89,7 +89,7 @@ export function ServiceSection() {
           <AnimatedSection delay={0.2} className="flex items-center gap-4 shrink-0">
             <Link
               to="/services"
-              className="group flex items-center gap-3 bg-[#111111] hover:bg-[#FF6501] text-white px-7 py-4 rounded-full font-medium transition-colors text-sm"
+              className="group flex items-center gap-3 bg-[#111111] hover:bg-[#FF6501] text-white px-7 py-4 rounded-full  transition-colors text-sm"
             >
               Browse all services
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -122,7 +122,7 @@ export function ServiceSection() {
 
                   {/* Text Content */}
                   <div className="absolute bottom-0 left-0 w-full p-6 md:p-8 flex flex-col justify-end">
-                    <h3 className="text-white text-2xl md:text-3xl font-medium mb-2 tracking-tight group-hover:text-[#FF6501] transition-colors duration-300">
+                    <h3 className="text-white text-2xl md:text-3xl  mb-2 tracking-tight group-hover:text-[#FF6501] transition-colors duration-300">
                       {service.title}
                     </h3>
                     
@@ -132,7 +132,7 @@ export function ServiceSection() {
                         <p className="text-white/80 text-[15px] leading-relaxed font-sans mt-2">
                           {service.desc}
                         </p>
-                        <div className="flex items-center gap-2 text-[#FF6501] text-sm font-medium mt-4 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100">
+                        <div className="flex items-center gap-2 text-[#FF6501] text-sm  mt-4 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100">
                           Explore Service <ArrowRight className="w-4 h-4" />
                         </div>
                       </div>

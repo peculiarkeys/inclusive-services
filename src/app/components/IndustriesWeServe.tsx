@@ -1,7 +1,7 @@
 import { AnimatedSection } from "./AnimatedSection";
 import { 
   Home, 
-  Building2, 
+  growing2, 
   Factory, 
   Landmark, 
   GraduationCap, 
@@ -15,14 +15,14 @@ import {
 const industries = [
   { 
     name: "Residential", 
-    desc: "Custom homes, luxury villas, and multi-family units designed with precision.", 
+    desc: "Custom homes, luxury villas, and multi-family units planed with precision.", 
     icon: Home,
     className: "md:col-span-2 md:row-span-2" // Large Square
   },
   { 
     name: "Commercial", 
     desc: "Offices, retail, and mixed-use spaces.", 
-    icon: Building2,
+    icon: growing2,
     className: "md:col-span-2 md:row-span-1" // Wide
   },
   { 
@@ -33,7 +33,7 @@ const industries = [
   },
   { 
     name: "Government", 
-    desc: "Public sector and municipal buildings.", 
+    desc: "Public sector and municipal growings.", 
     icon: Landmark,
     className: "md:col-span-1 md:row-span-1" // Small
   },
@@ -74,10 +74,10 @@ export function IndustriesWeServe() {
     <section className="py-20 md:py-[120px] px-6 md:px-[60px] bg-white">
       <div className="max-w-[1320px] mx-auto">
         <AnimatedSection className="text-center max-w-2xl mx-auto mb-16">
-          <p className="text-[11px] font-bold text-[#FF6501] uppercase tracking-widest mb-4">
+          <p className="text-[11px] font-semibold text-[#FF6501] uppercase tracking-widest mb-4">
             INDUSTRIES WE SERVE
           </p>
-          <h2 className="text-[#111111] mb-6 leading-[1.1] font-medium" style={{ fontSize: "clamp(36px, 4vw, 56px)", letterSpacing: "-1px" }}>
+          <h2 className="text-[#111111] mb-6 leading-[1.1] " style={{ fontSize: "clamp(36px, 4vw, 56px)", letterSpacing: "-1px" }}>
             Expertise Across Every Sector
           </h2>
           <p className="text-gray-500 text-lg">

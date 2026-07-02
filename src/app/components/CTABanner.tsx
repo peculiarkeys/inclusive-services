@@ -3,13 +3,13 @@ import { AnimatedSection } from "./AnimatedSection";
 import { ArrowRight } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Link } from "react-router";
-const rawImages = import.meta.glob("../../assets/obembe_projects/*.{jpeg,jpg,png,webp}", {
+const rawImages = import.meta.glob("../../assets/programs/*.{jpeg,jpg,png,webp}", {
   eager: true,
   import: "default",
 }) as Record<string, string>;
 
-const projectImages = Object.keys(rawImages).sort().map(key => rawImages[key]);
-const bgImg = projectImages[15] || "";
+const programImages = Object.keys(rawImages).sort().map(key => rawImages[key]);
+const bgImg = programImages[15] || "";
 export function CTABanner() {
   return (
     <section id="contact" className="relative overflow-hidden">
@@ -24,7 +24,7 @@ export function CTABanner() {
                 Ready to Build Something That Lasts?
               </h2>
               <p className="text-white mb-10 max-w-[516px]" style={{ fontSize: "18px", lineHeight: "32.4px" }}>
-                Whether it's a hotel, an office complex, or a project still living in your head — let's talk about how to make it real.
+                Whether it's a hotel, an office complex, or a program still living in your head — let's talk about how to make it real.
               </p>
 
               <Link to="/contact" className="inline-block">

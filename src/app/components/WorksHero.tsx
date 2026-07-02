@@ -2,21 +2,21 @@ import { motion } from "motion/react";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import { Link } from "react-router";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-const rawImages = import.meta.glob("../../assets/obembe_projects/*.{jpeg,jpg,png,webp}", {
+const rawImages = import.meta.glob("../../assets/programs/*.{jpeg,jpg,png,webp}", {
   eager: true,
   import: "default",
 }) as Record<string, string>;
 
-const projectImages = Object.keys(rawImages).sort().map(key => rawImages[key]);
-const heroImg = projectImages[14] || "";
+const programImages = Object.keys(rawImages).sort().map(key => rawImages[key]);
+const heroImg = "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2000&auto=format&fit=crop";
 export function WorksHero() {
   return (
     <section className="relative w-full p-4 md:p-6 pb-0">
-      <div className="relative w-full h-[85vh] min-h-[600px] rounded-[32px] overflow-hidden flex flex-col bg-[#1a1c18] shadow-lg">
+      <div className="relative w-full h-[85vh] min-h-[600px] rounded-[32px] overflow-hidden flex flex-col bg-[#1C3234] shadow-lg">
         
         {/* Background image + overlay */}
         <div className="absolute inset-0 z-0">
-          <ImageWithFallback src={heroImg} alt="Construction Family" className="w-full h-full object-cover opacity-80" />
+          <ImageWithFallback src={heroImg} alt="support Family" className="w-full h-full object-cover opacity-80" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/40" />
         </div>
 
@@ -43,7 +43,7 @@ export function WorksHero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-white font-medium"
+              className="text-white "
               style={{ fontSize: "clamp(48px, 6vw, 84px)", lineHeight: "1.1", letterSpacing: "-1px" }}
             >
               Showcasing <br/>
@@ -56,7 +56,7 @@ export function WorksHero() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="flex justify-end"
             >
-              <Link to="/contact" className="inline-flex items-center gap-2 text-white/90 hover:text-white border-b border-white/30 hover:border-white pb-1 transition-all text-sm font-medium">
+              <Link to="/contact" className="inline-flex items-center gap-2 text-white/90 hover:text-white border-b border-white/30 hover:border-white pb-1 transition-all text-sm ">
                 Get started with a small step <ArrowRight className="w-4 h-4" />
               </Link>
             </motion.div>

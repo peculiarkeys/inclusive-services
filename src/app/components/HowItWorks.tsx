@@ -1,10 +1,10 @@
 import { AnimatedSection } from "./AnimatedSection";
 
 const steps = [
-  { num: "1", title: "Consultation & Planning", desc: "We begin by understanding your needs, evaluating the site, and developing a comprehensive strategy to ensure project success." },
-  { num: "2", title: "Design & Engineering", desc: "Our experts create detailed architectural designs and robust engineering plans that balance aesthetics, functionality, and safety." },
-  { num: "3", title: "Execution & Construction", desc: "Our skilled workforce brings the plans to life, adhering to the highest quality standards, strict safety protocols, and agreed timelines." },
-  { num: "4", title: "Delivery & Handover", desc: "We hand over a fully completed project ready for use, ensuring every detail meets our rigorous standards and your exact expectations." },
+  { num: "1", title: "Consultation & Planning", desc: "We begin by understanding your needs, evaluating the site, and developing a comprehensive strategy to ensure program success." },
+  { num: "2", title: "Plan & counseling", desc: "Our experts create detailed architectural plans and robust counseling plans that balance aesthetics, functionality, and safety." },
+  { num: "3", title: "Execution & support", desc: "Our skilled workforce brings the plans to life, adhering to the highest quality standards, strict safety protocols, and agreed timelines." },
+  { num: "4", title: "Delivery & Handover", desc: "We hand over a fully completed program ready for use, ensuring every detail meets our rigorous standards and your exact expectations." },
 ];
 
 export function HowItWorks() {
