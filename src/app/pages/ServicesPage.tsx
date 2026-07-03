@@ -10,35 +10,35 @@ const services = [
     title: "Therapy & Counselling",
     desc: "A safe space to work through stress, conflict, trauma, grief, parenting challenges, separation, and emotional difficulties.",
     target: "Families experiencing stress, conflict, trauma, or major transitions.",
-    link: "/services/therapy",
+    link: "/contact",
     img: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop"
   },
   {
     title: "Home Assessments",
     desc: "Professional, timely, and culturally sensitive home assessment reports including SAFE home studies.",
     target: "Adoption, foster care, kinship care, and placement planning.",
-    link: "/services/assessments",
+    link: "/contact",
     img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop"
   },
   {
     title: "One-to-One Support",
     desc: "Individualized support for children and youth based on their unique emotional, physical, social, and developmental needs.",
     target: "Children needing emotional support, routine-building, or social skills.",
-    link: "/services/support",
+    link: "/contact",
     img: "https://images.unsplash.com/photo-1527613426441-4da17471b66d?q=80&w=800&auto=format&fit=crop"
   },
   {
     title: "Supervised Visitation",
     desc: "Safe, structured, and supportive visitation services that help maintain family connections while prioritizing child safety.",
     target: "High-conflict situations, court-related visitation, or reunification planning.",
-    link: "/services/visitation",
+    link: "/contact",
     img: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=800&auto=format&fit=crop"
   },
   {
     title: "Transportation Services",
     desc: "Safe and reliable transportation for children and families to attend appointments, visits, and community activities.",
     target: "Caregivers needing support getting to schools, therapy, or visits.",
-    link: "/services/transportation",
+    link: "/contact",
     img: "https://images.unsplash.com/photo-1534081333815-ae5019106622?q=80&w=800&auto=format&fit=crop"
   },
   {

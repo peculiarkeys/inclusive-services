@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 
 export function WhatsAppFloatingIcon() {
   const whatsappUrl =
-    "https://wa.me/2349044444303?text=Hello%20Inclusive Social Services%20support,%20I%20have%20an%20inquiry%20regarding%20a%20program.";
+    "https://wa.me/15878943596?text=Hello%20Inclusive Social Services%20support,%20I%20have%20an%20inquiry%20regarding%20a%20program.";
 
   return (
     <motion.a

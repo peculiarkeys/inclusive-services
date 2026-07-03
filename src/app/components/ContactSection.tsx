@@ -45,7 +45,7 @@ export function ContactSection() {
                     </div>
                     <div>
                       <h4 className="text-white/60 text-sm font-medium mb-1">Call Us Directly</h4>
-                      <p className="text-lg font-medium text-white">0904 444 4303</p>
+                      <p className="text-lg font-medium text-white">+1 (587) 894-3596</p>
                     </div>
                   </div>
 
@@ -179,7 +179,7 @@ export function ContactSection() {
                 </div>
 
                 <a 
-                  href="https://wa.me/2349044444303?text=Hello%20Inclusive Social Services%20support,%20I%20have%20an%20inquiry%20regarding%20a%20program."
+                  href="https://wa.me/15878943596?text=Hello%20Inclusive Social Services%20support,%20I%20have%20an%20inquiry%20regarding%20a%20program."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex-1 inline-flex items-center justify-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-full font-medium text-base hover:bg-[#20b858] transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 w-full sm:w-auto"

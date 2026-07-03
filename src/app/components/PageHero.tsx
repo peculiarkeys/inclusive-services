@@ -19,7 +19,7 @@ export function PageHero({ title, description, image }: PageHeroProps) {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 w-full max-w-[1320px] mx-auto px-6 md:px-10 h-full flex flex-col justify-end pb-8 md:pb-20">
+        <div className="relative z-10 w-full max-w-[1320px] mx-auto px-6 md:px-10 h-full flex flex-col justify-end pb-8 pt-28 md:pb-20 md:pt-40">
           <div className="flex flex-col gap-3 md:gap-4 max-w-[800px]">
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
