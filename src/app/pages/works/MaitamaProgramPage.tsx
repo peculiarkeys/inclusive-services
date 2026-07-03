@@ -1,5 +1,5 @@
 import { PageHero } from "../../components/PageHero";
-import { MaitamaprogramGallery } from "../../components/MaitamaprogramGallery";
+import { MaitamaprogramGallery } from "../../components/MaitamaProgramGallery";
 import { CTABanner } from "../../components/CTABanner";
 
 const rawImages = import.meta.glob("../../../assets/maitama_program/*.{jpeg,jpg,png,webp}", {

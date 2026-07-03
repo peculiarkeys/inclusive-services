@@ -1,7 +1,7 @@
 import { PageHero } from "../components/PageHero";
 import { BlogSection } from "../components/BlogSection";
 import { FAQSection } from "../components/FAQSection";
-import { programsSection } from "../components/programsSection";
+import { programsSection } from "../components/ProgramsSection";
 import { AboutSection } from "../components/AboutSection";
 import { CTABanner } from "../components/CTABanner";
 

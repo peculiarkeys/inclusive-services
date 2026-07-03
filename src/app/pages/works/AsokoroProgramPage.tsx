@@ -1,5 +1,5 @@
 import { PageHero } from "../../components/PageHero";
-import { AsokoroprogramGallery } from "../../components/AsokoroprogramGallery";
+import { AsokoroprogramGallery } from "../../components/AsokoroProgramGallery";
 import { CTABanner } from "../../components/CTABanner";
 
 const rawImages = import.meta.glob("../../../assets/asokoro_program/*.{jpeg,jpg,png,webp}", {
