@@ -15,9 +15,29 @@ function Logo({ size = 36, invert = false }: { color?: string; size?: number; in
 
 export { Logo };
 
+const servicesData = {
+  "Therapeutic Services": [
+    { title: "Therapy & Counselling", desc: "Individual & family sessions for stress, conflict, and emotional challenges.", img: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop", link: "/services" },
+    { title: "One-to-One Support", desc: "Individualized support for children and youth based on their unique needs.", img: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=800&auto=format&fit=crop", link: "/services" }
+  ],
+  "Assessments & Support": [
+    { title: "Home Assessments", desc: "Professional, timely, and culturally sensitive home assessment reports.", img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop", link: "/services" },
+    { title: "Supervised Visitation", desc: "Safe, structured visitation services that maintain family connections.", img: "https://images.unsplash.com/photo-1527613426441-4da17471b66d?q=80&w=800&auto=format&fit=crop", link: "/services" }
+  ],
+  "Family Transitions": [
+    { title: "Adoption & Foster", desc: "Guidance and support for caregivers navigating adoption or foster care.", img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop", link: "/adoption" },
+    { title: "Divorce & Separation", desc: "Child-focused support to help families through separation transitions.", img: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop", link: "/divorce-support" }
+  ],
+  "Community Access": [
+    { title: "Transportation", desc: "Reliable, safe transit for families to access essential services.", img: "https://images.unsplash.com/photo-1527613426441-4da17471b66d?q=80&w=800&auto=format&fit=crop", link: "/services" },
+    { title: "Community Support", desc: "Workshops, resources, and referrals tailored to your family's needs.", img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop", link: "/contact" }
+  ]
+};
+
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [activeCategory, setActiveCategory] = useState<keyof typeof servicesData>("Therapeutic Services");
 
   // Mega menu close timeout
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
@@ -50,7 +70,6 @@ export function Header() {
             onMouseLeave={handleMouseLeave}
           >
             <Link to="/" className="text-white hover:text-white/70 transition-colors text-[13px] font-medium whitespace-nowrap">Home</Link>
-            <Link to="/about" className="text-white hover:text-white/70 transition-colors text-[13px] font-medium whitespace-nowrap">About Us</Link>
             
             {/* Services Mega Menu Toggle */}
             <div 
@@ -68,49 +87,35 @@ export function Header() {
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: 10, scale: 0.98 }}
                     transition={{ duration: 0.2 }}
-                    className="absolute top-[100%] left-1/2 -translate-x-1/2 w-[750px] bg-white rounded-3xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] border border-gray-100 overflow-hidden flex"
+                    className="absolute top-[100%] left-1/2 -translate-x-1/2 w-[90vw] max-w-[1000px] bg-white rounded-3xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] border border-gray-100 overflow-hidden flex min-h-[360px]"
                   >
                      {/* Mega Menu Content */}
-                     <div className="w-1/3 bg-[#F5F5F5] p-8 border-r border-gray-100 flex flex-col text-left">
-                        <h3 className="text-lg font-semibold text-[#111] mb-3">Our Services</h3>
-                        <p className="text-gray-500 text-sm mb-6 leading-relaxed">Explore our range of culturally responsive support and therapy programs tailored for your family.</p>
-                        <Link to="/services" className="mt-auto text-[#348B93] font-semibold text-sm flex items-center gap-2 hover:gap-3 transition-all">
-                          View All <ChevronDown className="w-4 h-4 -rotate-90" />
-                        </Link>
+                     {/* Left Sidebar */}
+                     <div className="w-[30%] border-r border-gray-100 p-6 flex flex-col text-left">
+                        <span className="text-[11px] font-bold text-gray-400 tracking-wider uppercase mb-4 px-4">Services</span>
+                        <div className="flex flex-col gap-1">
+                          {(Object.keys(servicesData) as Array<keyof typeof servicesData>).map(category => (
+                            <button 
+                              key={category}
+                              onMouseEnter={() => setActiveCategory(category)}
+                              className={`text-left px-4 py-2.5 rounded-xl text-sm font-medium transition-colors ${activeCategory === category ? 'bg-gray-100 text-[#111]' : 'text-gray-600 hover:bg-gray-50'}`}
+                            >
+                              {category}
+                            </button>
+                          ))}
+                        </div>
                      </div>
-                     <div className="w-2/3 p-8 grid grid-cols-2 gap-x-6 gap-y-5 text-left">
-                        <Link to="/services/therapy" className="group">
-                          <h4 className="text-[#111] font-semibold text-sm group-hover:text-[#348B93] transition-colors mb-0.5">Therapy & Counselling</h4>
-                          <p className="text-gray-500 text-xs leading-snug">Individual & family sessions.</p>
-                        </Link>
-                        <Link to="/services/assessments" className="group">
-                          <h4 className="text-[#111] font-semibold text-sm group-hover:text-[#348B93] transition-colors mb-0.5">Home Assessments</h4>
-                          <p className="text-gray-500 text-xs leading-snug">Professional & sensitive reports.</p>
-                        </Link>
-                        <Link to="/services/support" className="group">
-                          <h4 className="text-[#111] font-semibold text-sm group-hover:text-[#348B93] transition-colors mb-0.5">One-to-One Support</h4>
-                          <p className="text-gray-500 text-xs leading-snug">Individualized youth support.</p>
-                        </Link>
-                        <Link to="/services/visitation" className="group">
-                          <h4 className="text-[#111] font-semibold text-sm group-hover:text-[#348B93] transition-colors mb-0.5">Supervised Visitation</h4>
-                          <p className="text-gray-500 text-xs leading-snug">Safe and structured visits.</p>
-                        </Link>
-                        <Link to="/services/transportation" className="group">
-                          <h4 className="text-[#111] font-semibold text-sm group-hover:text-[#348B93] transition-colors mb-0.5">Transportation</h4>
-                          <p className="text-gray-500 text-xs leading-snug">Reliable transit for families.</p>
-                        </Link>
-                        <Link to="/adoption" className="group">
-                          <h4 className="text-[#111] font-semibold text-sm group-hover:text-[#348B93] transition-colors mb-0.5">Adoption & Foster</h4>
-                          <p className="text-gray-500 text-xs leading-snug">Guidance for caregivers.</p>
-                        </Link>
-                        <Link to="/divorce-support" className="group">
-                          <h4 className="text-[#111] font-semibold text-sm group-hover:text-[#348B93] transition-colors mb-0.5">Divorce & Separation</h4>
-                          <p className="text-gray-500 text-xs leading-snug">Child-focused support.</p>
-                        </Link>
-                        <Link to="/contact" className="group">
-                          <h4 className="text-[#111] font-semibold text-sm group-hover:text-[#348B93] transition-colors mb-0.5">Community Support</h4>
-                          <p className="text-gray-500 text-xs leading-snug">Workshops & referrals.</p>
-                        </Link>
+                     {/* Right Content */}
+                     <div className="w-[70%] p-8 bg-white flex gap-6">
+                        {servicesData[activeCategory].map((item, idx) => (
+                          <Link key={idx} to={item.link} className="group flex-1 flex flex-col">
+                            <div className="w-full h-40 rounded-2xl overflow-hidden mb-4 relative bg-gray-100">
+                              <img src={item.img} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                            </div>
+                            <h4 className="text-[#111] font-semibold text-base mb-2 group-hover:text-[#348B93] transition-colors">{item.title}</h4>
+                            <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+                          </Link>
+                        ))}
                      </div>
                   </motion.div>
                 )}
@@ -125,16 +130,16 @@ export function Header() {
           {/* Right CTA button */}
           <div className="hidden w-1/4 lg:flex justify-end items-center gap-6 shrink-0">
             <Link
-              to="/login"
+              to="/about"
               className="text-white hover:text-white/70 transition-colors text-sm font-medium"
             >
-              Log In
+              About
             </Link>
             <Link
             to="/contact"
             className="group inline-flex items-center gap-2 bg-white text-[#111] px-6 py-3 rounded-full font-medium text-sm hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
           >
-            <span>Sign Up</span>
+            <span>Get Started</span>
             <ArrowRight className="w-4 h-4 text-[#111] group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
@@ -159,9 +164,8 @@ export function Header() {
               <Link to="/" className="text-[#111] hover:text-[#348B93] transition-colors py-2 text-base font-medium border-b border-gray-100" onClick={() => setMobileOpen(false)}>Home</Link>
               <Link to="/about" className="text-[#111] hover:text-[#348B93] transition-colors py-2 text-base font-medium border-b border-gray-100" onClick={() => setMobileOpen(false)}>About Us</Link>
               <Link to="/services" className="text-[#111] hover:text-[#348B93] transition-colors py-2 text-base font-medium border-b border-gray-100" onClick={() => setMobileOpen(false)}>Services</Link>
-
               <Link to="/contact" className="text-[#111] hover:text-[#348B93] transition-colors py-2 text-base font-medium border-b border-gray-100" onClick={() => setMobileOpen(false)}>Resources & Contact</Link>
-              <Link to="/contact" className="mt-2 text-white bg-[#348B93] hover:bg-[#2a7076] transition-colors py-3 text-base font-medium rounded-full text-center" onClick={() => setMobileOpen(false)}>Sign Up</Link>
+              <Link to="/contact" className="mt-2 text-white bg-[#348B93] hover:bg-[#2a7076] transition-colors py-3 text-base font-medium rounded-full text-center" onClick={() => setMobileOpen(false)}>Get Started</Link>
             </div>
           </motion.div>
         )}
