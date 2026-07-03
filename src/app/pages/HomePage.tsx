@@ -57,26 +57,26 @@ export function HomePage() {
           <div className="absolute inset-0 bg-black/40" />
         </div>
 
-        <div className="relative z-10 w-full max-w-[1440px] mx-auto px-8 md:px-16 flex flex-col items-start text-white">
+        <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 md:px-16 flex flex-col items-start text-white">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="w-full">
-            <h1 className="text-5xl md:text-7xl font-semibold leading-tight max-w-4xl mb-6">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight max-w-4xl mb-4 md:mb-6">
               Family Support That<br/>Puts Children First
             </h1>
             <p className="text-lg text-white/90 max-w-2xl mb-10 leading-relaxed">
               We believe every child deserves safety, stability, and care. We provide practical guidance and professional support to help families navigate challenging times and create nurturing environments.
             </p>
             
-            <div className="flex flex-wrap items-center gap-4">
-              <Link to="/contact" className="group inline-flex items-center gap-3 bg-white text-[#111111] px-8 py-4 rounded-full font-medium text-base hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+            <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-4 mt-6">
+              <Link to="/contact" className="group inline-flex items-center justify-center gap-3 bg-white text-[#111111] px-8 py-4 rounded-full font-medium text-base hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 w-full sm:w-auto">
                 <span>Request a Consultation</span>
                 <ArrowRight className="w-5 h-5 text-[#111111] group-hover:translate-x-1 transition-transform" />
               </Link>
-              <Link to="/services" className="group inline-flex items-center gap-3 bg-transparent border border-white/30 text-white px-8 py-4 rounded-full font-medium text-base hover:bg-white/10 transition-all">
+              <Link to="/services" className="group inline-flex items-center justify-center gap-3 bg-transparent border border-white/30 text-white px-8 py-4 rounded-full font-medium text-base hover:bg-white/10 transition-all w-full sm:w-auto">
                 <span>Explore Our Services</span>
               </Link>
             </div>
 
-            <div className="flex flex-wrap gap-12 mt-24 text-white">
+            <div className="flex flex-wrap gap-6 md:gap-12 mt-12 md:mt-24 text-white">
               <div>
                 <h4 className="text-2xl font-semibold mb-1">10,000</h4>
                 <p className="text-white/80 text-sm">Families Supported</p>
