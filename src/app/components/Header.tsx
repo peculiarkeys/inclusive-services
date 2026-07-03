@@ -35,7 +35,7 @@ export function Header() {
 
   return (
     <>
-      <header className="absolute top-0 left-0 right-0 z-50 w-full bg-transparent px-6 lg:px-12 py-6">
+      <header className="absolute top-0 left-0 right-0 z-50 w-full bg-transparent px-6 lg:px-12 pt-10 lg:pt-12 pb-6">
         <div className="max-w-[1440px] mx-auto w-full flex items-center justify-between">
           {/* Left: Logo */}
           <div className="w-1/4 flex justify-start">
@@ -153,7 +153,7 @@ export function Header() {
             initial={{ height: 0, opacity: 0, y: -20 }}
             animate={{ height: "auto", opacity: 1, y: 0 }}
             exit={{ height: 0, opacity: 0, y: -20 }}
-            className="fixed top-[80px] left-4 right-4 z-40 lg:hidden overflow-hidden bg-white rounded-2xl shadow-xl border border-black/5"
+            className="fixed top-[100px] left-4 right-4 z-40 lg:hidden overflow-hidden bg-white rounded-2xl shadow-xl border border-black/5"
           >
             <div className="px-6 py-6 flex flex-col gap-4 text-left">
               <Link to="/" className="text-[#111] hover:text-[#348B93] transition-colors py-2 text-base font-medium border-b border-gray-100" onClick={() => setMobileOpen(false)}>Home</Link>
