@@ -21,7 +21,7 @@ const services = [
     desc: "Developing detailed counseling plans using the latest tools.",
     img: getFirstImage(architectureImgs, 1),
     icon: HardHat,
-    link: "/services/individual-counseling",
+    link: "/services",
     className: "md:col-span-2 md:row-span-1" // Wide
   },
   {
@@ -29,7 +29,7 @@ const services = [
     desc: "Sourcing high-quality materials globally.",
     img: getFirstImage(obembeImgs, 4),
     icon: Truck,
-    link: "/services/child-welfare",
+    link: "/services",
     className: "md:col-span-1 md:row-span-1" // Square
   },
   {
@@ -37,7 +37,7 @@ const services = [
     desc: "Bringing programs to life with unmatched craftsmanship and rigorous standards.",
     img: getFirstImage(obembeImgs, 7),
     icon: Hammer,
-    link: "/services/support",
+    link: "/services",
     className: "md:col-span-1 md:row-span-2" // Tall
   },
   {
@@ -45,7 +45,7 @@ const services = [
     desc: "Taking full responsibility for the entire program lifecycle.",
     img: getFirstImage(maitamaImgs, 2),
     icon: Key,
-    link: "/services/community-programs-solutions",
+    link: "/services",
     className: "md:col-span-1 md:row-span-1" // Square
   },
   {
@@ -53,7 +53,7 @@ const services = [
     desc: "Breathing new life into existing structures.",
     img: getFirstImage(transcorpImgs, 0),
     icon: RefreshCw,
-    link: "/services/crisis-intervention-and-rehabilitation",
+    link: "/services",
     className: "md:col-span-1 md:row-span-1" // Square
   },
   {
@@ -61,7 +61,7 @@ const services = [
     desc: "Maximizing lifespan and operational efficiency of your assets.",
     img: getFirstImage(furnitureImgs, 1),
     icon: Settings,
-    link: "/services/group-support-and-facility-management",
+    link: "/services",
     className: "md:col-span-2 md:row-span-1" // Wide
   },
 ];

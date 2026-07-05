@@ -4,7 +4,7 @@ import { ArrowRight, Heart, Users, Shield, Clock } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { motion } from "motion/react";
 
-const heroImage = "https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=2000&auto=format&fit=crop";
+const heroImage = "/hero-family.png";
 const servicesImgs = [
   "https://images.unsplash.com/photo-1536640712-4d4c36ef0e2c?q=80&w=800&auto=format&fit=crop",
   "https://images.unsplash.com/photo-1542810634-71277d95dcbb?q=80&w=800&auto=format&fit=crop",
@@ -51,10 +51,10 @@ export function HomePage() {
     <div className="w-full bg-white flex flex-col items-center">
       
       {/* 1. Hero Section */}
-      <section className="relative w-full h-[85vh] min-h-[600px] overflow-hidden flex flex-col justify-end pb-12">
+      <section className="relative w-full min-h-[100vh] md:min-h-[700px] md:h-[85vh] overflow-hidden flex flex-col justify-end pb-12 pt-[140px] md:pt-[100px]">
         <div className="absolute inset-0 z-0 overflow-hidden">
           <ImageWithFallback src={heroImage} alt="Hero Background" className="w-full h-full object-cover object-center" />
-          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/10 md:bg-black/20" />
         </div>
 
         <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 md:px-16 flex flex-col items-start text-white pt-32 md:pt-16">

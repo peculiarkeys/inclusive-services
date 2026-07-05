@@ -44,11 +44,11 @@ export function Footer() {
         <div className="lg:col-span-3 flex flex-col gap-5">
           <h4 className="text-[#111111] font-semibold text-base">Services</h4>
           <ul className="flex flex-col gap-3.5">
-            <li><Link to="/services/therapy" className="text-gray-500 hover:text-[#348B93] transition-colors text-sm font-medium">Therapy & Counselling</Link></li>
-            <li><Link to="/services/assessments" className="text-gray-500 hover:text-[#348B93] transition-colors text-sm font-medium">Home Assessments</Link></li>
-            <li><Link to="/services/support" className="text-gray-500 hover:text-[#348B93] transition-colors text-sm font-medium">One-to-One Support</Link></li>
-            <li><Link to="/services/visitation" className="text-gray-500 hover:text-[#348B93] transition-colors text-sm font-medium">Supervised Visitation</Link></li>
-            <li><Link to="/services/transportation" className="text-gray-500 hover:text-[#348B93] transition-colors text-sm font-medium">Transportation Services</Link></li>
+            <li><Link to="/services" className="text-gray-500 hover:text-[#348B93] transition-colors text-sm font-medium">Therapy & Counselling</Link></li>
+            <li><Link to="/services" className="text-gray-500 hover:text-[#348B93] transition-colors text-sm font-medium">Home Assessments</Link></li>
+            <li><Link to="/services" className="text-gray-500 hover:text-[#348B93] transition-colors text-sm font-medium">One-to-One Support</Link></li>
+            <li><Link to="/services" className="text-gray-500 hover:text-[#348B93] transition-colors text-sm font-medium">Supervised Visitation</Link></li>
+            <li><Link to="/services" className="text-gray-500 hover:text-[#348B93] transition-colors text-sm font-medium">Transportation Services</Link></li>
             <li><Link to="/adoption" className="text-gray-500 hover:text-[#348B93] transition-colors text-sm font-medium">Adoption & Foster Care Guidance</Link></li>
             <li><Link to="/divorce-support" className="text-gray-500 hover:text-[#348B93] transition-colors text-sm font-medium">Divorce & Separation Support</Link></li>
             <li><Link to="/contact" className="text-gray-500 hover:text-[#348B93] transition-colors text-sm font-medium">Community Support</Link></li>
@@ -61,7 +61,7 @@ export function Footer() {
           <ul className="flex flex-col gap-4">
             <li className="flex items-start gap-3">
               <Phone className="w-4 h-4 text-[#348B93] mt-0.5 shrink-0" />
-              <a href="tel:09044444303" className="text-gray-500 hover:text-[#348B93] transition-colors text-sm font-medium">0904 444 4303</a>
+              <a href="tel:+15878943596" className="text-gray-500 hover:text-[#348B93] transition-colors text-sm font-medium">+1 (587) 894-3596</a>
             </li>
             <li className="flex items-start gap-3">
               <Mail className="w-4 h-4 text-[#348B93] mt-0.5 shrink-0" />
