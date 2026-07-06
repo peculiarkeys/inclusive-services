@@ -14,6 +14,10 @@ import { MaitamaprogramPage } from './pages/works/MaitamaProgramPage';
 import { ServicesPage } from "./pages/ServicesPage";
 import { AdoptionPage } from "./pages/AdoptionPage";
 import { DivorceSupportPage } from "./pages/DivorceSupportPage";
+import { TherapyCounsellingPage } from "./pages/TherapyCounsellingPage";
+import { OneToOneSupportPage } from "./pages/OneToOneSupportPage";
+import { TransportationPage } from "./pages/TransportationPage";
+import { CommunitySupportPage } from "./pages/CommunitySupportPage";
 import { BlogPage } from "./pages/BlogPage";
 import { SingleBlogPage } from "./pages/SingleBlogPage";
 import { ContactPage } from "./pages/ContactPage";
@@ -41,6 +45,10 @@ export default function App() {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/adoption" element={<AdoptionPage />} />
           <Route path="/divorce-support" element={<DivorceSupportPage />} />
+          <Route path="/therapy-and-counselling" element={<TherapyCounsellingPage />} />
+          <Route path="/one-to-one-support" element={<OneToOneSupportPage />} />
+          <Route path="/transportation" element={<TransportationPage />} />
+          <Route path="/community-support" element={<CommunitySupportPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:slug" element={<SingleBlogPage />} />
           <Route path="/contact" element={<ContactPage />} />

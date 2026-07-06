@@ -10,7 +10,7 @@ const services = [
     title: "Therapy & Counselling",
     desc: "A safe space to work through stress, conflict, trauma, grief, parenting challenges, separation, and emotional difficulties.",
     target: "Families experiencing stress, conflict, trauma, or major transitions.",
-    link: "/contact",
+    link: "/therapy-and-counselling",
     img: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop"
   },
   {
@@ -24,7 +24,7 @@ const services = [
     title: "One-to-One Support",
     desc: "Individualized support for children and youth based on their unique emotional, physical, social, and developmental needs.",
     target: "Children needing emotional support, routine-building, or social skills.",
-    link: "/contact",
+    link: "/one-to-one-support",
     img: "https://images.unsplash.com/photo-1527613426441-4da17471b66d?q=80&w=800&auto=format&fit=crop"
   },
   {
@@ -38,7 +38,7 @@ const services = [
     title: "Transportation Services",
     desc: "Safe and reliable transportation for children and families to attend appointments, visits, and community activities.",
     target: "Caregivers needing support getting to schools, therapy, or visits.",
-    link: "/contact",
+    link: "/transportation",
     img: "https://images.unsplash.com/photo-1534081333815-ae5019106622?q=80&w=800&auto=format&fit=crop"
   },
   {
@@ -59,7 +59,7 @@ const services = [
     title: "Community Support",
     desc: "Helping families access the right resources through outreach programs, free consultations, workshops, and referrals.",
     target: "Families looking for information, parenting resources, or community support.",
-    link: "/contact",
+    link: "/community-support",
     img: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=800&auto=format&fit=crop"
   }
 ];
