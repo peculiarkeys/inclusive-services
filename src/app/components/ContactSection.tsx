@@ -9,8 +9,8 @@ export function ContactSection() {
         <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-16 gap-10">
           <div className="max-w-2xl">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-2 h-2 rounded-full bg-[#348B93]" />
-              <span className="text-[#348B93] font-bold text-xs tracking-widest uppercase">Contact Us</span>
+              <div className="w-2 h-2 rounded-full bg-[#62B9AB]" />
+              <span className="text-[#62B9AB] font-bold text-xs tracking-widest uppercase">Contact Us</span>
             </div>
             <h2 className="text-4xl md:text-5xl lg:text-[64px] font-semibold text-[#111] leading-[1.1] mb-6 tracking-tight">
               Let's Start a<br/>Conversation
@@ -33,7 +33,7 @@ export function ContactSection() {
             {/* Main Info Card */}
             <div className="bg-[#111] text-white rounded-[40px] p-10 lg:p-12 flex flex-col justify-between h-full relative overflow-hidden group">
               {/* Abstract background shape */}
-              <div className="absolute -top-24 -right-24 w-64 h-64 bg-white/5 rounded-full blur-3xl group-hover:bg-[#348B93]/20 transition-colors duration-700" />
+              <div className="absolute -top-24 -right-24 w-64 h-64 bg-white/5 rounded-full blur-3xl group-hover:bg-[#62B9AB]/20 transition-colors duration-700" />
               
               <div className="relative z-10">
                 <h3 className="text-3xl font-semibold mb-12 tracking-tight">Contact<br/>Information</h3>
@@ -51,7 +51,7 @@ export function ContactSection() {
 
                   <div className="flex items-start gap-5">
                     <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center shrink-0">
-                      <Mail className="w-5 h-5 text-[#348B93]" />
+                      <Mail className="w-5 h-5 text-[#62B9AB]" />
                     </div>
                     <div>
                       <h4 className="text-white/60 text-sm font-medium mb-1">Email Address</h4>
@@ -100,7 +100,7 @@ export function ContactSection() {
                   <input 
                     type="text" 
                     id="firstName" 
-                    className="w-full px-5 py-4 rounded-2xl border border-gray-200 bg-gray-50/50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#348B93]/20 focus:border-[#348B93] transition-all text-base placeholder:text-gray-400"
+                    className="w-full px-5 py-4 rounded-2xl border border-gray-200 bg-gray-50/50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#62B9AB]/20 focus:border-[#62B9AB] transition-all text-base placeholder:text-gray-400"
                     placeholder="John"
                   />
                 </div>
@@ -109,7 +109,7 @@ export function ContactSection() {
                   <input 
                     type="text" 
                     id="lastName" 
-                    className="w-full px-5 py-4 rounded-2xl border border-gray-200 bg-gray-50/50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#348B93]/20 focus:border-[#348B93] transition-all text-base placeholder:text-gray-400"
+                    className="w-full px-5 py-4 rounded-2xl border border-gray-200 bg-gray-50/50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#62B9AB]/20 focus:border-[#62B9AB] transition-all text-base placeholder:text-gray-400"
                     placeholder="Doe"
                   />
                 </div>
@@ -121,7 +121,7 @@ export function ContactSection() {
                   <input 
                     type="email" 
                     id="email" 
-                    className="w-full px-5 py-4 rounded-2xl border border-gray-200 bg-gray-50/50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#348B93]/20 focus:border-[#348B93] transition-all text-base placeholder:text-gray-400"
+                    className="w-full px-5 py-4 rounded-2xl border border-gray-200 bg-gray-50/50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#62B9AB]/20 focus:border-[#62B9AB] transition-all text-base placeholder:text-gray-400"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -130,7 +130,7 @@ export function ContactSection() {
                   <input 
                     type="tel" 
                     id="phone" 
-                    className="w-full px-5 py-4 rounded-2xl border border-gray-200 bg-gray-50/50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#348B93]/20 focus:border-[#348B93] transition-all text-base placeholder:text-gray-400"
+                    className="w-full px-5 py-4 rounded-2xl border border-gray-200 bg-gray-50/50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#62B9AB]/20 focus:border-[#62B9AB] transition-all text-base placeholder:text-gray-400"
                     placeholder="+234 800 000 0000"
                   />
                 </div>
@@ -141,7 +141,7 @@ export function ContactSection() {
                 <div className="relative">
                   <select 
                     id="service" 
-                    className="w-full px-5 py-4 rounded-2xl border border-gray-200 bg-gray-50/50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#348B93]/20 focus:border-[#348B93] transition-all appearance-none text-base text-gray-700 bg-transparent"
+                    className="w-full px-5 py-4 rounded-2xl border border-gray-200 bg-gray-50/50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#62B9AB]/20 focus:border-[#62B9AB] transition-all appearance-none text-base text-gray-700 bg-transparent"
                   >
                     <option value="" disabled selected>Select a service</option>
                     <option value="counseling">Counseling</option>
@@ -160,7 +160,7 @@ export function ContactSection() {
                 <textarea 
                   id="message" 
                   rows={5}
-                  className="w-full px-5 py-4 rounded-2xl border border-gray-200 bg-gray-50/50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#348B93]/20 focus:border-[#348B93] transition-all resize-none text-base placeholder:text-gray-400"
+                  className="w-full px-5 py-4 rounded-2xl border border-gray-200 bg-gray-50/50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#62B9AB]/20 focus:border-[#62B9AB] transition-all resize-none text-base placeholder:text-gray-400"
                   placeholder="Tell us about how we can help..."
                 />
               </div>
@@ -168,7 +168,7 @@ export function ContactSection() {
               <div className="flex flex-col sm:flex-row gap-4 mt-6 items-center">
                 <button 
                   type="submit"
-                  className="group flex-1 inline-flex items-center justify-center gap-3 bg-[#348B93] text-white px-8 py-4 rounded-full font-medium text-base hover:bg-[#2a7076] transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 w-full sm:w-auto"
+                  className="group flex-1 inline-flex items-center justify-center gap-3 bg-[#62B9AB] text-white px-8 py-4 rounded-full font-medium text-base hover:bg-[#2a7076] transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 w-full sm:w-auto"
                 >
                   <span>Send Message</span>
                   <Send className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" />

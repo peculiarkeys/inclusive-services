@@ -17,7 +17,7 @@ const services = [
     title: "Home Assessments",
     desc: "Professional, timely, and culturally sensitive home assessment reports including SAFE home studies.",
     target: "Adoption, foster care, kinship care, and placement planning.",
-    link: "/contact",
+    link: "/home-assessments",
     img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop"
   },
   {
@@ -31,7 +31,7 @@ const services = [
     title: "Supervised Visitation",
     desc: "Safe, structured, and supportive visitation services that help maintain family connections while prioritizing child safety.",
     target: "High-conflict situations, court-related visitation, or reunification planning.",
-    link: "/contact",
+    link: "/supervised-visitation",
     img: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=800&auto=format&fit=crop"
   },
   {
@@ -70,7 +70,7 @@ export function ServicesPage() {
       
       {/* 1. Hero Section */}
       <section className="relative w-full p-4 md:p-6 pb-0">
-        <div className="relative w-full h-[60vh] min-h-[400px] rounded-[40px] overflow-hidden flex flex-col bg-[#1C3234] shadow-lg mt-0">
+        <div className="relative w-full h-[60vh] min-h-[400px] rounded-[40px] overflow-hidden flex flex-col bg-[#074E80] shadow-lg mt-0">
           <div className="absolute inset-0 z-0">
             <ImageWithFallback src={heroImg} alt="Support Team" className="w-full h-full object-cover opacity-60 mix-blend-overlay" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-black/30 to-black/50" />
@@ -102,8 +102,8 @@ export function ServicesPage() {
         <div className="max-w-[1320px] mx-auto flex flex-col lg:flex-row gap-16 items-start">
           <div className="lg:w-1/3">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-2 h-2 rounded-full bg-[#348B93]" />
-              <span className="text-[#348B93] font-bold text-xs tracking-widest uppercase">Our Approach</span>
+              <div className="w-2 h-2 rounded-full bg-[#62B9AB]" />
+              <span className="text-[#62B9AB] font-bold text-xs tracking-widest uppercase">Our Approach</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-semibold text-[#111] leading-tight mb-6">
               Support That Meets Families Where They Are
@@ -146,13 +146,13 @@ export function ServicesPage() {
       </section>
 
       {/* 4. CTA Section */}
-      <section className="w-full bg-[#348B93] py-24 px-6 text-center text-white m-4 md:m-6 rounded-[40px] shadow-lg max-w-[calc(100%-32px)] md:max-w-[calc(100%-48px)] mx-auto mb-12">
+      <section className="w-full bg-[#62B9AB] py-24 px-6 text-center text-white m-4 md:m-6 rounded-[40px] shadow-lg max-w-[calc(100%-32px)] md:max-w-[calc(100%-48px)] mx-auto mb-12">
         <div className="max-w-2xl mx-auto flex flex-col items-center">
           <h2 className="text-4xl md:text-5xl font-semibold mb-6 leading-tight">Not Sure Which Service You Need?</h2>
           <p className="text-white/80 mb-10 text-lg leading-relaxed">
             You do not need to have everything figured out before reaching out. Contact us and we will help you understand which service may best fit your situation.
           </p>
-          <Link to="/contact" className="group inline-flex items-center gap-3 bg-white text-[#348B93] px-8 py-4 rounded-full font-medium text-base hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+          <Link to="/contact" className="group inline-flex items-center gap-3 bg-white text-[#62B9AB] px-8 py-4 rounded-full font-medium text-base hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
             <span>Speak With Our Team</span>
             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
           </Link>

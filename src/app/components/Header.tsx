@@ -17,20 +17,20 @@ export { Logo };
 
 const servicesData = {
   "Therapeutic Services": [
-    { title: "Therapy & Counselling", desc: "Individual & family sessions for stress, conflict, and emotional challenges.", img: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop", link: "/services" },
-    { title: "One-to-One Support", desc: "Individualized support for children and youth based on their unique needs.", img: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=800&auto=format&fit=crop", link: "/services" }
+    { title: "Therapy & Counselling", desc: "Individual & family sessions for stress, conflict, and emotional challenges.", img: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop", link: "/therapy-and-counselling" },
+    { title: "One-to-One Support", desc: "Individualized support for children and youth based on their unique needs.", img: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=800&auto=format&fit=crop", link: "/one-to-one-support" }
   ],
   "Assessments & Support": [
-    { title: "Home Assessments", desc: "Professional, timely, and culturally sensitive home assessment reports.", img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop", link: "/services" },
-    { title: "Supervised Visitation", desc: "Safe, structured visitation services that maintain family connections.", img: "https://images.unsplash.com/photo-1527613426441-4da17471b66d?q=80&w=800&auto=format&fit=crop", link: "/services" }
+    { title: "Home Assessments", desc: "Professional, timely, and culturally sensitive home assessment reports.", img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop", link: "/home-assessments" },
+    { title: "Supervised Visitation", desc: "Safe, structured visitation services that maintain family connections.", img: "https://images.unsplash.com/photo-1527613426441-4da17471b66d?q=80&w=800&auto=format&fit=crop", link: "/supervised-visitation" }
   ],
   "Family Transitions": [
     { title: "Adoption & Foster", desc: "Guidance and support for caregivers navigating adoption or foster care.", img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop", link: "/adoption" },
     { title: "Divorce & Separation", desc: "Child-focused support to help families through separation transitions.", img: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop", link: "/divorce-support" }
   ],
   "Community Access": [
-    { title: "Transportation", desc: "Reliable, safe transit for families to access essential services.", img: "https://images.unsplash.com/photo-1527613426441-4da17471b66d?q=80&w=800&auto=format&fit=crop", link: "/services" },
-    { title: "Community Support", desc: "Workshops, resources, and referrals tailored to your family's needs.", img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop", link: "/contact" }
+    { title: "Transportation", desc: "Reliable, safe transit for families to access essential services.", img: "https://images.unsplash.com/photo-1527613426441-4da17471b66d?q=80&w=800&auto=format&fit=crop", link: "/transportation" },
+    { title: "Community Support", desc: "Workshops, resources, and referrals tailored to your family's needs.", img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop", link: "/community-support" }
   ]
 };
 
@@ -112,7 +112,7 @@ export function Header() {
                             <div className="w-full h-40 rounded-2xl overflow-hidden mb-4 relative bg-gray-100">
                               <img src={item.img} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                             </div>
-                            <h4 className="text-[#111] font-semibold text-base mb-2 group-hover:text-[#348B93] transition-colors">{item.title}</h4>
+                            <h4 className="text-[#111] font-semibold text-base mb-2 group-hover:text-[#62B9AB] transition-colors">{item.title}</h4>
                             <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
                           </Link>
                         ))}
@@ -161,11 +161,11 @@ export function Header() {
             className="fixed top-[100px] left-4 right-4 z-40 lg:hidden overflow-hidden bg-white rounded-2xl shadow-xl border border-black/5"
           >
             <div className="px-6 py-6 flex flex-col gap-4 text-left">
-              <Link to="/" className="text-[#111] hover:text-[#348B93] transition-colors py-2 text-base font-medium border-b border-gray-100" onClick={() => setMobileOpen(false)}>Home</Link>
-              <Link to="/about" className="text-[#111] hover:text-[#348B93] transition-colors py-2 text-base font-medium border-b border-gray-100" onClick={() => setMobileOpen(false)}>About Us</Link>
-              <Link to="/services" className="text-[#111] hover:text-[#348B93] transition-colors py-2 text-base font-medium border-b border-gray-100" onClick={() => setMobileOpen(false)}>Services</Link>
-              <Link to="/contact" className="text-[#111] hover:text-[#348B93] transition-colors py-2 text-base font-medium border-b border-gray-100" onClick={() => setMobileOpen(false)}>Resources & Contact</Link>
-              <Link to="/contact" className="mt-2 text-white bg-[#348B93] hover:bg-[#2a7076] transition-colors py-3 text-base font-medium rounded-full text-center" onClick={() => setMobileOpen(false)}>Get Started</Link>
+              <Link to="/" className="text-[#111] hover:text-[#62B9AB] transition-colors py-2 text-base font-medium border-b border-gray-100" onClick={() => setMobileOpen(false)}>Home</Link>
+              <Link to="/about" className="text-[#111] hover:text-[#62B9AB] transition-colors py-2 text-base font-medium border-b border-gray-100" onClick={() => setMobileOpen(false)}>About Us</Link>
+              <Link to="/services" className="text-[#111] hover:text-[#62B9AB] transition-colors py-2 text-base font-medium border-b border-gray-100" onClick={() => setMobileOpen(false)}>Services</Link>
+              <Link to="/contact" className="text-[#111] hover:text-[#62B9AB] transition-colors py-2 text-base font-medium border-b border-gray-100" onClick={() => setMobileOpen(false)}>Resources & Contact</Link>
+              <Link to="/contact" className="mt-2 text-white bg-[#62B9AB] hover:bg-[#2a7076] transition-colors py-3 text-base font-medium rounded-full text-center" onClick={() => setMobileOpen(false)}>Get Started</Link>
             </div>
           </motion.div>
         )}

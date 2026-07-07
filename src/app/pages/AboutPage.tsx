@@ -12,7 +12,7 @@ export function AboutPage() {
       
       {/* 1. Hero Section */}
       <section className="relative w-full p-4 md:p-6 pb-0">
-        <div className="relative w-full h-[70vh] min-h-[500px] rounded-[40px] overflow-hidden flex flex-col bg-[#1C3234] shadow-lg mt-0">
+        <div className="relative w-full h-[70vh] min-h-[500px] rounded-[40px] overflow-hidden flex flex-col bg-[#074E80] shadow-lg mt-0">
           <div className="absolute inset-0 z-0">
             <ImageWithFallback src={heroImg} alt="Support Team" className="w-full h-full object-cover opacity-60 mix-blend-overlay" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-black/30 to-black/50" />
@@ -45,8 +45,8 @@ export function AboutPage() {
         <div className="max-w-[1320px] mx-auto flex flex-col lg:flex-row gap-16 items-start">
           <div className="lg:w-1/3">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-2 h-2 rounded-full bg-[#348B93]" />
-              <span className="text-[#348B93] font-bold text-xs tracking-widest uppercase">Who We Are</span>
+              <div className="w-2 h-2 rounded-full bg-[#62B9AB]" />
+              <span className="text-[#62B9AB] font-bold text-xs tracking-widest uppercase">Who We Are</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-semibold text-[#111] leading-tight mb-6">
               Supporting Families. Strengthening Connections.
@@ -69,7 +69,7 @@ export function AboutPage() {
       {/* 3. Mission & Vision Bento */}
       <section className="w-full px-6 md:px-12 pb-24">
         <div className="max-w-[1320px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-[#348B93] rounded-[40px] p-10 md:p-14 text-white flex flex-col h-full shadow-lg">
+          <div className="bg-[#62B9AB] rounded-[40px] p-10 md:p-14 text-white flex flex-col h-full shadow-lg">
             <h3 className="text-sm tracking-widest uppercase font-bold mb-10 opacity-80">Our Mission</h3>
             <p className="text-2xl md:text-3xl font-medium leading-relaxed mt-auto">
               Our mission is to support children, youth, caregivers, and families by providing professional, culturally responsive, and child-focused services that promote safety, stability, healthy relationships, and family well-being.
@@ -97,35 +97,35 @@ export function AboutPage() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
               <div className="flex flex-col gap-4">
-                <div className="w-12 h-12 rounded-full bg-[#f5f5f5] flex items-center justify-center text-[#348B93]">
+                <div className="w-12 h-12 rounded-full bg-[#f5f5f5] flex items-center justify-center text-[#62B9AB]">
                   <CheckCircle2 className="w-6 h-6" />
                 </div>
                 <h4 className="text-xl font-semibold text-[#111]">Strengthen Family Capacity</h4>
                 <p className="text-gray-500 leading-relaxed text-sm">We help caregivers build the skills, confidence, and support systems needed to provide safe and nurturing care.</p>
               </div>
               <div className="flex flex-col gap-4">
-                <div className="w-12 h-12 rounded-full bg-[#f5f5f5] flex items-center justify-center text-[#348B93]">
+                <div className="w-12 h-12 rounded-full bg-[#f5f5f5] flex items-center justify-center text-[#62B9AB]">
                   <CheckCircle2 className="w-6 h-6" />
                 </div>
                 <h4 className="text-xl font-semibold text-[#111]">Promote Child Safety</h4>
                 <p className="text-gray-500 leading-relaxed text-sm">We prioritize the emotional, physical, developmental, and relational needs of children and youth.</p>
               </div>
               <div className="flex flex-col gap-4">
-                <div className="w-12 h-12 rounded-full bg-[#f5f5f5] flex items-center justify-center text-[#348B93]">
+                <div className="w-12 h-12 rounded-full bg-[#f5f5f5] flex items-center justify-center text-[#62B9AB]">
                   <CheckCircle2 className="w-6 h-6" />
                 </div>
                 <h4 className="text-xl font-semibold text-[#111]">Preserve Family Connection</h4>
                 <p className="text-gray-500 leading-relaxed text-sm">Whenever safe and appropriate, we support children in maintaining meaningful relationships with parents, caregivers, siblings, and extended family.</p>
               </div>
               <div className="flex flex-col gap-4">
-                <div className="w-12 h-12 rounded-full bg-[#f5f5f5] flex items-center justify-center text-[#348B93]">
+                <div className="w-12 h-12 rounded-full bg-[#f5f5f5] flex items-center justify-center text-[#62B9AB]">
                   <CheckCircle2 className="w-6 h-6" />
                 </div>
                 <h4 className="text-xl font-semibold text-[#111]">Support Stability During Transition</h4>
                 <p className="text-gray-500 leading-relaxed text-sm">We assist families navigating separation, divorce, placement, reunification, adoption, foster care, and child welfare processes.</p>
               </div>
               <div className="flex flex-col gap-4">
-                <div className="w-12 h-12 rounded-full bg-[#f5f5f5] flex items-center justify-center text-[#348B93]">
+                <div className="w-12 h-12 rounded-full bg-[#f5f5f5] flex items-center justify-center text-[#62B9AB]">
                   <CheckCircle2 className="w-6 h-6" />
                 </div>
                 <h4 className="text-xl font-semibold text-[#111]">Connect Families to Resources</h4>
@@ -177,7 +177,7 @@ export function AboutPage() {
                   "Child-focused decision-making"
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-center gap-3 text-gray-600 text-sm font-medium">
-                    <div className="w-2 h-2 rounded-full bg-[#348B93] shrink-0" />
+                    <div className="w-2 h-2 rounded-full bg-[#62B9AB] shrink-0" />
                     {item}
                   </li>
                 ))}
@@ -199,13 +199,13 @@ export function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="w-full bg-[#1C3234] py-24 px-6 text-center text-white">
+      <section className="w-full bg-[#074E80] py-24 px-6 text-center text-white">
         <div className="max-w-2xl mx-auto flex flex-col items-center">
           <h2 className="text-4xl md:text-5xl font-semibold mb-6 leading-tight">Let’s Support Your Family’s Next Step</h2>
           <p className="text-white/80 mb-10 text-lg leading-relaxed">
             Whether you are a caregiver, parent, professional, or community partner, we are here to help you understand the services available and how we can support your family’s needs.
           </p>
-          <Link to="/contact" className="group inline-flex items-center gap-3 bg-[#348B93] text-white px-8 py-4 rounded-full font-medium text-base hover:bg-[#2a7076] transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+          <Link to="/contact" className="group inline-flex items-center gap-3 bg-[#62B9AB] text-white px-8 py-4 rounded-full font-medium text-base hover:bg-[#2a7076] transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
             <span>Contact Inclusive Social Services</span>
             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
           </Link>

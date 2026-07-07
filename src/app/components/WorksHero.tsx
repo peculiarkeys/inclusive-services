@@ -12,7 +12,7 @@ const heroImg = "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&
 export function WorksHero() {
   return (
     <section className="relative w-full p-4 md:p-6 pb-0">
-      <div className="relative w-full h-[85vh] min-h-[600px] rounded-[32px] overflow-hidden flex flex-col bg-[#1C3234] shadow-lg">
+      <div className="relative w-full h-[85vh] min-h-[600px] rounded-[32px] overflow-hidden flex flex-col bg-[#074E80] shadow-lg">
         
         {/* Background image + overlay */}
         <div className="absolute inset-0 z-0">

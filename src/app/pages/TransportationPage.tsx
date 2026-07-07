@@ -12,7 +12,7 @@ export function TransportationPage() {
       
       {/* 1. Hero Section */}
       <section className="relative w-full p-4 md:p-6 pb-0">
-        <div className="relative w-full h-[70vh] min-h-[500px] rounded-[40px] overflow-hidden flex flex-col bg-[#1C3234] shadow-lg mt-0">
+        <div className="relative w-full h-[70vh] min-h-[500px] rounded-[40px] overflow-hidden flex flex-col bg-[#074E80] shadow-lg mt-0">
           <div className="absolute inset-0 z-0">
             <ImageWithFallback src={heroImg} alt="Transportation Services" className="w-full h-full object-cover opacity-60 mix-blend-overlay" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-black/30 to-black/50" />
@@ -47,8 +47,8 @@ export function TransportationPage() {
         <div className="max-w-[1320px] mx-auto flex flex-col lg:flex-row gap-16 items-start">
           <div className="lg:w-1/3">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-2 h-2 rounded-full bg-[#348B93]" />
-              <span className="text-[#348B93] font-bold text-xs tracking-widest uppercase">The Overview</span>
+              <div className="w-2 h-2 rounded-full bg-[#62B9AB]" />
+              <span className="text-[#62B9AB] font-bold text-xs tracking-widest uppercase">The Overview</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-semibold text-[#111] leading-tight mb-6">
               Removing Barriers to Access
@@ -69,13 +69,13 @@ export function TransportationPage() {
       <section className="w-full px-6 md:px-12 pb-24 bg-[#f9f9f9]">
         <div className="max-w-[1320px] mx-auto">
           <div className="flex items-center gap-3 mb-10">
-            <div className="w-2 h-2 rounded-full bg-[#348B93]" />
-            <span className="text-[#348B93] font-bold text-xs tracking-widest uppercase">Key Services</span>
+            <div className="w-2 h-2 rounded-full bg-[#62B9AB]" />
+            <span className="text-[#62B9AB] font-bold text-xs tracking-widest uppercase">Key Services</span>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white rounded-[30px] p-8 shadow-[0_10px_40px_rgba(0,0,0,0.03)] hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 rounded-full bg-[#f0f7f8] flex items-center justify-center text-[#348B93] mb-6">
+              <div className="w-12 h-12 rounded-full bg-[#f0f7f8] flex items-center justify-center text-[#62B9AB] mb-6">
                 <Car className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-semibold text-[#111] mb-3">Supervised Visits</h3>
@@ -85,7 +85,7 @@ export function TransportationPage() {
             </div>
             
             <div className="bg-white rounded-[30px] p-8 shadow-[0_10px_40px_rgba(0,0,0,0.03)] hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 rounded-full bg-[#f0f7f8] flex items-center justify-center text-[#348B93] mb-6">
+              <div className="w-12 h-12 rounded-full bg-[#f0f7f8] flex items-center justify-center text-[#62B9AB] mb-6">
                 <MapPin className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-semibold text-[#111] mb-3">Therapy & Medical</h3>
@@ -95,7 +95,7 @@ export function TransportationPage() {
             </div>
 
             <div className="bg-white rounded-[30px] p-8 shadow-[0_10px_40px_rgba(0,0,0,0.03)] hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 rounded-full bg-[#f0f7f8] flex items-center justify-center text-[#348B93] mb-6">
+              <div className="w-12 h-12 rounded-full bg-[#f0f7f8] flex items-center justify-center text-[#62B9AB] mb-6">
                 <Clock className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-semibold text-[#111] mb-3">School & Education</h3>
@@ -105,7 +105,7 @@ export function TransportationPage() {
             </div>
 
             <div className="bg-white rounded-[30px] p-8 shadow-[0_10px_40px_rgba(0,0,0,0.03)] hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 rounded-full bg-[#f0f7f8] flex items-center justify-center text-[#348B93] mb-6">
+              <div className="w-12 h-12 rounded-full bg-[#f0f7f8] flex items-center justify-center text-[#62B9AB] mb-6">
                 <UserCheck className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-semibold text-[#111] mb-3">Accompanied Transit</h3>
@@ -141,7 +141,7 @@ export function TransportationPage() {
                 "Agencies needing reliable transport solutions for the children in their care."
               ].map((item, idx) => (
                 <li key={idx} className="flex items-start gap-4">
-                  <ShieldCheck className="w-6 h-6 text-[#348B93] shrink-0 mt-1" />
+                  <ShieldCheck className="w-6 h-6 text-[#62B9AB] shrink-0 mt-1" />
                   <span className="text-gray-700 text-lg">{item}</span>
                 </li>
               ))}
@@ -151,7 +151,7 @@ export function TransportationPage() {
       </section>
 
       {/* 5. Our Approach */}
-      <section className="w-full py-24 px-6 md:px-12 bg-[#1C3234] text-white">
+      <section className="w-full py-24 px-6 md:px-12 bg-[#074E80] text-white">
         <div className="max-w-[1320px] mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-4xl md:text-5xl font-semibold leading-tight mb-6">Our Standard of Care</h2>
@@ -182,8 +182,8 @@ export function TransportationPage() {
       <section className="w-full px-6 md:px-12 py-24 bg-[#f9f9f9]">
         <div className="max-w-[1320px] mx-auto">
           <div className="flex items-center gap-3 mb-10">
-            <div className="w-2 h-2 rounded-full bg-[#348B93]" />
-            <span className="text-[#348B93] font-bold text-xs tracking-widest uppercase">The Outcomes</span>
+            <div className="w-2 h-2 rounded-full bg-[#62B9AB]" />
+            <span className="text-[#62B9AB] font-bold text-xs tracking-widest uppercase">The Outcomes</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-semibold text-[#111] leading-tight mb-12">
             More Than Just a Ride
@@ -192,7 +192,7 @@ export function TransportationPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
             <div className="flex gap-6">
               <div className="w-16 h-16 rounded-2xl bg-white shadow-sm flex items-center justify-center shrink-0 border border-gray-100">
-                <Heart className="w-8 h-8 text-[#348B93]" />
+                <Heart className="w-8 h-8 text-[#62B9AB]" />
               </div>
               <div>
                 <h3 className="text-2xl font-semibold text-[#111] mb-3">Maintained Connections</h3>
@@ -201,7 +201,7 @@ export function TransportationPage() {
             </div>
             <div className="flex gap-6">
               <div className="w-16 h-16 rounded-2xl bg-white shadow-sm flex items-center justify-center shrink-0 border border-gray-100">
-                <ShieldCheck className="w-8 h-8 text-[#348B93]" />
+                <ShieldCheck className="w-8 h-8 text-[#62B9AB]" />
               </div>
               <div>
                 <h3 className="text-2xl font-semibold text-[#111] mb-3">Educational Continuity</h3>
@@ -210,7 +210,7 @@ export function TransportationPage() {
             </div>
             <div className="flex gap-6">
               <div className="w-16 h-16 rounded-2xl bg-white shadow-sm flex items-center justify-center shrink-0 border border-gray-100">
-                <UserCheck className="w-8 h-8 text-[#348B93]" />
+                <UserCheck className="w-8 h-8 text-[#62B9AB]" />
               </div>
               <div>
                 <h3 className="text-2xl font-semibold text-[#111] mb-3">Caregiver Relief</h3>
@@ -219,7 +219,7 @@ export function TransportationPage() {
             </div>
             <div className="flex gap-6">
               <div className="w-16 h-16 rounded-2xl bg-white shadow-sm flex items-center justify-center shrink-0 border border-gray-100">
-                <MapPin className="w-8 h-8 text-[#348B93]" />
+                <MapPin className="w-8 h-8 text-[#62B9AB]" />
               </div>
               <div>
                 <h3 className="text-2xl font-semibold text-[#111] mb-3">Improved Health</h3>
@@ -237,18 +237,18 @@ export function TransportationPage() {
           <h3 className="text-3xl md:text-4xl font-medium text-gray-800 leading-relaxed italic mb-8">
             "We believe that access to support, family, and education should never be hindered by logistics."
           </h3>
-          <p className="text-[#348B93] font-semibold tracking-wide uppercase text-sm">Our Commitment</p>
+          <p className="text-[#62B9AB] font-semibold tracking-wide uppercase text-sm">Our Commitment</p>
         </div>
       </section>
 
       {/* 8. CTA Section */}
-      <section className="w-full bg-[#1C3234] py-24 px-6 text-center text-white m-4 md:m-6 rounded-[40px] shadow-lg max-w-[calc(100%-32px)] md:max-w-[calc(100%-48px)] mx-auto mb-12">
+      <section className="w-full bg-[#074E80] py-24 px-6 text-center text-white m-4 md:m-6 rounded-[40px] shadow-lg max-w-[calc(100%-32px)] md:max-w-[calc(100%-48px)] mx-auto mb-12">
         <div className="max-w-2xl mx-auto flex flex-col items-center">
           <h2 className="text-4xl md:text-5xl font-semibold mb-6 leading-tight">Need a Ride You Can Trust?</h2>
           <p className="text-white/80 mb-10 text-lg leading-relaxed">
             Contact us today to schedule reliable, safe, and supportive transportation for the children and youth in your care.
           </p>
-          <Link to="/contact" className="group inline-flex items-center gap-3 bg-[#348B93] text-white px-8 py-4 rounded-full font-medium text-base hover:bg-[#2a7076] transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+          <Link to="/contact" className="group inline-flex items-center gap-3 bg-[#62B9AB] text-white px-8 py-4 rounded-full font-medium text-base hover:bg-[#2a7076] transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
             <span>Schedule Transport</span>
             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
           </Link>

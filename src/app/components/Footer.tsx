@@ -16,13 +16,13 @@ export function Footer() {
             Supporting children, youth, caregivers, and families with compassionate, culturally responsive, and professional social services.
           </p>
           <div className="flex gap-4">
-            <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 text-gray-500 hover:bg-[#348B93] hover:text-white transition-colors">
+            <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 text-gray-500 hover:bg-[#62B9AB] hover:text-white transition-colors">
               <Twitter className="w-4 h-4" />
             </a>
-            <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 text-gray-500 hover:bg-[#348B93] hover:text-white transition-colors">
+            <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 text-gray-500 hover:bg-[#62B9AB] hover:text-white transition-colors">
               <Instagram className="w-4 h-4" />
             </a>
-            <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 text-gray-500 hover:bg-[#348B93] hover:text-white transition-colors">
+            <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 text-gray-500 hover:bg-[#62B9AB] hover:text-white transition-colors">
               <Linkedin className="w-4 h-4" />
             </a>
           </div>
@@ -32,11 +32,11 @@ export function Footer() {
         <div className="lg:col-span-3 flex flex-col gap-5">
           <h4 className="text-[#111111] font-semibold text-base">Quick Links</h4>
           <ul className="flex flex-col gap-3.5">
-            <li><Link to="/" className="text-gray-500 hover:text-[#348B93] transition-colors text-sm font-medium">Home</Link></li>
-            <li><Link to="/about" className="text-gray-500 hover:text-[#348B93] transition-colors text-sm font-medium">About Us</Link></li>
-            <li><Link to="/services" className="text-gray-500 hover:text-[#348B93] transition-colors text-sm font-medium">Services</Link></li>
+            <li><Link to="/" className="text-gray-500 hover:text-[#62B9AB] transition-colors text-sm font-medium">Home</Link></li>
+            <li><Link to="/about" className="text-gray-500 hover:text-[#62B9AB] transition-colors text-sm font-medium">About Us</Link></li>
+            <li><Link to="/services" className="text-gray-500 hover:text-[#62B9AB] transition-colors text-sm font-medium">Services</Link></li>
 
-            <li><Link to="/contact" className="text-gray-500 hover:text-[#348B93] transition-colors text-sm font-medium">Resources & Contact</Link></li>
+            <li><Link to="/contact" className="text-gray-500 hover:text-[#62B9AB] transition-colors text-sm font-medium">Resources & Contact</Link></li>
           </ul>
         </div>
 
@@ -44,14 +44,14 @@ export function Footer() {
         <div className="lg:col-span-3 flex flex-col gap-5">
           <h4 className="text-[#111111] font-semibold text-base">Services</h4>
           <ul className="flex flex-col gap-3.5">
-            <li><Link to="/services" className="text-gray-500 hover:text-[#348B93] transition-colors text-sm font-medium">Therapy & Counselling</Link></li>
-            <li><Link to="/services" className="text-gray-500 hover:text-[#348B93] transition-colors text-sm font-medium">Home Assessments</Link></li>
-            <li><Link to="/services" className="text-gray-500 hover:text-[#348B93] transition-colors text-sm font-medium">One-to-One Support</Link></li>
-            <li><Link to="/services" className="text-gray-500 hover:text-[#348B93] transition-colors text-sm font-medium">Supervised Visitation</Link></li>
-            <li><Link to="/services" className="text-gray-500 hover:text-[#348B93] transition-colors text-sm font-medium">Transportation Services</Link></li>
-            <li><Link to="/adoption" className="text-gray-500 hover:text-[#348B93] transition-colors text-sm font-medium">Adoption & Foster Care Guidance</Link></li>
-            <li><Link to="/divorce-support" className="text-gray-500 hover:text-[#348B93] transition-colors text-sm font-medium">Divorce & Separation Support</Link></li>
-            <li><Link to="/contact" className="text-gray-500 hover:text-[#348B93] transition-colors text-sm font-medium">Community Support</Link></li>
+            <li><Link to="/services" className="text-gray-500 hover:text-[#62B9AB] transition-colors text-sm font-medium">Therapy & Counselling</Link></li>
+            <li><Link to="/services" className="text-gray-500 hover:text-[#62B9AB] transition-colors text-sm font-medium">Home Assessments</Link></li>
+            <li><Link to="/services" className="text-gray-500 hover:text-[#62B9AB] transition-colors text-sm font-medium">One-to-One Support</Link></li>
+            <li><Link to="/services" className="text-gray-500 hover:text-[#62B9AB] transition-colors text-sm font-medium">Supervised Visitation</Link></li>
+            <li><Link to="/services" className="text-gray-500 hover:text-[#62B9AB] transition-colors text-sm font-medium">Transportation Services</Link></li>
+            <li><Link to="/adoption" className="text-gray-500 hover:text-[#62B9AB] transition-colors text-sm font-medium">Adoption & Foster Care Guidance</Link></li>
+            <li><Link to="/divorce-support" className="text-gray-500 hover:text-[#62B9AB] transition-colors text-sm font-medium">Divorce & Separation Support</Link></li>
+            <li><Link to="/contact" className="text-gray-500 hover:text-[#62B9AB] transition-colors text-sm font-medium">Community Support</Link></li>
           </ul>
         </div>
 
@@ -60,15 +60,15 @@ export function Footer() {
           <h4 className="text-[#111111] font-semibold text-base">Contact</h4>
           <ul className="flex flex-col gap-4">
             <li className="flex items-start gap-3">
-              <Phone className="w-4 h-4 text-[#348B93] mt-0.5 shrink-0" />
-              <a href="tel:+15878943596" className="text-gray-500 hover:text-[#348B93] transition-colors text-sm font-medium">+1 (587) 894-3596</a>
+              <Phone className="w-4 h-4 text-[#62B9AB] mt-0.5 shrink-0" />
+              <a href="tel:+15878943596" className="text-gray-500 hover:text-[#62B9AB] transition-colors text-sm font-medium">+1 (587) 894-3596</a>
             </li>
             <li className="flex items-start gap-3">
-              <Mail className="w-4 h-4 text-[#348B93] mt-0.5 shrink-0" />
-              <a href="mailto:info@inclusivesocialservices.com" className="text-gray-500 hover:text-[#348B93] transition-colors text-sm font-medium break-all">info@inclusivesocialservices.com</a>
+              <Mail className="w-4 h-4 text-[#62B9AB] mt-0.5 shrink-0" />
+              <a href="mailto:info@inclusivesocialservices.com" className="text-gray-500 hover:text-[#62B9AB] transition-colors text-sm font-medium break-all">info@inclusivesocialservices.com</a>
             </li>
             <li className="flex items-start gap-3">
-              <MapPin className="w-4 h-4 text-[#348B93] mt-0.5 shrink-0" />
+              <MapPin className="w-4 h-4 text-[#62B9AB] mt-0.5 shrink-0" />
               <span className="text-gray-500 text-sm font-medium leading-relaxed">Suite 09, First floor, Vicbalcon Towers Jabi, Abuja</span>
             </li>
           </ul>

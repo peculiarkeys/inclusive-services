@@ -101,8 +101,8 @@ export function HomePage() {
           <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-16 gap-10">
             <div className="max-w-2xl">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-2 h-2 rounded-full bg-[#348B93]" />
-                <span className="text-[#348B93] font-bold text-xs tracking-widest uppercase">Our Services</span>
+                <div className="w-2 h-2 rounded-full bg-[#62B9AB]" />
+                <span className="text-[#62B9AB] font-bold text-xs tracking-widest uppercase">Our Services</span>
               </div>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#111] leading-[1.1] mb-6 tracking-tight">
                 Flexible Support Services
@@ -111,7 +111,7 @@ export function HomePage() {
                 We provide flexible support services designed around the needs of children, youth, families, caregivers, and community partners.
               </p>
             </div>
-            <Link to="/services" className="shrink-0 group inline-flex items-center gap-3 bg-[#348B93] text-white px-8 py-4 rounded-full font-medium text-base hover:bg-[#2a7076] transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+            <Link to="/services" className="shrink-0 group inline-flex items-center gap-3 bg-[#62B9AB] text-white px-8 py-4 rounded-full font-medium text-base hover:bg-[#2a7076] transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
               <span>View All Services</span>
               <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
             </Link>
@@ -161,7 +161,7 @@ export function HomePage() {
             
             <div className="lg:w-3/4 flex flex-col items-start lg:items-end">
               <h2 className="text-4xl md:text-5xl lg:text-[64px] font-semibold text-[#111] leading-[1.1] mb-8 text-left lg:text-right w-full tracking-tight">
-                Compassionate. <span className="inline-flex items-center justify-center w-12 h-12 md:w-[60px] md:h-[60px] bg-[#348B93] text-white rounded-full mx-1 md:mx-2 align-middle -mt-2"><Heart className="w-6 h-6 md:w-7 md:h-7" fill="currentColor" /></span> Professional. <br className="hidden md:block"/> Family- <span className="inline-flex items-center justify-center w-12 h-12 md:w-[60px] md:h-[60px] bg-[#FF994F] text-white rounded-full mx-1 md:mx-2 align-middle -mt-2"><Users className="w-6 h-6 md:w-7 md:h-7" fill="currentColor" /></span> Centered.
+                Compassionate. <span className="inline-flex items-center justify-center w-12 h-12 md:w-[60px] md:h-[60px] bg-[#62B9AB] text-white rounded-full mx-1 md:mx-2 align-middle -mt-2"><Heart className="w-6 h-6 md:w-7 md:h-7" fill="currentColor" /></span> Professional. <br className="hidden md:block"/> Family- <span className="inline-flex items-center justify-center w-12 h-12 md:w-[60px] md:h-[60px] bg-[#FF994F] text-white rounded-full mx-1 md:mx-2 align-middle -mt-2"><Users className="w-6 h-6 md:w-7 md:h-7" fill="currentColor" /></span> Centered.
               </h2>
               <div className="flex flex-col md:flex-row items-start lg:items-center justify-end gap-8 w-full">
                 <p className="text-gray-500 max-w-xl text-lg leading-relaxed text-left lg:text-right">
@@ -203,7 +203,7 @@ export function HomePage() {
             {/* Card 3: Image Background (Collaborative) */}
             <div className="rounded-[32px] p-8 flex flex-col justify-between relative overflow-hidden group min-h-[420px]">
               <ImageWithFallback src={featureSideImage} alt="Collaborative Service Delivery" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#1C3234]/90 via-[#1C3234]/30 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#074E80]/90 via-[#074E80]/30 to-transparent" />
               <span className="text-white/90 text-sm font-medium relative z-10">Partnership</span>
               <div className="relative z-10 mt-12">
                 <h3 className="text-4xl font-semibold text-white mb-4 leading-[1.1] tracking-tight">Collaborative<br/>Delivery</h3>
@@ -237,7 +237,7 @@ export function HomePage() {
         className="w-full max-w-[1320px] mx-auto py-24 px-6"
       >
         <div className="flex flex-col items-center text-center mb-16 relative">
-          <span className="text-[#348B93] font-semibold text-sm tracking-wider uppercase mb-3 absolute top-0 left-0 hidden md:block">Our Approach</span>
+          <span className="text-[#62B9AB] font-semibold text-sm tracking-wider uppercase mb-3 absolute top-0 left-0 hidden md:block">Our Approach</span>
           
           <h2 className="text-4xl md:text-5xl font-semibold text-[#111111] mb-6 mt-12 max-w-xl">Support Built Around Each Family</h2>
           <p className="text-gray-600 max-w-2xl mb-8 leading-relaxed">
@@ -269,7 +269,7 @@ export function HomePage() {
         whileInView={{ opacity: 1, scale: 1 }} 
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="w-full max-w-[1440px] mx-auto bg-[#348B93] text-white rounded-[40px] py-16 md:py-24 px-6 text-center relative overflow-hidden"
+        className="w-full max-w-[1440px] mx-auto bg-[#62B9AB] text-white rounded-[40px] py-16 md:py-24 px-6 text-center relative overflow-hidden"
       >
         {/* Abstract background graphics would go here, using simple circles for now */}
         <div className="absolute -top-24 -left-24 w-64 md:w-96 h-64 md:h-96 border-[20px] md:border-[40px] border-white/5 rounded-full" />
@@ -280,7 +280,7 @@ export function HomePage() {
           <p className="text-white/80 max-w-xl mx-auto mb-10 text-lg leading-relaxed">
             Whether you are a caregiver, parent, professional, or community partner, we are here to help you understand the services available and how we can support your family’s needs.
           </p>
-          <Link to="/contact" className="group inline-flex items-center gap-3 bg-white text-[#348B93] px-8 py-4 rounded-full font-medium text-base hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+          <Link to="/contact" className="group inline-flex items-center gap-3 bg-white text-[#62B9AB] px-8 py-4 rounded-full font-medium text-base hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
             <span>Connect With Us</span>
             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
           </Link>
@@ -359,7 +359,7 @@ export function HomePage() {
           <p className="text-[#111] font-semibold mb-4 max-w-xs leading-tight">
             See how impactful support makes a difference?
           </p>
-          <Link to="/contact" className="group inline-flex items-center gap-3 bg-[#348B93] text-white px-8 py-4 rounded-full font-medium text-base hover:bg-[#2a7076] transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+          <Link to="/contact" className="group inline-flex items-center gap-3 bg-[#62B9AB] text-white px-8 py-4 rounded-full font-medium text-base hover:bg-[#2a7076] transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
             <span>Schedule a Call</span>
             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
           </Link>

@@ -18,6 +18,8 @@ import { TherapyCounsellingPage } from "./pages/TherapyCounsellingPage";
 import { OneToOneSupportPage } from "./pages/OneToOneSupportPage";
 import { TransportationPage } from "./pages/TransportationPage";
 import { CommunitySupportPage } from "./pages/CommunitySupportPage";
+import { SupervisedVisitationPage } from "./pages/SupervisedVisitationPage";
+import { HomeAssessmentPage } from "./pages/HomeAssessmentPage";
 import { BlogPage } from "./pages/BlogPage";
 import { SingleBlogPage } from "./pages/SingleBlogPage";
 import { ContactPage } from "./pages/ContactPage";
@@ -49,6 +51,8 @@ export default function App() {
           <Route path="/one-to-one-support" element={<OneToOneSupportPage />} />
           <Route path="/transportation" element={<TransportationPage />} />
           <Route path="/community-support" element={<CommunitySupportPage />} />
+          <Route path="/supervised-visitation" element={<SupervisedVisitationPage />} />
+          <Route path="/home-assessments" element={<HomeAssessmentPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:slug" element={<SingleBlogPage />} />
           <Route path="/contact" element={<ContactPage />} />

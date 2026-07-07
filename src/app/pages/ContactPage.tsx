@@ -21,8 +21,8 @@ export function ContactPage() {
           <div className="flex flex-col lg:flex-row gap-16 items-start mb-16">
             <div className="lg:w-1/3">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-2 h-2 rounded-full bg-[#348B93]" />
-                <span className="text-[#348B93] font-bold text-xs tracking-widest uppercase">Community & Referrals</span>
+                <div className="w-2 h-2 rounded-full bg-[#62B9AB]" />
+                <span className="text-[#62B9AB] font-bold text-xs tracking-widest uppercase">Community & Referrals</span>
               </div>
               <h2 className="text-4xl md:text-5xl font-semibold text-[#111] leading-tight mb-6">
                 We believe in the power of community.
@@ -38,7 +38,7 @@ export function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-white rounded-[32px] p-8 md:p-10 shadow-sm border border-gray-100 flex items-start gap-6">
               <div className="w-14 h-14 rounded-full bg-[#f0f7f8] flex items-center justify-center shrink-0">
-                <HandHeart className="w-7 h-7 text-[#348B93]" />
+                <HandHeart className="w-7 h-7 text-[#62B9AB]" />
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-[#111] mb-2">Free Consultations</h3>
@@ -48,7 +48,7 @@ export function ContactPage() {
 
             <div className="bg-white rounded-[32px] p-8 md:p-10 shadow-sm border border-gray-100 flex items-start gap-6">
               <div className="w-14 h-14 rounded-full bg-[#f0f7f8] flex items-center justify-center shrink-0">
-                <BookOpen className="w-7 h-7 text-[#348B93]" />
+                <BookOpen className="w-7 h-7 text-[#62B9AB]" />
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-[#111] mb-2">Professional Referrals</h3>
@@ -58,7 +58,7 @@ export function ContactPage() {
 
             <div className="bg-white rounded-[32px] p-8 md:p-10 shadow-sm border border-gray-100 flex items-start gap-6">
               <div className="w-14 h-14 rounded-full bg-[#f0f7f8] flex items-center justify-center shrink-0">
-                <Network className="w-7 h-7 text-[#348B93]" />
+                <Network className="w-7 h-7 text-[#62B9AB]" />
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-[#111] mb-2">Support Networks</h3>
@@ -68,7 +68,7 @@ export function ContactPage() {
 
             <div className="bg-white rounded-[32px] p-8 md:p-10 shadow-sm border border-gray-100 flex items-start gap-6">
               <div className="w-14 h-14 rounded-full bg-[#f0f7f8] flex items-center justify-center shrink-0">
-                <ShieldCheck className="w-7 h-7 text-[#348B93]" />
+                <ShieldCheck className="w-7 h-7 text-[#62B9AB]" />
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-[#111] mb-2">Agency Collaboration</h3>

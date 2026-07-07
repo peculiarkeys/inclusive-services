@@ -10,7 +10,7 @@ interface PageHeroProps {
 export function PageHero({ title, description, image }: PageHeroProps) {
   return (
     <section className="relative w-full p-4 md:p-6 pb-0">
-      <div className="relative w-full h-[60vh] min-h-[350px] md:min-h-[400px] rounded-3xl md:rounded-[32px] overflow-hidden flex flex-col bg-[#1C3234] shadow-lg mt-0">
+      <div className="relative w-full h-[60vh] min-h-[350px] md:min-h-[400px] rounded-3xl md:rounded-[32px] overflow-hidden flex flex-col bg-[#074E80] shadow-lg mt-0">
         
         {/* Background image + overlay */}
         <div className="absolute inset-0 z-0">
