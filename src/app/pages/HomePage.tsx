@@ -53,7 +53,7 @@ export function HomePage() {
       {/* 1. Hero Section */}
       <section className="relative w-full min-h-[100vh] md:min-h-[700px] md:h-[85vh] overflow-hidden flex flex-col justify-end pb-12 pt-[140px] md:pt-[100px]">
         <div className="absolute inset-0 z-0 overflow-hidden">
-          <ImageWithFallback src={heroImage} alt="Hero Background" className="w-full h-full object-cover object-center" />
+          <ImageWithFallback src={heroImage} alt="Hero Background" loading="eager" fetchPriority="high" className="w-full h-full object-cover object-center" />
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/10 md:bg-black/20" />
         </div>
 
