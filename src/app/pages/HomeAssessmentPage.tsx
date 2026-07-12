@@ -3,8 +3,8 @@ import { ArrowRight, ClipboardCheck, Home, FileText, CheckCircle2, ShieldCheck, 
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { Link } from "react-router";
 
-const heroImg = "/images/family-counseling-session-home-with-therapist-pshycologist-showing-pictures-emotions-girl-african-american-father-european-mother.jpg";
-const targetImg = "/images/close-up-smiley-family-therapist.jpg";
+const heroImg = "/images/family-counseling-session-home-with-therapist-pshycologist-showing-pictures-emotions-girl-african-american-father-european-mother_compressed.webp";
+const targetImg = "/images/close-up-smiley-family-therapist_compressed.webp";
 
 export function HomeAssessmentPage() {
   return (

@@ -3,8 +3,8 @@ import { ArrowRight, MessageSquare, Route, Users, ShieldAlert, CheckCircle2, Tar
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { Link } from "react-router";
 
-const heroImg = "/images/married-couple-having-problems-their-relationship-they-are-attending-pshycologist-advice (1).jpg";
-const targetImg = "/images/pexels-gustavo-fring-7447058.jpg";
+const heroImg = "/images/married-couple-having-problems-their-relationship-they-are-attending-pshycologist-advice (1)_compressed.webp";
+const targetImg = "/images/pexels-gustavo-fring-7447058_compressed.webp";
 
 export function DivorceSupportPage() {
   return (

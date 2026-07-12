@@ -17,20 +17,20 @@ export { Logo };
 
 const servicesData = {
   "Therapeutic Services": [
-    { title: "Therapy & Counselling", desc: "Individual & family sessions for stress, conflict, and emotional challenges.", img: "/images/married-couple-having-problems-their-relationship-they-are-attending-pshycologist-advice (1).jpg", link: "/therapy-and-counselling" },
-    { title: "One-to-One Support", desc: "Individualized support for children and youth based on their unique needs.", img: "/images/full-shot-young-woman-undergoing-therapy.jpg", link: "/one-to-one-support" }
+    { title: "Therapy & Counselling", desc: "Individual & family sessions for stress, conflict, and emotional challenges.", img: "/images/married-couple-having-problems-their-relationship-they-are-attending-pshycologist-advice (1)_compressed.webp", link: "/therapy-and-counselling" },
+    { title: "One-to-One Support", desc: "Individualized support for children and youth based on their unique needs.", img: "/images/full-shot-young-woman-undergoing-therapy_compressed.webp", link: "/one-to-one-support" }
   ],
   "Assessments & Support": [
-    { title: "Home Assessments", desc: "Professional, timely, and culturally sensitive home assessment reports.", img: "/images/close-up-smiley-family-therapist.jpg", link: "/home-assessments" },
-    { title: "Supervised Visitation", desc: "Safe, structured visitation services that maintain family connections.", img: "/images/male-psychologist-taking-notes-couple-therapy-session-help-with-relationship-issues-counselor-giving-advice-explaining-marriage-problems-using-paper-psychoanalysis-close-up.jpg", link: "/supervised-visitation" }
+    { title: "Home Assessments", desc: "Professional, timely, and culturally sensitive home assessment reports.", img: "/images/close-up-smiley-family-therapist_compressed.webp", link: "/home-assessments" },
+    { title: "Supervised Visitation", desc: "Safe, structured visitation services that maintain family connections.", img: "/images/male-psychologist-taking-notes-couple-therapy-session-help-with-relationship-issues-counselor-giving-advice-explaining-marriage-problems-using-paper-psychoanalysis-close-up_compressed.webp", link: "/supervised-visitation" }
   ],
   "Family Transitions": [
-    { title: "Adoption & Foster", desc: "Guidance and support for caregivers navigating adoption or foster care.", img: "/images/pexels-shvets-production-7176305.jpg", link: "/adoption" },
-    { title: "Divorce & Separation", desc: "Child-focused support to help families through separation transitions.", img: "/images/married-couple-having-problems-their-relationship-they-are-attending-pshycologist-advice (1).jpg", link: "/divorce-support" }
+    { title: "Adoption & Foster", desc: "Guidance and support for caregivers navigating adoption or foster care.", img: "/images/pexels-shvets-production-7176305_compressed.webp", link: "/adoption" },
+    { title: "Divorce & Separation", desc: "Child-focused support to help families through separation transitions.", img: "/images/married-couple-having-problems-their-relationship-they-are-attending-pshycologist-advice (1)_compressed.webp", link: "/divorce-support" }
   ],
   "Community Access": [
-    { title: "Transportation", desc: "Reliable, safe transit for families to access essential services.", img: "/images/pexels-shvets-production-7176137.jpg", link: "/transportation" },
-    { title: "Community Support", desc: "Workshops, resources, and referrals tailored to your family's needs.", img: "/images/psychologist-advising-group-patients.jpg", link: "/community-support" }
+    { title: "Transportation", desc: "Reliable, safe transit for families to access essential services.", img: "/images/pexels-shvets-production-7176137_compressed.webp", link: "/transportation" },
+    { title: "Community Support", desc: "Workshops, resources, and referrals tailored to your family's needs.", img: "/images/psychologist-advising-group-patients_compressed.webp", link: "/community-support" }
   ]
 };
 

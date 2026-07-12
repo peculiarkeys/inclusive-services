@@ -4,7 +4,7 @@ import { AnimatedSection } from "./AnimatedSection";
 import { ArrowUpRight } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
-const rawImages = import.meta.glob("../../assets/programs/*.jpg", {
+const rawImages = import.meta.glob("../../assets/programs/*_compressed.webp", {
   eager: true,
   import: "default",
 }) as Record<string, string>;

@@ -3,8 +3,8 @@ import { ArrowRight, Users, BookOpen, HandHeart, PhoneCall, CheckCircle2, Link a
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { Link } from "react-router";
 
-const heroImg = "/images/psychologist-advising-group-patients.jpg";
-const targetImg = "/images/pexels-ai25studioai-7579187.jpg";
+const heroImg = "/images/psychologist-advising-group-patients_compressed.webp";
+const targetImg = "/images/pexels-ai25studioai-7579187_compressed.webp";
 
 export function CommunitySupportPage() {
   return (

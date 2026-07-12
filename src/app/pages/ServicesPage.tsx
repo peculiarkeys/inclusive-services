@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { Link } from "react-router";
 
-const heroImg = "/images/family-counseling-session-home-with-therapist-pshycologist-showing-pictures-emotions-girl-african-american-father-european-mother.jpg";
+const heroImg = "/images/family-counseling-session-home-with-therapist-pshycologist-showing-pictures-emotions-girl-african-american-father-european-mother_compressed.webp";
 
 const services = [
   {
@@ -11,56 +11,56 @@ const services = [
     desc: "A safe space to work through stress, conflict, trauma, grief, parenting challenges, separation, and emotional difficulties.",
     target: "Families experiencing stress, conflict, trauma, or major transitions.",
     link: "/therapy-and-counselling",
-    img: "/images/married-couple-having-problems-their-relationship-they-are-attending-pshycologist-advice (1).jpg"
+    img: "/images/married-couple-having-problems-their-relationship-they-are-attending-pshycologist-advice (1)_compressed.webp"
   },
   {
     title: "Home Assessments",
     desc: "Professional, timely, and culturally sensitive home assessment reports including SAFE home studies.",
     target: "Adoption, foster care, kinship care, and placement planning.",
     link: "/home-assessments",
-    img: "/images/close-up-smiley-family-therapist.jpg"
+    img: "/images/close-up-smiley-family-therapist_compressed.webp"
   },
   {
     title: "One-to-One Support",
     desc: "Individualized support for children and youth based on their unique emotional, physical, social, and developmental needs.",
     target: "Children needing emotional support, routine-building, or social skills.",
     link: "/one-to-one-support",
-    img: "/images/full-shot-young-woman-undergoing-therapy.jpg"
+    img: "/images/full-shot-young-woman-undergoing-therapy_compressed.webp"
   },
   {
     title: "Supervised Visitation",
     desc: "Safe, structured, and supportive visitation services that help maintain family connections while prioritizing child safety.",
     target: "High-conflict situations, court-related visitation, or reunification planning.",
     link: "/supervised-visitation",
-    img: "/images/male-psychologist-taking-notes-couple-therapy-session-help-with-relationship-issues-counselor-giving-advice-explaining-marriage-problems-using-paper-psychoanalysis-close-up.jpg"
+    img: "/images/male-psychologist-taking-notes-couple-therapy-session-help-with-relationship-issues-counselor-giving-advice-explaining-marriage-problems-using-paper-psychoanalysis-close-up_compressed.webp"
   },
   {
     title: "Transportation Services",
     desc: "Safe and reliable transportation for children and families to attend appointments, visits, and community activities.",
     target: "Caregivers needing support getting to schools, therapy, or visits.",
     link: "/transportation",
-    img: "/images/pexels-shvets-production-7176137.jpg"
+    img: "/images/pexels-shvets-production-7176137_compressed.webp"
   },
   {
     title: "Adoption & Foster Care",
     desc: "Guidance for caregivers and families navigating adoption, foster care, kinship care, or placement readiness.",
     target: "Prospective adoptive parents, foster caregivers, and kinship families.",
     link: "/adoption",
-    img: "/images/pexels-shvets-production-7176305.jpg"
+    img: "/images/pexels-shvets-production-7176305_compressed.webp"
   },
   {
     title: "Divorce & Separation",
     desc: "Support for families going through separation, with a child-focused approach to communication and stability.",
     target: "Families experiencing separation, parenting conflict, or transitions.",
     link: "/divorce-support",
-    img: "/images/married-couple-having-problems-their-relationship-they-are-attending-pshycologist-advice (1).jpg"
+    img: "/images/married-couple-having-problems-their-relationship-they-are-attending-pshycologist-advice (1)_compressed.webp"
   },
   {
     title: "Community Support",
     desc: "Helping families access the right resources through outreach programs, free consultations, workshops, and referrals.",
     target: "Families looking for information, parenting resources, or community support.",
     link: "/community-support",
-    img: "/images/psychologist-advising-group-patients.jpg"
+    img: "/images/psychologist-advising-group-patients_compressed.webp"
   }
 ];
 

@@ -4,7 +4,7 @@ import { ContactSection } from "../components/ContactSection";
 import { FAQSection } from "../components/FAQSection";
 import { ShieldCheck, Network, HandHeart, BookOpen } from "lucide-react";
 
-const heroImg = "/images/woman-asking-questions-interview.jpg";
+const heroImg = "/images/woman-asking-questions-interview_compressed.webp";
 
 export function ContactPage() {
   return (

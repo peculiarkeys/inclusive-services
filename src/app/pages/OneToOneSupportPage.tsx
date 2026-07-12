@@ -3,8 +3,8 @@ import { ArrowRight, User, Star, Shield, Target, GraduationCap, CheckCircle2, He
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { Link } from "react-router";
 
-const heroImg = "/images/full-shot-young-woman-undergoing-therapy.jpg";
-const targetImg = "/images/psychology-therapy-psychiatry-mental-health-counseling-concept-candid-shot-nervous-self-conscious-young-male-glasses-telling-middle-aged-female-counselor-about-his-problems-work.jpg";
+const heroImg = "/images/full-shot-young-woman-undergoing-therapy_compressed.webp";
+const targetImg = "/images/psychology-therapy-psychiatry-mental-health-counseling-concept-candid-shot-nervous-self-conscious-young-male-glasses-telling-middle-aged-female-counselor-about-his-problems-work_compressed.webp";
 
 export function OneToOneSupportPage() {
   return (

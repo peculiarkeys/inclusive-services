@@ -4,23 +4,23 @@ import { ArrowRight, Heart, Users, Shield, Clock } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { motion } from "motion/react";
 
-const heroImage = "/images/family-counseling-session-home-with-therapist-pshycologist-showing-pictures-emotions-girl-african-american-father-european-mother.jpg";
+const heroImage = "/images/family-counseling-session-home-with-therapist-pshycologist-showing-pictures-emotions-girl-african-american-father-european-mother_compressed.webp";
 const servicesImgs = [
-  "/images/married-couple-having-problems-their-relationship-they-are-attending-pshycologist-advice (1).jpg",
-  "/images/close-up-smiley-family-therapist.jpg",
-  "/images/male-psychologist-taking-notes-couple-therapy-session-help-with-relationship-issues-counselor-giving-advice-explaining-marriage-problems-using-paper-psychoanalysis-close-up.jpg",
-  "/images/full-shot-young-woman-undergoing-therapy.jpg"
+  "/images/married-couple-having-problems-their-relationship-they-are-attending-pshycologist-advice (1)_compressed.webp",
+  "/images/close-up-smiley-family-therapist_compressed.webp",
+  "/images/male-psychologist-taking-notes-couple-therapy-session-help-with-relationship-issues-counselor-giving-advice-explaining-marriage-problems-using-paper-psychoanalysis-close-up_compressed.webp",
+  "/images/full-shot-young-woman-undergoing-therapy_compressed.webp"
 ];
-const featureSideImage = "/images/people-sharing-feelings-emotions-group-therapy-session.jpg";
+const featureSideImage = "/images/people-sharing-feelings-emotions-group-therapy-session_compressed.webp";
 const programImgs = [
-  "/images/psychologist-advising-group-patients.jpg",
-  "/images/male-psychologist-taking-notes-couple-therapy-session-help-with-relationship-issues-counselor-giving-advice-explaining-marriage-problems-using-paper-psychoanalysis-close-up.jpg",
-  "/images/psychology-therapy-psychiatry-mental-health-counseling-concept-candid-shot-nervous-self-conscious-young-male-glasses-telling-middle-aged-female-counselor-about-his-problems-work.jpg"
+  "/images/psychologist-advising-group-patients_compressed.webp",
+  "/images/male-psychologist-taking-notes-couple-therapy-session-help-with-relationship-issues-counselor-giving-advice-explaining-marriage-problems-using-paper-psychoanalysis-close-up_compressed.webp",
+  "/images/psychology-therapy-psychiatry-mental-health-counseling-concept-candid-shot-nervous-self-conscious-young-male-glasses-telling-middle-aged-female-counselor-about-his-problems-work_compressed.webp"
 ];
 const communityImgs = [
-  "/images/african-american-man-sharing-addiction-story-with-group-people-aa-therapy-meeting-adult-having-conversation-with-psychologist-patients-circle-rehabilitation-session.jpg",
-  "/images/pexels-alex-green-5699467.jpg",
-  "/images/pexels-shvets-production-7176137.jpg"
+  "/images/african-american-man-sharing-addiction-story-with-group-people-aa-therapy-meeting-adult-having-conversation-with-psychologist-patients-circle-rehabilitation-session_compressed.webp",
+  "/images/pexels-alex-green-5699467_compressed.webp",
+  "/images/pexels-shvets-production-7176137_compressed.webp"
 ];
 
 const testimonials = [
@@ -28,19 +28,19 @@ const testimonials = [
     text: "Inclusive Services completely transformed my family. The culturally responsive approach and guided programs are perfect for someone like me who needs structure to stay consistent.",
     name: "Sophie R.",
     role: "Foster Parent",
-    img: "/images/pexels-alex-green-5699467.jpg",
+    img: "/images/pexels-alex-green-5699467_compressed.webp",
   },
   {
     text: "The dedication of their social workers has been a game-changer for the families I represent. The flexibility of their online sessions ensures continuous support.",
     name: "Elena M.",
     role: "Case Worker",
-    img: "/images/woman-asking-questions-interview.jpg",
+    img: "/images/woman-asking-questions-interview_compressed.webp",
   },
   {
     text: "The cultural responsiveness of their team made our adoption journey incredibly smooth. We felt understood and supported every step of the way.",
     name: "Marcus T.",
     role: "Adoptive Father",
-    img: "/images/pexels-timur-weber-8560681.jpg",
+    img: "/images/pexels-timur-weber-8560681_compressed.webp",
   }
 ];
 

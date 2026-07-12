@@ -8,7 +8,7 @@ const rawImages = import.meta.glob("../../assets/programs/*.{jpeg,jpg,png,webp}"
 }) as Record<string, string>;
 
 const programImages = Object.keys(rawImages).sort().map(key => rawImages[key]);
-const heroImg = "/images/family-counseling-session-home-with-therapist-pshycologist-showing-pictures-emotions-girl-african-american-father-european-mother.jpg";
+const heroImg = "/images/family-counseling-session-home-with-therapist-pshycologist-showing-pictures-emotions-girl-african-american-father-european-mother_compressed.webp";
 export function WorksHero() {
   return (
     <section className="relative w-full p-4 md:p-6 pb-0">
