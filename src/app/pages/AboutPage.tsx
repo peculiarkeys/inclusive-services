@@ -3,8 +3,8 @@ import { ArrowRight, CheckCircle2, Quote } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { Link } from "react-router";
 
-const heroImg = "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2000&auto=format&fit=crop";
-const sideImg = "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=800&auto=format&fit=crop";
+const heroImg = "/images/people-sharing-feelings-emotions-group-therapy-session.jpg";
+const sideImg = "/images/close-up-smiley-family-therapist.jpg";
 
 export function AboutPage() {
   return (

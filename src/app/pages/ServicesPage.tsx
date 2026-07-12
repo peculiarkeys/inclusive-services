@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { Link } from "react-router";
 
-const heroImg = "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2000&auto=format&fit=crop";
+const heroImg = "/images/family-counseling-session-home-with-therapist-pshycologist-showing-pictures-emotions-girl-african-american-father-european-mother.jpg";
 
 const services = [
   {
@@ -11,56 +11,56 @@ const services = [
     desc: "A safe space to work through stress, conflict, trauma, grief, parenting challenges, separation, and emotional difficulties.",
     target: "Families experiencing stress, conflict, trauma, or major transitions.",
     link: "/therapy-and-counselling",
-    img: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop"
+    img: "/images/married-couple-having-problems-their-relationship-they-are-attending-pshycologist-advice (1).jpg"
   },
   {
     title: "Home Assessments",
     desc: "Professional, timely, and culturally sensitive home assessment reports including SAFE home studies.",
     target: "Adoption, foster care, kinship care, and placement planning.",
     link: "/home-assessments",
-    img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop"
+    img: "/images/close-up-smiley-family-therapist.jpg"
   },
   {
     title: "One-to-One Support",
     desc: "Individualized support for children and youth based on their unique emotional, physical, social, and developmental needs.",
     target: "Children needing emotional support, routine-building, or social skills.",
     link: "/one-to-one-support",
-    img: "https://images.unsplash.com/photo-1527613426441-4da17471b66d?q=80&w=800&auto=format&fit=crop"
+    img: "/images/full-shot-young-woman-undergoing-therapy.jpg"
   },
   {
     title: "Supervised Visitation",
     desc: "Safe, structured, and supportive visitation services that help maintain family connections while prioritizing child safety.",
     target: "High-conflict situations, court-related visitation, or reunification planning.",
     link: "/supervised-visitation",
-    img: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=800&auto=format&fit=crop"
+    img: "/images/male-psychologist-taking-notes-couple-therapy-session-help-with-relationship-issues-counselor-giving-advice-explaining-marriage-problems-using-paper-psychoanalysis-close-up.jpg"
   },
   {
     title: "Transportation Services",
     desc: "Safe and reliable transportation for children and families to attend appointments, visits, and community activities.",
     target: "Caregivers needing support getting to schools, therapy, or visits.",
     link: "/transportation",
-    img: "https://images.unsplash.com/photo-1534081333815-ae5019106622?q=80&w=800&auto=format&fit=crop"
+    img: "/images/pexels-shvets-production-7176137.jpg"
   },
   {
     title: "Adoption & Foster Care",
     desc: "Guidance for caregivers and families navigating adoption, foster care, kinship care, or placement readiness.",
     target: "Prospective adoptive parents, foster caregivers, and kinship families.",
     link: "/adoption",
-    img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop"
+    img: "/images/pexels-shvets-production-7176305.jpg"
   },
   {
     title: "Divorce & Separation",
     desc: "Support for families going through separation, with a child-focused approach to communication and stability.",
     target: "Families experiencing separation, parenting conflict, or transitions.",
     link: "/divorce-support",
-    img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800&auto=format&fit=crop"
+    img: "/images/married-couple-having-problems-their-relationship-they-are-attending-pshycologist-advice (1).jpg"
   },
   {
     title: "Community Support",
     desc: "Helping families access the right resources through outreach programs, free consultations, workshops, and referrals.",
     target: "Families looking for information, parenting resources, or community support.",
     link: "/community-support",
-    img: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=800&auto=format&fit=crop"
+    img: "/images/psychologist-advising-group-patients.jpg"
   }
 ];
 

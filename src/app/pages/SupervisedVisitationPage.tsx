@@ -3,8 +3,8 @@ import { ArrowRight, Eye, ShieldCheck, Heart, UserCheck, Shield, Clock, MapPin, 
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { Link } from "react-router";
 
-const heroImg = "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=2000&auto=format&fit=crop";
-const targetImg = "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?q=80&w=1000&auto=format&fit=crop";
+const heroImg = "/images/people-sharing-feelings-emotions-group-therapy-session.jpg";
+const targetImg = "/images/pexels-shvets-production-7176298.jpg";
 
 export function SupervisedVisitationPage() {
   return (

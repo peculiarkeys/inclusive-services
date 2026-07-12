@@ -11,7 +11,7 @@ const rawImages = import.meta.glob("../../assets/programs/*.{jpeg,jpg,png,webp}"
 }) as Record<string, string>;
 
 const programImages = Object.keys(rawImages).sort().map(key => rawImages[key]);
-const heroImg = "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2000&auto=format&fit=crop";
+const heroImg = "/images/pexels-rdne-9064323.jpg";
 
 export function BlogPage() {
   return (

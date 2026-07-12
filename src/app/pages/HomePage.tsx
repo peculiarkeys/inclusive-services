@@ -4,23 +4,23 @@ import { ArrowRight, Heart, Users, Shield, Clock } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { motion } from "motion/react";
 
-const heroImage = "/hero-family.png";
+const heroImage = "/images/family-counseling-session-home-with-therapist-pshycologist-showing-pictures-emotions-girl-african-american-father-european-mother.jpg";
 const servicesImgs = [
-  "https://images.unsplash.com/photo-1536640712-4d4c36ef0e2c?q=80&w=800&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1542810634-71277d95dcbb?q=80&w=800&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?q=80&w=800&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800&auto=format&fit=crop"
+  "/images/married-couple-having-problems-their-relationship-they-are-attending-pshycologist-advice (1).jpg",
+  "/images/close-up-smiley-family-therapist.jpg",
+  "/images/male-psychologist-taking-notes-couple-therapy-session-help-with-relationship-issues-counselor-giving-advice-explaining-marriage-problems-using-paper-psychoanalysis-close-up.jpg",
+  "/images/full-shot-young-woman-undergoing-therapy.jpg"
 ];
-const featureSideImage = "https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=800&auto=format&fit=crop";
+const featureSideImage = "/images/people-sharing-feelings-emotions-group-therapy-session.jpg";
 const programImgs = [
-  "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=800&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1520182205149-1e5e4e7329b4?q=80&w=800&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=800&auto=format&fit=crop"
+  "/images/psychologist-advising-group-patients.jpg",
+  "/images/male-psychologist-taking-notes-couple-therapy-session-help-with-relationship-issues-counselor-giving-advice-explaining-marriage-problems-using-paper-psychoanalysis-close-up.jpg",
+  "/images/psychology-therapy-psychiatry-mental-health-counseling-concept-candid-shot-nervous-self-conscious-young-male-glasses-telling-middle-aged-female-counselor-about-his-problems-work.jpg"
 ];
 const communityImgs = [
-  "https://images.unsplash.com/photo-1536640712-4d4c36ef0e2c?q=80&w=800&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1542810634-71277d95dcbb?q=80&w=800&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800&auto=format&fit=crop"
+  "/images/african-american-man-sharing-addiction-story-with-group-people-aa-therapy-meeting-adult-having-conversation-with-psychologist-patients-circle-rehabilitation-session.jpg",
+  "/images/pexels-alex-green-5699467.jpg",
+  "/images/pexels-shvets-production-7176137.jpg"
 ];
 
 const testimonials = [
@@ -28,19 +28,19 @@ const testimonials = [
     text: "Inclusive Services completely transformed my family. The culturally responsive approach and guided programs are perfect for someone like me who needs structure to stay consistent.",
     name: "Sophie R.",
     role: "Foster Parent",
-    img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop",
+    img: "/images/pexels-alex-green-5699467.jpg",
   },
   {
     text: "The dedication of their social workers has been a game-changer for the families I represent. The flexibility of their online sessions ensures continuous support.",
     name: "Elena M.",
     role: "Case Worker",
-    img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800&auto=format&fit=crop",
+    img: "/images/woman-asking-questions-interview.jpg",
   },
   {
     text: "The cultural responsiveness of their team made our adoption journey incredibly smooth. We felt understood and supported every step of the way.",
     name: "Marcus T.",
     role: "Adoptive Father",
-    img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop",
+    img: "/images/pexels-timur-weber-8560681.jpg",
   }
 ];
 
@@ -120,12 +120,12 @@ export function HomePage() {
           {/* 2-Grid Items */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             {[
-              { title: "Therapy & Counselling", desc: "Supportive counselling services for individuals and families experiencing stress, conflict, transition, or emotional challenges.", img: servicesImgs[0] },
-              { title: "Home Assessments", desc: "Professional, timely, and culturally sensitive home assessment reports, including SAFE home studies and supplemental reports.", img: servicesImgs[1] },
-              { title: "Supervised Visitation", desc: "Safe, structured, and supportive visitation services that help maintain family connections while prioritizing child safety.", img: servicesImgs[2] },
-              { title: "One-to-One Support", desc: "Individualized support for children and youth based on their unique emotional, physical, social, and developmental needs.", img: servicesImgs[3] }
+              { title: "Therapy & Counselling", desc: "Supportive counselling services for individuals and families experiencing stress, conflict, transition, or emotional challenges.", img: servicesImgs[0], link: "/therapy-and-counselling" },
+              { title: "Home Assessments", desc: "Professional, timely, and culturally sensitive home assessment reports, including SAFE home studies and supplemental reports.", img: servicesImgs[1], link: "/home-assessments" },
+              { title: "Supervised Visitation", desc: "Safe, structured, and supportive visitation services that help maintain family connections while prioritizing child safety.", img: servicesImgs[2], link: "/supervised-visitation" },
+              { title: "One-to-One Support", desc: "Individualized support for children and youth based on their unique emotional, physical, social, and developmental needs.", img: servicesImgs[3], link: "/one-to-one-support" }
             ].map((item, idx) => (
-              <Link to="/services" key={idx} className="group relative h-[420px] rounded-[40px] overflow-hidden block shadow-sm hover:shadow-xl transition-shadow duration-500">
+              <Link to={item.link} key={idx} className="group relative h-[420px] rounded-[40px] overflow-hidden block shadow-sm hover:shadow-xl transition-shadow duration-500">
                 <ImageWithFallback src={item.img} alt={item.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
                 

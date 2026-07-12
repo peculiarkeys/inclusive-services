@@ -3,8 +3,8 @@ import { ArrowRight, Heart, Home, Users, Shield, CheckCircle2, Star, ShieldCheck
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { Link } from "react-router";
 
-const heroImg = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2000&auto=format&fit=crop";
-const targetImg = "https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=1000&auto=format&fit=crop";
+const heroImg = "/images/pexels-shvets-production-7176305.jpg";
+const targetImg = "/images/pexels-shvets-production-7176305 (1).jpg";
 
 export function AdoptionPage() {
   return (

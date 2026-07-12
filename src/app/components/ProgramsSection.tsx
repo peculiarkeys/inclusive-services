@@ -5,7 +5,7 @@ import { MapPin, X, Plus, ChevronLeft, ChevronRight } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 // Dynamically import all images in the programs folder
-const rawImages = import.meta.glob("../../assets/programs/*.jpeg", {
+const rawImages = import.meta.glob("../../assets/programs/*.jpg", {
   eager: true,
   import: "default",
 }) as Record<string, string>;

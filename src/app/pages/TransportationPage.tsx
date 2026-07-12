@@ -3,8 +3,8 @@ import { ArrowRight, Car, MapPin, Clock, ShieldCheck, Heart, UserCheck, Shield }
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { Link } from "react-router";
 
-const heroImg = "https://images.unsplash.com/photo-1534081333815-ae5019106622?q=80&w=2000&auto=format&fit=crop";
-const targetImg = "https://images.unsplash.com/photo-1516728778615-2d590ea1855e?q=80&w=1000&auto=format&fit=crop";
+const heroImg = "/images/pexels-shvets-production-7176137.jpg";
+const targetImg = "/images/pexels-shvets-production-7176029.jpg";
 
 export function TransportationPage() {
   return (
