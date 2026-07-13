@@ -65,7 +65,7 @@ export function ContactSection() {
                     </div>
                     <div>
                       <h4 className="text-white/60 text-sm font-medium mb-1">Office Location</h4>
-                      <p className="text-base text-white leading-relaxed">Suite 09, First floor, Vicbalcon Towers Jabi.<br/>Abuja, Nigeria</p>
+                      <p className="text-base text-white leading-relaxed">301 Redstone Boulevard NE. Unit 266,<br/>Calgary, Alberta</p>
                     </div>
                   </div>
                 </div>

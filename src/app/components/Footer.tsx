@@ -69,7 +69,7 @@ export function Footer() {
             </li>
             <li className="flex items-start gap-3">
               <MapPin className="w-4 h-4 text-[#62B9AB] mt-0.5 shrink-0" />
-              <span className="text-gray-500 text-sm font-medium leading-relaxed">Suite 09, First floor, Vicbalcon Towers Jabi, Abuja</span>
+              <span className="text-gray-500 text-sm font-medium leading-relaxed">301 Redstone Boulevard NE. Unit 266, Calgary, Alberta</span>
             </li>
           </ul>
         </div>
