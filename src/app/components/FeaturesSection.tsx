@@ -17,7 +17,7 @@ export function FeaturesSection() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 auto-rows-auto lg:auto-rows-[1fr]">
           
           {/* Card 1: Left Tall */}
-          <AnimatedSection className="lg:col-span-1 lg:row-span-2 relative rounded-[24px] overflow-hidden min-h-[400px] lg:min-h-[500px] group cursor-pointer" delay={0.1}>
+          <AnimatedSection className="lg:col-span-1 lg:row-span-2 relative rounded-[24px] overflow-hidden min-h-[400px] lg:min-h-[500px] group cursor-pointer hover:-translate-y-1 hover:shadow-xl transition-all duration-300" delay={0.1}>
             <ImageWithFallback 
               src={feat1} 
               alt="Excellence" 
@@ -43,7 +43,7 @@ export function FeaturesSection() {
           </AnimatedSection>
 
           {/* Card 4: Right Tall */}
-          <AnimatedSection className="lg:col-span-1 lg:row-span-2 relative rounded-[24px] overflow-hidden min-h-[400px] lg:min-h-[500px] group cursor-pointer" delay={0.5}>
+          <AnimatedSection className="lg:col-span-1 lg:row-span-2 relative rounded-[24px] overflow-hidden min-h-[400px] lg:min-h-[500px] group cursor-pointer hover:-translate-y-1 hover:shadow-xl transition-all duration-300" delay={0.5}>
             <ImageWithFallback 
               src={feat2} 
               alt="Quality" 
@@ -62,7 +62,7 @@ export function FeaturesSection() {
           </AnimatedSection>
 
           {/* Card 2: Square Middle Left */}
-          <AnimatedSection className="lg:col-span-1 bg-[#f9f9f9] rounded-[24px] p-8 flex flex-col justify-between min-h-[250px] relative group cursor-pointer" delay={0.3}>
+          <AnimatedSection className="lg:col-span-1 bg-[#f9f9f9] rounded-[24px] p-8 flex flex-col justify-between min-h-[250px] relative group cursor-pointer hover:-translate-y-1 hover:shadow-xl transition-all duration-300" delay={0.3}>
             <div>
               <h3 className="text-2xl  text-[#111111] mb-2 leading-tight">Integrity</h3>
               <p className="text-[#111111]/70 text-sm mt-4">What we say is what we do. No surprises, no excuses.</p>
@@ -78,7 +78,7 @@ export function FeaturesSection() {
           </AnimatedSection>
 
           {/* Card 3: Square Middle Right */}
-          <AnimatedSection className="lg:col-span-1 bg-[#f9f9f9] rounded-[24px] p-8 flex flex-col justify-between min-h-[250px] relative group cursor-pointer" delay={0.4}>
+          <AnimatedSection className="lg:col-span-1 bg-[#f9f9f9] rounded-[24px] p-8 flex flex-col justify-between min-h-[250px] relative group cursor-pointer hover:-translate-y-1 hover:shadow-xl transition-all duration-300" delay={0.4}>
             <div>
               <Wind className="w-8 h-8 text-[#111111] mb-6" />
               <h3 className="text-2xl  text-[#111111] leading-tight">Collaboration</h3>

@@ -23,6 +23,7 @@ import { HomeAssessmentPage } from "./pages/HomeAssessmentPage";
 import { BlogPage } from "./pages/BlogPage";
 import { SingleBlogPage } from "./pages/SingleBlogPage";
 import { ContactPage } from "./pages/ContactPage";
+import { ResourcesPage } from "./pages/ResourcesPage";
 import { ScrollToTop } from "./components/ScrollToTop"; // We need this to scroll up on route change
 import { WhatsAppFloatingIcon } from "./components/WhatsAppFloatingIcon";
 
@@ -56,6 +57,7 @@ export default function App() {
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:slug" element={<SingleBlogPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/resources" element={<ResourcesPage />} />
         </Routes>
       </main>
       <Footer />

@@ -1,6 +1,4 @@
-import { motion } from "motion/react";
-import { useRef } from "react";
-import { useInView } from "./useInView";
+import { useEffect, useRef } from "react";
 
 interface AnimatedSectionProps {
   children: React.ReactNode;
@@ -16,23 +14,36 @@ export function AnimatedSection({
   direction = "up",
 }: AnimatedSectionProps) {
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { threshold: 0.15 });
 
-  const initial = {
-    opacity: 0,
-    y: direction === "up" ? 40 : 0,
-    x: direction === "left" ? -40 : direction === "right" ? 40 : 0,
-  };
+  useEffect(() => {
+    // Check if browser supports scroll-driven animations
+    const supportsNative = CSS.supports('(animation-timeline: view()) and (animation-range: entry)');
+    
+    if (!supportsNative && ref.current) {
+      const el = ref.current;
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            el.classList.add("is-visible");
+            observer.unobserve(el);
+          }
+        },
+        { threshold: 0.15 }
+      );
+      observer.observe(el);
+      return () => observer.disconnect();
+    }
+  }, []);
+
+  const animationClass = `animated-section-native animated-section-fallback animated-section-${direction}`;
 
   return (
-    <motion.div
+    <div
       ref={ref}
-      className={className}
-      initial={initial}
-      animate={isInView ? { opacity: 1, y: 0, x: 0 } : initial}
-      transition={{ duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] }}
+      className={`${animationClass} ${className}`}
+      style={delay > 0 ? { transitionDelay: `${delay}s`, animationDelay: `${delay}s` } : undefined}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }

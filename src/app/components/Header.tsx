@@ -83,10 +83,10 @@ export function Header() {
               <AnimatePresence>
                 {activeDropdown === "services" && (
                   <motion.div
-                    initial={{ opacity: 0, y: 10, scale: 0.98 }}
+                    initial={{ opacity: 0, y: 15, scale: 0.97 }}
                     animate={{ opacity: 1, y: 0, scale: 1 }}
-                    exit={{ opacity: 0, y: 10, scale: 0.98 }}
-                    transition={{ duration: 0.2 }}
+                    exit={{ opacity: 0, y: 15, scale: 0.97 }}
+                    transition={{ type: "spring", stiffness: 300, damping: 25 }}
                     className="absolute top-[100%] left-1/2 -translate-x-1/2 w-[90vw] max-w-[1000px] bg-white rounded-3xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] border border-gray-100 overflow-hidden flex min-h-[360px]"
                   >
                      {/* Mega Menu Content */}
@@ -123,7 +123,8 @@ export function Header() {
             </div>
 
 
-            <Link to="/contact" className="text-white hover:text-white/70 transition-colors text-[13px] font-medium whitespace-nowrap">Resources & Contact</Link>
+            <Link to="/resources" className="text-white hover:text-white/70 transition-colors text-[13px] font-medium whitespace-nowrap">Resources</Link>
+            <Link to="/contact" className="text-white hover:text-white/70 transition-colors text-[13px] font-medium whitespace-nowrap">Contact</Link>
             
           </nav>
 
@@ -135,13 +136,15 @@ export function Header() {
             >
               About
             </Link>
-            <Link
-            to="/contact"
-            className="group inline-flex items-center gap-2 bg-white text-[#111] px-6 py-3 rounded-full font-medium text-sm hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
-          >
-            <span>Get Started</span>
-            <ArrowRight className="w-4 h-4 text-[#111] group-hover:translate-x-1 transition-transform" />
-          </Link>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Link
+                to="/contact"
+                className="group inline-flex items-center gap-2 bg-white text-[#111] px-6 py-3 rounded-full font-medium text-sm hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl"
+              >
+                <span>Get Started</span>
+                <ArrowRight className="w-4 h-4 text-[#111] group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </motion.div>
         </div>
 
           {/* Mobile toggle */}
@@ -164,7 +167,8 @@ export function Header() {
               <Link to="/" className="text-[#111] hover:text-[#62B9AB] transition-colors py-2 text-base font-medium border-b border-gray-100" onClick={() => setMobileOpen(false)}>Home</Link>
               <Link to="/about" className="text-[#111] hover:text-[#62B9AB] transition-colors py-2 text-base font-medium border-b border-gray-100" onClick={() => setMobileOpen(false)}>About Us</Link>
               <Link to="/services" className="text-[#111] hover:text-[#62B9AB] transition-colors py-2 text-base font-medium border-b border-gray-100" onClick={() => setMobileOpen(false)}>Services</Link>
-              <Link to="/contact" className="text-[#111] hover:text-[#62B9AB] transition-colors py-2 text-base font-medium border-b border-gray-100" onClick={() => setMobileOpen(false)}>Resources & Contact</Link>
+              <Link to="/resources" className="text-[#111] hover:text-[#62B9AB] transition-colors py-2 text-base font-medium border-b border-gray-100" onClick={() => setMobileOpen(false)}>Resources</Link>
+              <Link to="/contact" className="text-[#111] hover:text-[#62B9AB] transition-colors py-2 text-base font-medium border-b border-gray-100" onClick={() => setMobileOpen(false)}>Contact</Link>
               <Link to="/contact" className="mt-2 text-white bg-[#62B9AB] hover:bg-[#2a7076] transition-colors py-3 text-base font-medium rounded-full text-center" onClick={() => setMobileOpen(false)}>Get Started</Link>
             </div>
           </motion.div>

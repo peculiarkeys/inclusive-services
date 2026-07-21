@@ -105,7 +105,7 @@ export function ServiceSection() {
               return (
                 <motion.div
                   key={i}
-                  className={`group relative rounded-3xl overflow-hidden cursor-pointer shadow-md hover:shadow-xl transition-shadow duration-500 ${service.className}`}
+                  className={`group relative rounded-3xl overflow-hidden cursor-pointer shadow-md hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 ${service.className}`}
                   onClick={() => navigate(service.link)}
                 >
                   <ImageWithFallback
